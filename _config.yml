@@ -22,7 +22,7 @@ domain: fcschmidt.com
 
 # Google Analytics
 google__analytics:
-  tracking-id:
+  tracking-id: UA-85981803-1
 
 #Disqus Comments
 disqus:
@@ -43,4 +43,4 @@ author:
   github: fcschmidt
   bitbucket: fcschmidt
   stackoverflow: fcschmidt
-  stackoverflow_profissional:
+  stackoverflow_story: fcschmidt
