@@ -35,7 +35,8 @@
 }
 .indice .about__resume .about__resume-content{
     font-size: 1.6rem;
-    /*color: #1b6d85;*/
+    margin-bottom: -.5em;
+    margin-top: -.4em;
 }
 .indice .about__resume h4{
     margin-top: 0;
@@ -295,6 +296,12 @@
 .post .post__footer .post__share .btn__facebook:hover{background-color: #3b5998;}
 .post .post__footer .post__share .btn__google-plus:hover{background-color: #dd4b39;}
 .post .post__footer .post__share .btn__linkedin:hover{background-color: #007bb6;}
+
+.disqus__comments{
+    margin-top: 2em;
+}
+
+
 
 /* Categories and Tags */
 .header__category .title,

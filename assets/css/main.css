@@ -281,6 +281,9 @@ video{
     margin-top: -1em;
     /*color: #1b6d85;*/
 }
+.sidebar .twitter-follow-button{
+    margin-left: 2em;
+}
 .sidebar .sidebar__meta .fa{
     color: #d3d3d3;
     margin-right: .5em;
