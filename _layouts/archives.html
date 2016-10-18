@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-md-offset-1">
+    <nav class="nav__menu-secondary visible-xs-block">
+        <ul class="list-unstyled list-inline">
+            <li><a class="blog" href="/blog/">Blog</a></li>
+            <li><a class="category" href="/categories/">Categories</a></li>
+            <li><a class="tag" href="/tags/">Tags</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        {% if site.nav != "blog" %}
+            {% if page.class == "categories" %}
+                {% include blog/categories.html %}
+            {% endif %}
+            {% if page.class == "tags" %}
+                {% include blog/tags.html %}
+            {% endif %}
+        {% endif %}
+    </div>
+</div>

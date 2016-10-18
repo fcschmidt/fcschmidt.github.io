@@ -1,0 +1,39 @@
+<aside class="sidebar col-sm-3 col-md-3 col-md-push-1 hidden-xs">
+    <div class="sidebar__categories">
+        <a href="/categories/">Categories</a>
+        <hr/>
+        <ul class="list-unstyled">
+            {% assign categories_list = site.categories %}
+            {% if categories_list.first[0] == null %}
+                {% for category in categories_list %}
+                    <li>
+                        {{ category | capitalize }} <span class="badge pull-right">{{ site.categories[category].size }}</span>
+                    </li>
+                {% endfor %}
+            {% else %}
+                {% for category in categories_list %}
+                    <li>
+                        {{ category[0] | capitalize }} <span class="badge pull-right">{{ category[1].size }}</span>
+                    </li>
+                {% endfor %}
+            {% endif %}
+            {% assign categories_list = nil %}
+        </ul>
+    </div>
+    <div class="sidebar__tags">
+        <a href="/tags/">Tags</a>
+        <hr/>
+        {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+        {% assign tag_words = site_tags | split:',' | sort %}
+        <ul class="list-unstyled">
+            {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+                {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+                    <li>
+                        {{ this_word }}<span class="badge pull-right">{{ site.tags[this_word].size }}</span>
+                    </li>
+                {% endunless %}
+            {% endfor %}
+        </ul>
+    </div>
+    {% include blog/sidebar-footer.html %}
+</aside>

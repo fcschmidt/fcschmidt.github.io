@@ -1,0 +1,46 @@
+# Build settings
+penalink: /:year/:month/:day/:title/
+paginate: 5 # pagination based on number of posts
+paginate_path: "blog/:num/"
+exclude: ["README.md"] # files to exclude
+highlighter: rouge
+markdown: kramdown
+
+safe: false
+baseurl: ""
+url: http://localhost:4000
+
+# Site settings
+name: "F&aacute;bio Schmidt"
+title: "F&aacute;bio Schmidt"
+description: "Computer Science student, Autodidata, Lifehacker, Python, R enthusiast and AI interested"
+image: "codercat.jpg"
+twitter_user: fcschimidt
+
+url: https://fcschmidt.github.io
+domain: fcschmidt.com
+
+# Google Analytics
+google__analytics:
+  tracking-id:
+
+#Disqus Comments
+disqus:
+  shorname: fcschimidt
+
+# Author
+author:
+  name: "F&aacute;bio Schmidt"
+  avatar: "codercat.jpg"
+  profile: "profile.jpg"
+  bio: "Computer Science student, Autodidata, Lifehacker, Python, R enthusiast and AI interested"
+  location: Brazil
+  email: fcschimidt@gmail.com
+  twitter: fcschimidt
+  gplus: +fábiocschmidt
+  instagram:
+  linkedin: fcschimidt
+  github: fcschmidt
+  bitbucket: fcschmidt
+  stackoverflow: fcschmidt
+  stackoverflow_profissional:

@@ -1,0 +1,60 @@
+<aside class="sidebar col-sm-3 col-md-3 col-md-push-1">
+    <div class="sidebar__tags page__tags-mobile">
+        <p>Tags</p>
+        <hr/>
+        {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+        {% assign tag_words = site_tags | split:',' | sort %}
+        <ul class="list-unstyled">
+            {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+                {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+                    <li>
+                        <a href="#{{ this_word | replace:' ','-' }}-ref" data-toggle="tab">
+                            {{ this_word }}<span class="badge pull-right">{{ site.tags[this_word].size }}</span>
+                        </a>
+                    </li>
+                {% endunless %}
+            {% endfor %}
+        </ul>
+    </div>
+    {% include blog/sidebar-footer.html %}
+</aside>
+<div class="col-sm-9 col-md-8 col-md-push-1">
+    <header class="header header__tags">
+        <div class="header__container">
+            <div class="header__content">
+                <p class="title">{{ page.title }}</p>
+                <p class="desc">{{ page.description }}</p>
+            </div>
+        </div>
+    </header>
+    <section class="tags">
+        <article class="tags__content">
+            <ul class="breadcrumb hidden-xs">
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/categories/">Categories</a></li>
+                <li>{{ page.title }}</li>
+            </ul>
+            <div class="click clearfix">
+                <img class="img img-responsive hidden-xs" src="/assets/images/clickhere.png" alt="Click to open" style="margin-top: .5em"/>
+                <p class="click__span text-center visible-xs"><i class="fa fa-arrow-up"></i> Select a tag above <i class="fa fa-arrow-up"></i></p>
+            </div>
+            <nav class="tab-content">
+                {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+                    {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+                        <div class="tab-pane" id="{{ this_word | replace:' ','-' }}-ref">
+                            <h3 class="title">Posts tagged <span class="target">{{ this_word }}</span></h3>
+                            <ul class="list-unstyled">
+                                {% for post in site.tags[this_word] %}{% if post.title != null %}
+                                    <li>
+                                        <a href="{{ site.baseurl }}{{ post.url}}">{{ post.title}}</a>
+                                        <span class="text-muted">- {{ post.date | date: "%d %b, %Y" }}</span>
+                                    </li>
+                                {% endif %}{% endfor %}
+                            </ul>
+                        </div>
+                    {% endunless %}
+                {% endfor %}
+            </nav>
+        </article>
+    </section>
+</div>

@@ -1,0 +1,39 @@
+---
+layout: blog
+title: Blog post
+description: "My blog technical and disclosure of personal projects and thing of my mind"
+nav: blog
+class: blog__nav
+permalink: /blog/
+quote_author: einstein
+---
+
+<section class="blog__post">
+    {% for post in site.posts %}
+    <article class="blog__post-container">
+        <h2 class="title">
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p class="blog__post-date">
+            {% if post.lang == "en" %}
+            <span>Published {{ post.date | date: "%b %-d, %Y"}}</span>
+            {% else %}
+            <span>Publicado em {{ post.date | date: "%d &middot; %m &middot; %Y"}}</span>
+            {% endif %}
+        </p>
+        <p class="blog__post-content">
+            {% if post.fullview %}
+            {{ post.content }}
+            {% else %}
+            {{ post.excerpt | markdown | strip_html | truncate: 150}}
+            {% endif %}
+        </p>
+        {% if post.lang == "en" %}
+        <a href="{{ post.url | prepend: site.baseurl }}">Read more&#8230</a>
+        {% else %}
+        <a href="{{ post.url | prepend: site.baseurl }}">Leia mais&#8230</a>
+        {% endif %}
+    </article>
+    {% endfor %}
+</section>
+

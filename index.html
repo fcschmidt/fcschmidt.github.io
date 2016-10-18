@@ -1,0 +1,56 @@
+---
+layout: page
+title: Home
+description: "Personal web page, blog and promoter projects!"
+nav: home
+class: indice
+---
+
+<article class="about__resume clearfix">
+    <h4 class="heading">Hey hi!</h4>
+    <p class="about__resume-content">
+        I'm {{ site.name }}.
+        I am student of <b>Computer Science</b>.
+        Curious intellectual <i class="fa fa-hand-spock-o"></i>, great enthusiast of Technology
+        <a href="/about/">read more</a>. About this <a href="/about/site-config/">site</a>.
+    </p>
+</article>
+<article class="recent__post">
+    <h4 class="heading">Recent article <a href="/blog/" title="view all posts">&infin;</a></h4>
+    {% for post in site.posts limit:1 %}
+    <div class="content">
+        <h5>
+            <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
+            &mdash; <span class="small">Published: {{ post.date | date: "%b %-d, %Y"}}</span>
+        </h5>
+        <p class="post__content">
+            {% if post.fullview %}
+            {{ post.content }}
+            {% else %}
+            {{ post.excerpt }}
+            {% endif %}
+        </p>
+    </div>
+    {% endfor %}
+</article>
+<article class="recent__project">
+    <h4 class="heading">Recent project <a href="/projects/" title="view all projects">&infin;</a></h4>
+    {% for project in site.data.data_projects %}
+    <div class="content">
+        <h5><a href="{{ project.link }}" title="Project title">{{ project.name }}</a></h5>
+        <p class="project__desc">
+            {{ project.description }}
+        </p>
+    </div>
+    {% endfor %}
+</article>
+<!--<div class="row">
+    <article class="col-md-6">
+        <div class="wrapper__content">
+        </div>
+    </article>
+    <article class="col-md-6">
+        <div class="wrapper__content">
+        </div>
+    </article>
+</div>-->

@@ -1,0 +1,47 @@
+---
+layout: page
+title: About
+description: "About me, Welcome to my personal web page!"
+nav: home
+class: about
+permalink: /about/
+---
+
+{% assign about = site.author %}
+<div class="about">
+    <div class="about__container">
+        <article class="about__content">
+            <h4 class="heading">About me</h4>
+            <div class="desc">
+                Welcome to my personal web page! <br>
+                I'm {{ site.name }}. I am student of <b>Computer Science</b>.
+                <p>
+                    Curious intellectual <i class="fa fa-hand-spock-o"></i>, great enthusiast of Technology
+                    and Aeronautics <i class="fa fa-fighter-jet faa-passing animated"></i>.<br>
+                    Love to Science <i class="fa fa-flask"></i> <b>E=mc &sup2;</b>. I love rock' roll. <br/>
+                    I support the philosophy of free software and open source projects and Open Science. <br>
+                    About this <a href="/about/site-config/">site</a>.
+                </p>
+            </div>
+        </article>
+        <div class="row">
+            <div class="about__others col-xs-12 col-md-8">
+                <p>Interested in Artificial Intelligence, Data Science, UX and Solve the problem.</p>
+                <p>
+                    See my information professional and skills
+                    <a href="https://www.linkedin.com/in/{{ about.linkedin }}" target="_blank">Linkedin</a> and
+                    <a href="http://stackoverflow.com/{{ about.stackoverflow}}" target="_blank">Stackoverflow professional</a>.
+                    My open source code projects, contributions and studies on
+                    <a href="https://github.com/{{ about.github }}" target="_blank">Github</a>
+                    and <a href="https://bitbucket.org/{{ about.bitbucket }}" target="_blank">Bitbucket</a>.
+                </p>
+                <!--<p>
+                    Contact me <a href="mailto:{{ about.email }}">fcschimidt[at]gmail[period]com</a>.
+                </p>-->
+            </div>
+            <div class="about__profile-img col-xs-12 col-md-4 center-block">
+                <img class="img img-responsive" src="/assets/images/{{ about.profile }}" alt="{{ about.avatar }}"/>
+            </div>
+        </div>
+    </div>
+</div>

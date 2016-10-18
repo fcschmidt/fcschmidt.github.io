@@ -1,0 +1,26 @@
+{% assign author = site.author %}
+<footer class="sidebar__footer hidden-xs">
+    <div class="author__post">
+        {% if author.avatar %}
+        <img class="img img-responsive img-rounded" src="/assets/images/{{ author.avatar}}" alt="{{ author.avatar }}"/>
+        {% endif %}
+        {% if author.name %}
+        <p class="sidebar__footer-name">{{ author.name }}</p>
+        {% endif %}
+        {% if author.bio %}
+        <p class="sidebar__footer-bio">{{ author.bio }}</p>
+        {% endif %}
+        <ul class="sidebar__footer-social list-unstyled list-inline">
+            {% include social.html %}
+        </ul>
+    </div>
+    {% assign quote_author = site.data.quotes[page.quote_author] %}
+    {% if quote_author %}
+    <blockquote cite="{{ quote_author.cite_link}}">
+        <p>{{ quote_author.content }}</p>
+        <footer>
+            <cite title="{{ quote_author.cite_title }}" class="text-capitalize">{{ quote_author.name }}</cite>
+        </footer>
+    </blockquote>
+    {% endif %}
+</footer>

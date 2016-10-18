@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body {% if page.nav %}id="{{ page.nav }}"{% endif %} {% if page.class %}class="{{ page.class }}"{% endif %}>
+{% include navbar.html %}
+<div class="container-fluid main__container">
+    <div class="row">
+        {{ content }}
+        {% include footer.html %}
+    </div>
+</div>
+{% include script.html %}
+</body>
+</html>
+
+

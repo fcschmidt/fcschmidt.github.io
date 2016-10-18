@@ -1,0 +1,29 @@
+einstein:
+  name: Albert Einstein
+  content: "Make things as simple as possible but no simpler."
+  cite_link: http://www
+  cite_title: The largest physical of all time
+
+yoda:
+  name: Master Yoda
+  content: "May the force be with you."
+  cite_link:
+  cite_title: Star Wars - Jedi Master
+
+author-name:
+  name:
+  content:
+  cite_link:
+  cite_title:
+
+author-name:
+  name:
+  content:
+  cite_link:
+  cite_title:
+
+author-name:
+  name:
+  content:
+  cite_link:
+  cite_title:
