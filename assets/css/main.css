@@ -29,14 +29,24 @@ video {
     font-size: 2rem;
     color: #778899;
 }
+code, samp, mark{
+    color: #1b6d85;
+}
 /*
 ===============================
     Default styles
 ===============================
 */
-.header .nav__menu .nav__menu-brand{display: none; text-decoration: none;}
+.header{
+    background-color: #F6F9FA;
+    border-bottom: 1px solid #F1F1F1;
+}
+.header .nav__menu .nav__menu-brand{
+    text-decoration: none;
+    display: none;
+}
 .header .btn{
-    color: #778899;
+    color: #1e90ff;
     background-color: #F6F9FA;
     border: none;
     border-radius: 0;
@@ -44,6 +54,7 @@ video {
 .header .nav__menu{
     margin: 0;
     border-top: 1px solid #F1F1F1;
+    display: none;
 }
 .header .nav__menu .nav__menu-primary li{
     background-color: #F1F1F1;
@@ -61,7 +72,6 @@ video {
 }
 .header .nav__menu .social{
     text-align: center;
-    background-color: #ffffff;
     margin-top: -.4em;
     margin-bottom: 0;
 }
@@ -80,6 +90,30 @@ video {
     width: 4em;
     height: 4em;
 }
+/* Page header */
+.header .page__header{
+    background-color: #F6F9FA;
+    border-top: 1px solid #F1F1F1;
+    margin-bottom: -.6em;
+}
+.header .page__header img{
+    width: 3.5em;
+    height: 3.5em;
+    margin-top: .2em;
+}
+.header .page__header .name{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #778899;
+    margin-bottom: 0;
+}
+.header .page__header .bio{
+    text-align: center;
+    font-size: 1rem;
+    color: #778899;
+}
+
 /* Secondary menu */
 nav.header__menu{
     background-color: #F6F9FA;
@@ -158,6 +192,7 @@ div pre::before{
         display: block;
     }
     .header #btn__menu{display: none;}
+    .header .nav__menu{display: block}
     .header .nav__menu .nav__menu-brand{
         color: #778899;
         margin-left: 1em;
@@ -192,6 +227,7 @@ div pre::before{
         color: #1e90ff;
     }
     .header .nav__menu .social{display: none;}
+    .header .page__header{display: none;}
     /* Secondary menu */
     nav.header__menu{
         background-color: #ffffff;
@@ -416,6 +452,7 @@ div pre::before{
 .sidebar .box,
 .blog__post .box,
 section article.box{
+    margin: 0 -.5em 1em -.5em;
     padding: .5em;
     border: 1px solid #e9e9e9;
 
@@ -423,9 +460,6 @@ section article.box{
     -moz-border-radius: 2px;
     border-radius: 2px;
 }
-.sidebar .box,
-.blog__post .box,
-section article.box,
 .header__blog .header__content{
     margin: 0 -.5em 1em -.5em;
 }
@@ -434,6 +468,9 @@ section article.box,
 .tags .box{
     background-color: #F6F9FA;
 }
+.header__blog{
+    margin-bottom: -.36em;
+}
 .header__blog  .header__content .title{
     font-size: 3.5rem;
     color: #1b6d85;
@@ -441,7 +478,7 @@ section article.box,
 }
 .header__blog .header__content .desc{
     color: #778899;
-    margin-top: -.5em;
+    margin-top: -.2em;
 }
 .blog .blog__post-content{
     font-size: 1.5rem;
@@ -458,7 +495,7 @@ section article.box,
 }
 /* Single post */
 .post .header__blog .header__content .title{
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 0;
 }
 .post .header__blog .header__content .header__data{
@@ -476,7 +513,16 @@ section article.box,
 .post .post__footer .post__meta ul li{
     font-size: 1.7rem;
     color: #778899;
+    margin-bottom: .5em;
 }
+.post .post__footer .post__meta ul li span{
+    background-color: #F6F9FA;
+    padding: .2em .3em;
+    border: 1px solid #F1F1F1;
+    border-radius: 3px;
+}
+.post .post__footer .post__meta ul li .fa-bookmark{margin-right: 1em;}
+.post .post__footer .post__meta ul li .fa-tags{margin-right: .7em;}
 .post .post__footer .footer__author{
     background-color: #F6F9FA;
     margin-bottom: .5em;
@@ -495,12 +541,14 @@ section article.box,
 }
 .post .post__footer .footer__author-content .bio{
     font-size: 1.1rem;
+    color: #778899;
     margin-bottom: 0;
 }
 .post .post__footer .footer__author-content .social li{
     padding: .3em;
     display: inline-block;
 }
+.post .post__footer .footer__author-content .social li a{color: #778899;}
 .post .post__footer .post__share{
     color: #778899;
     margin-bottom: 1em;
@@ -596,6 +644,12 @@ section article.box,
     .box .breadcrumb{
         margin: -.5em -.5em .5em -.5em;
     }
+    .post .single__post{
+        margin-top: 1.2em;
+    }
+    .post .single__post .box{
+        margin-top: -.5em;
+    }
     .post .post__footer .footer__author{
         /*display: none*/
         border: 1px solid #F1F1F1;
@@ -609,11 +663,7 @@ section article.box,
         margin: 0
     }
     .post .post__footer .post__share{
-        /*border-top: 1px solid #F1F1F1;*/
         margin-bottom: 1em;
-    }
-    .post .single__post{
-        margin-top: 1.2em;
     }
     .sidebar__footer .author__post{
         background-color: #F6F9FA;
@@ -660,6 +710,10 @@ section article.box,
     #blog .sidebar__footer blockquote{margin-top: 1em}
     #blog .sidebar__footer blockquote p{
         font-size: 1.2rem;
+    }
+    .categories .header__blog .title,
+    .tags .header__blog .title{
+        margin-left: -.2em;
     }
     .categories .no-box,
     .tags .no-box{

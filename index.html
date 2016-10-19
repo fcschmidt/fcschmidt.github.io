@@ -27,7 +27,7 @@ class: indice
             {% if post.fullview %}
             {{ post.content }}
             {% else %}
-            {{ post.excerpt }}
+            {{ post.excerpt | markdown | strip_html | truncate: 150 }}
             {% endif %}
         </p>
     </div>

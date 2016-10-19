@@ -25,7 +25,7 @@ quote_author: einstein
             {% if post.fullview %}
             {{ post.content }}
             {% else %}
-            {{ post.excerpt | markdown | strip_html | truncate: 150}}
+            {{ post.excerpt | markdown | strip_html | truncate: 150 }}
             {% endif %}
         </p>
         {% if post.lang == "en" %}
