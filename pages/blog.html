@@ -1,16 +1,16 @@
 ---
-layout: blog
+layout: post
 title: Blog post
 description: "My blog technical and disclosure of personal projects and thing of my mind"
 nav: blog
-class: blog__nav
+class: blog
 permalink: /blog/
 quote_author: einstein
 ---
 
 <section class="blog__post">
     {% for post in site.posts %}
-    <article class="blog__post-container">
+    <article class="box">
         <h2 class="title">
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>

@@ -4,24 +4,22 @@
         <a class="previous col-xs-6 col-md-6" href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ page.previous.title }}">
             <li>
                 <span aria-hidden="true" class="fa fa-long-arrow-left"></span> Previous<br>
-                <span class="title">{{ page.previous.title }}</span>
             </li>
         </a>
         {% else %}
         <a class="previous disabled col-xs-6 col-md-6" href="#" title="{{ page.previous.title }}">
-            <li><span aria-hidden="true" class="fa fa-long-arrow-left"></span> Previous <br/>Empty</li>
+            <li><span aria-hidden="true" class="fa fa-long-arrow-left"></span> Previous</li>
         </a>
         {% endif %}
         {% if page.next %}
         <a class="next col-xs-6 col-md-6" href="{{ site.baseurl }}{{ page.next.url }}" title="{{ page.next.title }}">
             <li>
                 Next <span aria-hidden="true" class="fa fa-long-arrow-right"></span><br>
-                <span class="title">{{ page.next.title }}</span>
             </li>
         </a>
         {% else %}
         <a class="next disabled col-xs-6 col-md-6" href="#" title="{{ page.next.title }}">
-            <li>Next <span aria-hidden="true" class="fa fa-long-arrow-right"></span> <br/>Empty</li>
+            <li>Next <span aria-hidden="true" class="fa fa-long-arrow-right"></span></li>
         </a>
         {% endif %}
     </ul>

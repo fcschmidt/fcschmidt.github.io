@@ -14,8 +14,10 @@ url: http://localhost:4000
 name: "F&aacute;bio Schmidt"
 title: "F&aacute;bio Schmidt"
 description: "Computer Science student, Autodidata, Lifehacker, Python, R enthusiast and AI interested"
-image: "codercat.jpg"
 twitter_user: fcschimidt
+image: "codercat.jpg"
+icon: favicon.ico
+styles: main.css
 
 url: https://fcschmidt.com
 domain: fcschmidt.com
@@ -23,10 +25,6 @@ domain: fcschmidt.com
 # Google Analytics
 google__analytics:
   tracking-id: UA-85981803-1
-
-#Disqus Comments
-disqus:
-  shorname: fcschimidt
 
 # Author
 author:

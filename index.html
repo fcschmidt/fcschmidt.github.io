@@ -23,7 +23,7 @@ class: indice
             <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
             &mdash; <span class="small">Published: {{ post.date | date: "%b %-d, %Y"}}</span>
         </h5>
-        <p class="post__content">
+        <p class="recent__post-content">
             {% if post.fullview %}
             {{ post.content }}
             {% else %}

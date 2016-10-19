@@ -8,17 +8,17 @@
         <ul class="list-unstyled">
             <li><i class="fa fa-bookmark"></i>
                 {% for category in page.categories %}
-                <span style="margin-left: .8em">{{ category }}</span> &middot;
+                <span>{{ category }}</span> &middot;
                 {% endfor %}
             </li>
             <li><i class="fa fa-tags"></i>
                 {% for tag in page.tags %}
-                <span style="margin-left: .5em">{{ tag }}</span> &middot;
+                <span>{{ tag }}</span> &middot;
                 {% endfor %}
             </li>
         </ul>
     </div>
-    <div class="footer__author row visible-xs">
+    <div class="footer__author row">
         {% assign author = site.author %}
         {% if author.avatar %}
         <img class="img img-responsive img-circle" src="/assets/images/{{ author.avatar }}" alt="{{ author.avatar }}"/>

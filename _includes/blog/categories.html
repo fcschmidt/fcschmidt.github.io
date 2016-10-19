@@ -1,5 +1,5 @@
 <aside class="sidebar col-sm-3 col-md-3 col-md-push-1">
-    <div class="sidebar__categories page__categories-mobile">
+    <div class="box">
         <p>Categories</p>
         <hr/>
         <ul class="list-unstyled">
@@ -27,16 +27,14 @@
     {% include blog/sidebar-footer.html %}
 </aside>
 <div class="col-sm-9 col-md-8 col-md-push-1">
-    <header class="header header__category">
-        <div class="header__container">
-            <div class="header__content">
-                <p class="title">{{ page.title }}</p>
-                <p class="desc">{{ page.description }}</p>
-            </div>
+    <header class="header__blog">
+        <div class="header__content">
+            <p class="title">{{ page.title }}</p>
+            <p class="desc">{{ page.description }}</p>
         </div>
     </header>
     <section class="categories">
-        <article class="category__content">
+        <article class="box no-box">
             <ul class="breadcrumb hidden-xs">
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/tags/">Tags</a></li>

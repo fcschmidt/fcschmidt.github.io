@@ -1,0 +1,15 @@
+{% assign author = site.author %}
+<header class="header clearfix">
+    <a id="btn__menu" class="btn text-capitalize"><i class="fa fa-bars"></i>
+        {% if page.nav == "home" %}Home{% else %}Blog{% endif %}
+    </a>
+    <nav class="nav__menu">
+        <a class="nav__menu-brand" href="/">{{ site.name }}</a>
+        <ul class="nav__menu-primary  list-unstyled">
+            <li class="home"><a href="/">Home</a></li>
+            <li class="blog"><a href="/blog/">Blog</a></li>
+        </ul>
+        {% include social.html %}
+    </nav>
+</header>
+

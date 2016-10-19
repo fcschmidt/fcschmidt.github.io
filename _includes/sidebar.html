@@ -1,6 +1,6 @@
 {% assign author = site.author %}
 <aside class="sidebar col-sm-4 col-md-3 col-md-push-1 hidden-xs">
-    <div class="sidebar__image clearfix">
+    <div class="sidebar__avatar clearfix">
         {% if author.avatar %}
         <img class="img img-responsive img-rounded clearfix" src="/assets/images/{{ author.avatar }}" alt="Avatar"/>
         {% endif %}
@@ -21,9 +21,7 @@
         {% endif %}
     </ul>
     <footer class="sidebar__footer">
-        <ul class="social list-unstyled list-inline">
-            {% include social.html %}
-        </ul>
+        {% include social.html %}
     </footer>
 </aside>
 

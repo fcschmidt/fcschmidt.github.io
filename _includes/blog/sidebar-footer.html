@@ -5,14 +5,12 @@
         <img class="img img-responsive img-rounded" src="/assets/images/{{ author.avatar}}" alt="{{ author.avatar }}"/>
         {% endif %}
         {% if author.name %}
-        <p class="sidebar__footer-name">{{ author.name }}</p>
+        <p class="name">{{ author.name }}</p>
         {% endif %}
         {% if author.bio %}
-        <p class="sidebar__footer-bio">{{ author.bio }}</p>
+        <p class="bio">{{ author.bio }}</p>
         {% endif %}
-        <ul class="sidebar__footer-social list-unstyled list-inline">
-            {% include social.html %}
-        </ul>
+
     </div>
     {% assign quote_author = site.data.quotes[page.quote_author] %}
     {% if quote_author %}

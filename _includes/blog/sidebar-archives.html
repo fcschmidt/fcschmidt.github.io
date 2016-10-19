@@ -1,5 +1,5 @@
 <aside class="sidebar col-sm-3 col-md-3 col-md-push-1 hidden-xs">
-    <div class="sidebar__categories">
+    <div class="box categories">
         <a href="/categories/">Categories</a>
         <hr/>
         <ul class="list-unstyled">
@@ -20,7 +20,7 @@
             {% assign categories_list = nil %}
         </ul>
     </div>
-    <div class="sidebar__tags">
+    <div class="box tags">
         <a href="/tags/">Tags</a>
         <hr/>
         {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
