@@ -11,5 +11,10 @@
         </ul>
         {% include social.html %}
     </nav>
+    <div class="page__header">
+        <img class="img img-responsive img-circle center-block" src="/assets/images/{{ author.profile }}" alt="{{ author.avatar }}"/>
+        <p class="name">{{ author.name }}</p>
+        <p class="bio">{{ author.bio }}</p>
+    </div>
 </header>
 
