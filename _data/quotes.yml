@@ -10,11 +10,11 @@ yoda:
   cite_link:
   cite_title: Star Wars - Jedi Master
 
-author-name:
-  name:
-  content:
+linus:
+  name: Linus Torvalds
+  content: "Talk is cheap. Show me the code."
   cite_link:
-  cite_title:
+  cite_title: Creator of the Linux
 
 author-name:
   name:
