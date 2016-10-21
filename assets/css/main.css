@@ -292,7 +292,9 @@ div pre::before{
     }
     .sidebar .sidebar__footer .social li a:hover{color: #d3d3d3;}
     /* Footer */
-    .footer{margin-top: 6em}
+    .footer{
+        margin-top: 3em
+    }
     .footer .footer__container{padding-top: .5em}
     .footer .footer__container .copy{float: left;}
     .footer .footer__container .author__create{float: right;}
@@ -437,7 +439,7 @@ div pre::before{
     }
     .about__resume p,
     .recent__post p{
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         margin-top: 0;
     }
     /* About */
@@ -469,10 +471,11 @@ section article.box{
     background-color: #F6F9FA;
 }
 .header__blog{
+    margin-top: -.5em;
     margin-bottom: -.36em;
 }
-.header__blog  .header__content .title{
-    font-size: 3.5rem;
+.header__blog  .header__content h1{
+    font-size: 2em;
     color: #1b6d85;
     margin-bottom: .1em;
 }
@@ -494,8 +497,8 @@ section article.box{
     margin-bottom: 0;
 }
 /* Single post */
-.post .header__blog .header__content .title{
-    font-size: 3.5rem;
+.post .header__blog .header__content h1{
+    font-size: 2.7rem;
     margin-bottom: 0;
 }
 .post .header__blog .header__content .header__data{
@@ -634,6 +637,7 @@ section article.box{
     #blog .nav__menu-secondary{display: none}
     .header__blog{
         background-color: #ffffff;
+        margin-top: -1.5em;
     }
     .sidebar .box,
     .blog__post .box,
@@ -643,6 +647,10 @@ section article.box{
     }
     .box .breadcrumb{
         margin: -.5em -.5em .5em -.5em;
+    }
+    .header__blog  .header__content .title,
+    .post .header__blog .header__content .title {!important;
+        font-size: 3.5rem;
     }
     .post .single__post{
         margin-top: 1.2em;
@@ -669,7 +677,7 @@ section article.box{
         background-color: #F6F9FA;
     }
     #blog .sidebar{
-        margin-top: 5.2em;
+        margin-top: 4.2em;
     }
     #blog .sidebar .sidebar__footer .author__post{
         padding: .5em;

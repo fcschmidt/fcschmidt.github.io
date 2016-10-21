@@ -11,9 +11,9 @@ quote_author: einstein
 <section class="blog__post">
     {% for post in site.posts %}
     <article class="box">
-        <h2 class="title">
+        <h3 class="title">
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        </h3>
         <p class="blog__post-date">
             {% if post.lang == "en" %}
             <span>Published {{ post.date | date: "%b %-d, %Y"}}</span>
