@@ -648,8 +648,8 @@ section article.box{
     .box .breadcrumb{
         margin: -.5em -.5em .5em -.5em;
     }
-    .header__blog  .header__content .title,
-    .post .header__blog .header__content .title {!important;
+    .header__blog  .header__content h1,
+    .post .header__blog .header__content h1 {!important;
         font-size: 3.5rem;
     }
     .post .single__post{
