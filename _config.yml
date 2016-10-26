@@ -18,8 +18,8 @@ image: "codercat.jpg"
 icon: favicon.ico
 styles: main.min.css
 
-url: https://fcschmidt.com
-enforce_ssl: fcschmidt.com
+url: http://fcschmidt.com
+#enforce_ssl: fcschmidt.com
 domain: fcschmidt.com
 
 # Google Analytics

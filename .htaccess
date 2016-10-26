@@ -3,7 +3,6 @@
     AddOutputFilterByType DEFLATE application/x-javascript application/javascript text/javascript
 </ifmodule>
 
-
 RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%fcschmidt.com$1[L,R=301]
+RewriteCond %{HTTP_HOST} ^www.fcschmidt.com [NC]
+RewriteRule ^(.*)$ https://wwww.fcschmidt.com$1[L,R=301]
