@@ -8,7 +8,6 @@ markdown: kramdown
 
 safe: false
 baseurl: ""
-url: http://localhost:4000
 
 # Site settings
 name: "F&aacute;bio Schmidt"

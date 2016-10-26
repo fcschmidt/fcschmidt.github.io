@@ -215,6 +215,7 @@ div pre::before{
     .header .nav__menu .nav__menu-primary li a{
         text-decoration: none;
         padding: 1em 1em;
+        margin-right: -1em;
     }
     .header .nav__menu .nav__menu-primary li a:hover,
     .header .nav__menu .nav__menu-primary li a:focus,
