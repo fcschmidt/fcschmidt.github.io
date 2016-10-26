@@ -2,7 +2,3 @@
     AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css
     AddOutputFilterByType DEFLATE application/x-javascript application/javascript text/javascript
 </ifmodule>
-
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.fcschmidt.com [NC]
-RewriteRule ^(.*)$ https://wwww.fcschmidt.com$1[L,R=301]
