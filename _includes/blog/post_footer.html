@@ -30,9 +30,7 @@
             {% if author.bio %}
             <p class="bio">{{ author.bio }}</p>
             {% endif %}
-            <ul class="list-unstyled list-inline">
-                {% include social.html %}
-            </ul>
+            {% include social.html %}
         </div>
     </div>
     <div class="post__share">
@@ -44,6 +42,7 @@
             <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ base_path }}{{ page.url }}" class="btn btn__linkedin" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
         </ul>
     </div>
+    <br/>
 </footer>
 {% include blog/post_paginate.html %}
 {% include disqus.html %}

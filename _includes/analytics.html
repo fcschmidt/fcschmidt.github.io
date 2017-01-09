@@ -1,4 +1,5 @@
-{% if site.google__analytics.tracking-id %}
+{% assign analytics = site.google__analytics.tracking-id %}
+{% if analytics %}
 <!-- Google Analytics (http://google.com/analytics) -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -6,7 +7,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '{{ site.google__analytics.tracking-id }}', 'auto');
+  ga('create', '{{ analytics }}', 'auto');
   ga('send', 'pageview');
 </script>
 <!--<script type="text/javascript">

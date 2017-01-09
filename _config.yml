@@ -1,37 +1,43 @@
 # Build settings
 penalink: /:year/:month/:day/:title/
-paginate: 5 # pagination based on number of posts
+paginate: 5
 paginate_path: "blog/:num/"
-exclude: ["README.md"] # files to exclude
+exclude: ["README.md"]
 highlighter: rouge
 markdown: kramdown
-
-safe: false
-baseurl: ""
-
-# Site settings
-name: "F&aacute;bio Schmidt"
-title: "F&aacute;bio Schmidt"
-description: "Computer Science student, Autodidata, Lifehacker, Python, R enthusiast and AI interested"
-twitter_user: fcschimidt
-image: "codercat.jpg"
-icon: favicon.ico
-styles: main.min.css
-
-url: http://fcschmidt.com
-#enforce_ssl: fcschmidt.com
-domain: fcschmidt.com
 
 # Google Analytics
 google__analytics:
   tracking-id: UA-85981803-1
 
+# Disqus comments
+disqus__shortname:
+  user-name: fcschmidt
+
+collections:
+  docs:
+    output: true
+
+
+# Site settings
+name: "F&aacute;bio Schmidt"
+title: "F&aacute;bio Schmidt"
+description: "Computer Science student, Autodidata, Python, R, AI interested  "
+
+safe: false
+baseurl: ""
+url: "http://fcschmidt.github.io"
+twitter_user: fcschimidt
+icon: favicon.ico
+styles: main.css
+
+
 # Author
 author:
   name: "F&aacute;bio Schmidt"
-  avatar: "codercat.jpg"
-  profile: "profile.jpg"
-  bio: "Computer Science student, Autodidata, Lifehacker, Python, R enthusiast and AI interested"
+  avatar: "profile3.png"
+  profile: "profile3.png"
+  bio: "Computer Science Student and Aspiring Data Scientist"
   location: Brazil
   email: fcschimidt@gmail.com
   twitter: fcschimidt
@@ -42,3 +48,26 @@ author:
   bitbucket: fcschmidt
   stackoverflow: fcschmidt
   stackoverflow_story: fcschmidt
+
+
+gems:
+  - jekyll-feed
+  # - jekyll-admin
+  # - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+#enforce_ssl: fcschmidt.com
+#domain: fcschmidt.com
+
+
+# Color annotations
+# background: #ffffff
+# background footer: #f5f5f5
+# Title color: #4C4C4C
+# Subtitle color (date): #7F7F7F
+# Post content color: #212121
+# Icons color: #767676 and #CCCCCC
+# 2B343D, 1D9C92
+# Styles1: #C7EBE8, #00FFCC, #FFFF99

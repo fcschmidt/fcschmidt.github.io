@@ -1,3 +1,4 @@
+{% assign disqus = site.disqus__shortname.user-name %}
 <nav class="header__menu">
     <ul class="nav__menu-secondary list-unstyled">
         <li><a class="blog" href="/blog/">Blog</a></li>
@@ -13,11 +14,15 @@
         {% endif %}
         {% if page.class == "post" %}
         <h1 class="title">{{ page.title }}</h1>
-        <script id="dsq-count-scr" src="//fcschmidt.disqus.com/count.js" async></script>
+        <script id="dsq-count-scr" src="//{{ disqus }}.disqus.com/count.js" async></script>
         <a href="{{ site.baseurl }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
         <ul class="header__data list-unstyled list-inline">
-            <li><i class="fa fa-calendar"></i> {{ page.date | date: "%b %-d, %Y" }}</li>&mdash;
-            <li class="text-uppercase">{{ page.lang }}</li>
+            {% if page.lang == "en" %}
+            <span>Published {{ page.date | date: "%b %-d, %Y"}}</span>
+            {% else %}
+            <span>Publicado em {{ page.date | date: "%d &middot; %m &middot; %Y"}}</span>
+            {% endif %}
+             &mdash;<li class="text-uppercase">{{ page.lang }}</li>
         </ul>
         {% endif %}
     </div>

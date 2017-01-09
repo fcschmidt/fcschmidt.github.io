@@ -2,19 +2,16 @@
 layout: default
 ---
 
-{% capture proj_hash = proj_size %}{% for proj_hash in site.data.projects %}{% endfor %}{% endcapture %}
-{% assign proj = proj_hash[1] %}
 <div class="col-xs-12 col-md-9 col-md-offset-1">
     <div class="row">
         {% include sidebar.html %}
         <div class="col-xs-12 col-sm-8 col-md-8 col-md-push-1">
-            <nav class="header__menu">
+            <!--<nav class="header__menu">
                 <ul class="nav__menu-secondary list-unstyled">
-                    <li><a id="indice" href="/">Indice</a></li>
+                    <li><a id="indice" href="/">Index</a></li>
                     <li><a id="about" href="/about/">About</a></li>
-                    <li><a id="projects" href="/projects/">Projects ({{ proj.projects | size }})</a></li>
                 </ul>
-            </nav>
+            </nav>-->
             <section class="wrapper__content">
                 {{ content }}
             </section>

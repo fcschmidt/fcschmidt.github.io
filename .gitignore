@@ -1,4 +1,11 @@
 _site
 .idea
 .jekyll-metadata
+_includes/landing/interests.html
+_includes/landing/others.html
+_includes/landing/skills.html
+pages/about.html
+pages/projects.html
+pages/docs.html
+_includes/docs
 

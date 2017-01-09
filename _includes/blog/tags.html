@@ -46,7 +46,7 @@
                             <ul class="list-unstyled">
                                 {% for post in site.tags[this_word] %}{% if post.title != null %}
                                     <li>
-                                        <a href="{{ site.baseurl }}{{ post.url}}">{{ post.title}}</a>
+                                        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
                                         <span class="text-muted">- {{ post.date | date: "%d %b, %Y" }}</span>
                                     </li>
                                 {% endif %}{% endfor %}
