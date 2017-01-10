@@ -26,7 +26,7 @@ description: "Computer Science student, Autodidata, Python, R, AI interested  "
 
 safe: false
 baseurl: ""
-url: "http://fcschmidt.github.io"
+url: "https://fcschmidt.github.io"
 twitter_user: fcschimidt
 icon: favicon.ico
 styles: main.css
@@ -62,12 +62,3 @@ exclude:
 #domain: fcschmidt.com
 
 
-# Color annotations
-# background: #ffffff
-# background footer: #f5f5f5
-# Title color: #4C4C4C
-# Subtitle color (date): #7F7F7F
-# Post content color: #212121
-# Icons color: #767676 and #CCCCCC
-# 2B343D, 1D9C92
-# Styles1: #C7EBE8, #00FFCC, #FFFF99
