@@ -6,14 +6,10 @@
     <nav class="nav__menu">
         <a class="nav__menu-brand" href="/">{{ site.name }}</a>
         <ul class="nav__menu-primary  list-unstyled">
-            <li class="home"><a href="/">Home</a></li>
-            <li class="blog"><a href="/blog/">Blog</a></li>
+            <li class="{% if page.title contains 'Landing' %}active{% endif %}"><a href="/">Home</a></li>
+            <li class="{% if page.url contains 'blog' %}active{% endif %}"><a href="/blog/">Blog</a></li>
+            <!--<li class="{% if page.url contains 'docs' %}active{% endif %}"><a href="/docs/home/">Docs</a></li>-->
         </ul>
-
-        <!--<ul class="nav__menu-primary  list-unstyled">
-            <li class="{% if page.url contains '/' %}current{% endif %}"><a href="/">Home</a></li>
-            <li class="{% if page.url contains '/blog/' %}current{% endif %}"><a href="/blog/">Blog</a></li>
-        </ul>-->
         {% include social.html %}
     </nav>
     <div class="page__header">
