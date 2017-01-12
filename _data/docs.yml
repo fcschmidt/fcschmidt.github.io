@@ -1,3 +1,6 @@
-- title: Getting Started
-  docs:
-  - teste
+title: My Docs
+docs:
+  - home
+  - projects
+  - research
+  - talks
