@@ -1,9 +1,9 @@
 {% assign disqus = site.disqus__shortname.user-name %}
 <nav class="header__menu">
     <ul class="nav__menu-secondary list-unstyled">
-        <li><a class="blog" href="/blog/">Blog</a></li>
-        <li><a class="category" href="/categories/">Categories</a></li>
-        <li><a class="tag" href="/tags/">Tags</a></li>
+        <li class="{% if page.url contains 'blog' %}active{% endif %}"><a href="/blog/">Blog</a></li>
+        <li><a href="/categories/">Categories</a></li>
+        <li><a href="/tags/">Tags</a></li>
     </ul>
 </nav>
 <header class="header__blog">
