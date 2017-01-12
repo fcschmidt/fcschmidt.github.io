@@ -2,6 +2,33 @@
 <script type="text/javascript" src="/assets/plugins/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/assets/js/main.js"></script>
+{% include analytics.html %}
+{% if page.url contains 'docs' %}
+<!-- Particle JS (https://github.com/VincentGarreau/particles.js)-->
+<script src="/assets/plugins/particle-js/particles.min.js"></script>
+<script src="/assets/plugins/particle-js/app.js"></script>
+<script src="/assets/plugins/particle-js/lib/stats.js"></script>
+<script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '45px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+</script>
+{% endif %}
+
 
 
 
