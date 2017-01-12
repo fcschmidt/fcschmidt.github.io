@@ -1,10 +1,22 @@
-#My Personal Page [fcschmidt.com](https://fcschmidt.com) :sunglasses:
-Minimalist design using [Jekyll](http://jekyllrb.com/) and [Bootstrap](http://getbootstrap.com/).
+# My Personal Page [https://fcschmidt.github.io](https://fcschmidt.github.io) :sunglasses:
 
-Hosted on [GitHub pages](https://pages.github.com/)
+
+## This site was designed and built using:
+- Designed and coded on [Ubuntu](http://getbootstrap.com/) in Brazil.
+- Encoded with [Pycharm](https://www.jetbrains.com/pycharm/).
+- Markdown written with [Haroopad](http://pad.haroopress.com/).
+- Design made with [Bootstrap](http://getbootstrap.com/).
+- Built on [Jekyll](http://jekyllrb.com/), the open source static site generator;
+- Hosted on [GitHub Pages](https://pages.github.com/).
 
 ## Credits
-Inspired by GitHub.
+- [Font Awesome](http://fontawesome.io/).
+- [Disqus](https://disqus.com/).
+- [Particle JS](http://github.com/VincentGarreau/particles.js).
+
+Home page Inspired by [GitHub](https://github.com/).
+Page site config Inspired by [Mark Dotto](http://markdotto.com/about/).
+
 ## License
-[MIT License](https://opensource.org/licenses/MIT) © Fábio Schmidt
+[MIT License](https://opensource.org/licenses/MIT) © Fábio Schmidt &middot; Minimalist Design
 
