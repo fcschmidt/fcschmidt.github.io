@@ -2,24 +2,28 @@
 layout: default
 ---
 
-<div class="col-md-9 col-md-offset-1">
-    <section class="row">
-        <div class="docs col-md-11 col-md-push-1">
-            <div class="content col-md-12">
-                <header>
-                    <h1>Docs</h1>
-                </header>
-                <hr/>
-                <p>
-                    teste
-                </p>
-            </div>
-        </div>
-    </section>
+<div class="count-particles">
+    <span class="js-count-particles">--</span> particles
 </div>
 
-<style>
-    .docs .content{
-        background-color: #21B2A6;
-    }
-</style>
+<div class="docs col-xs-12 col-md-9 col-md-offset-1">
+    <div class="row">
+        <header class="col-md-11 col-md-push-1">
+            <div id="particles-js" class="wrapper__content {{ page.color }}" style="padding: 0">
+                <!--<h1 class="heading"><span>{{ page.title }}</span></h1>-->
+                <!--<p>{{ page.description }}</p>-->
+            </div>
+            <nav>
+                {% assign doc = site.data.docs %}
+                {% include docs/docs_ul.html items=doc.docs %}
+            </nav>
+        </header>
+        <div class="docs__content col-md-11 col-md-push-1">
+            <section class="teste">
+                {{ content }}
+            </section>
+        </div>
+    </div>
+</div>
+
+
