@@ -1,5 +1,5 @@
 # Build settings
-penalink: /:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title/
 paginate: 5
 paginate_path: "blog/:num/"
 exclude: ["README.md"]
@@ -26,9 +26,12 @@ description: "Computer Science student, Autodidata, Python, R, AI interested  "
 
 safe: false
 url: https://fcschmidt.github.io
+url: https://fcschmidt.com
+domain: fcschmidt.com
+enforce_ssl: fcschmidt.com
 twitter_user: fcschimidt
 icon: favicon.ico
-styles: main.min.css
+styles: main.css
 
 
 # Author
@@ -58,7 +61,5 @@ exclude:
   - README.md
   - .gitignore
 
-#enforce_ssl: fcschmidt.com
-#domain: fcschmidt.com
 
 

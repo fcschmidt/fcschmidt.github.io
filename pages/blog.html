@@ -12,14 +12,10 @@ quote_author: einstein
     {% for post in site.posts %}
     <article class="box">
         <h3 class="title">
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a href="{{ post.url }}">{{ post.title }}</a>
         </h3>
         <p class="blog__post-date">
-            {% if post.lang == "en" %}
-            <span>Published {{ post.date | date: "%b %-d, %Y"}}</span>
-            {% else %}
-            <span>Publicado em {{ post.date | date: "%d &middot; %m &middot; %Y"}}</span>
-            {% endif %}
+            <span>Published {{ post.date | date: "%B %e, %Y"}}</span>
         </p>
         <p class="blog__post-content">
             {% if post.fullview %}
@@ -29,9 +25,9 @@ quote_author: einstein
             {% endif %}
         </p>
         {% if post.lang == "en" %}
-        <a href="{{ post.url | prepend: site.baseurl }}">Read more&#8230</a>
+        <a href="{{ post.url }}">Read more&#8230</a>
         {% else %}
-        <a href="{{ post.url | prepend: site.baseurl }}">Leia mais&#8230</a>
+        <a href="{{ post.url }}">Leia mais&#8230</a>
         {% endif %}
     </article>
     {% endfor %}

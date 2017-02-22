@@ -3,7 +3,7 @@ _site
 .jekyll-metadata
 _includes/landing/interests.html
 _includes/landing/others.html
-_includes/landing/skills.html
+tests/skills.html
 _includes/docs
 _layouts/docs.html
 _docs
@@ -13,6 +13,7 @@ _data/interests.yml
 _data/docs.yml
 _data/projects.yml
 _data/talks.yml
+
 
 
 

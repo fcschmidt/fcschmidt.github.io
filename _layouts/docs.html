@@ -2,24 +2,27 @@
 layout: default
 ---
 
-<div class="count-particles">
-    <span class="js-count-particles">--</span> particles
-</div>
 
+<header class="header__docs">
+    <div class="count-particles">
+        <span class="js-count-particles">--</span> particles
+    </div>
+    <div id="particles-js" class="wrapper__content {{ page.color }}" style="padding: 0">
+    </div>
+
+    <nav class="docs__menu">
+        {% assign doc = site.data.docs %}
+        {% include docs/docs_ul.html items=doc.docs %}
+    </nav>
+</header>
 <div class="docs col-xs-12 col-md-9 col-md-offset-1">
     <div class="row">
-        <header class="col-md-11 col-md-push-1">
-            <div id="particles-js" class="wrapper__content {{ page.color }}" style="padding: 0">
-                <!--<h1 class="heading"><span>{{ page.title }}</span></h1>-->
-                <!--<p>{{ page.description }}</p>-->
-            </div>
-            <nav>
-                {% assign doc = site.data.docs %}
-                {% include docs/docs_ul.html items=doc.docs %}
-            </nav>
-        </header>
-        <div class="docs__content col-md-11 col-md-push-1">
-            <section class="teste">
+        <div class="docs__content col-xs-12 col-md-11 col-md-push-1">
+            <section>
+                <header>
+                    <h1>{{ page.title }}</h1>
+                    <p>{{ page.description }}</p>
+                </header>
                 {{ content }}
             </section>
         </div>

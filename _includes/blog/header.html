@@ -1,9 +1,9 @@
 {% assign disqus = site.disqus__shortname.user-name %}
 <nav class="header__menu">
     <ul class="nav__menu-secondary list-unstyled">
-        <li class="{% if page.url contains 'blog' %}active{% endif %}"><a href="/blog/">Blog</a></li>
-        <li><a href="/categories/">Categories</a></li>
-        <li><a href="/tags/">Tags</a></li>
+        <li class="{% if page.url contains 'blog' %}current{% endif %}"><a href="/blog/">Blog</a></li>
+        <li class="{% if page.url contains 'categories' %}current{% endif %}"><a href="/categories/">Categories</a></li>
+        <li class="{% if page.url contains 'tags' %}current{% endif %}"><a href="/tags/">Tags</a></li>
     </ul>
 </nav>
 <header class="header__blog">
@@ -17,12 +17,8 @@
         <script id="dsq-count-scr" src="//{{ disqus }}.disqus.com/count.js" async></script>
         <a href="{{ site.baseurl }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
         <ul class="header__data list-unstyled list-inline">
-            {% if page.lang == "en" %}
-            <span>Published {{ page.date | date: "%b %-d, %Y"}}</span>
-            {% else %}
-            <span>Publicado em {{ page.date | date: "%d &middot; %m &middot; %Y"}}</span>
-            {% endif %}
-             &mdash;<li class="text-uppercase">{{ page.lang }}</li>
+            <span>Published {{ page.date | date: "%B %-d, %Y"}}</span>
+            &mdash;<li class="text-uppercase">{{ page.lang }}</li>
         </ul>
         {% endif %}
     </div>

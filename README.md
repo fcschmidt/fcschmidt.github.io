@@ -1,4 +1,4 @@
-# My Personal Page [https://fcschmidt.github.io](https://fcschmidt.github.io) :sunglasses:
+# My Personal Page [https://fcschmidt.com](https://fcschmidt.com) :sunglasses:
 
 
 ## This site was designed and built using:

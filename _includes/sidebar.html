@@ -6,7 +6,10 @@
         {% endif %}
     </div>
     {% if author.name %}
-    <p class="name">{{ author.name }}</p>
+    <a class="name" href="/">
+        <span id="fname">{{ author.name | split:' ' | first }}</span>
+        <span id="lname">{{ author.name | split:' ' | last }}</span>
+    </a>
     {% endif %}
     {% if author.bio %}
     <p class="bio">{{ author.bio }}</p>

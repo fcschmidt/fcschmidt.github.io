@@ -6,13 +6,14 @@ layout: default
     <div class="row">
         {% include sidebar.html %}
         <div class="col-xs-12 col-sm-8 col-md-8 col-md-push-1">
-            <!--<nav class="header__menu">
-                <ul class="nav__menu-secondary list-unstyled">
-                    <li><a id="indice" href="/">Index</a></li>
-                    <li><a id="about" href="/about/">About</a></li>
-                </ul>
-            </nav>-->
             <section class="wrapper__content">
+                <nav class="header__menu">
+                    <ul class="nav__menu-secondary list-unstyled">
+                        <li class="{% if page.title contains 'Home' %}current{% endif %}"><a href="/">Index</a></li>
+                        <li class="{% if page.url contains 'projects' %}current{% endif %} "><a href="/projects/">Projects</a></li>
+                        <li class="{% if page.url contains 'research' %}current{% endif %} "><a href="/research/">Research</a></li>
+                    </ul>
+                </nav>
                 {{ content }}
             </section>
         </div>
