@@ -185,7 +185,7 @@ nav.header__menu{
 figure pre,
 div pre{
     border-color: #EDEDED;
-    border-radius: 0px 0px 3px 3px;
+    border-radius: 3px;
 }
 figure pre::before,
 div pre::before{
