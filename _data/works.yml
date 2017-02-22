@@ -6,11 +6,9 @@
   language: in Portuguese
   archive:
      - item: available in
-       url: teste
+       url: https://www.dropbox.com/s/b3yk8twd27ij72n/APS-%20Criptografia.pdf?dl=0
        type: pdf
-     - item: e
-       url: teste
-       type: html
+
 
 - name: "SCHMIDT, F.C. [Colaboration]"
   title: DESENVOLVIMENTO DE UM JOGO COM UTILIZAÇÃO DE INTERFACE GRÁFICA
@@ -20,5 +18,5 @@
   language: in Portuguese
   archive:
      - item: available in
-       url: teste
+       url: https://www.dropbox.com/s/2l5lcxqatpi0y6s/APS-Game.pdf?dl=0
        type: pdf
