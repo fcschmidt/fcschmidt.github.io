@@ -1,0 +1,31 @@
+---
+layout: secondary
+title: Blog
+description:  "My blog technical and disclosure of personal projects and thing of my mind"
+image: home
+permalink: /blog/
+---
+
+
+<article class="posts">
+    {% for post in site.posts limit:3 %}
+    <p class="post__title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="post__date">&boxh; {{ post.date | date: "%B %-d, %Y" }}</span>
+    </p>
+    <p class="content">
+        {% if post.fullview %}
+        {{ post.content }}
+        {% else %}
+        {{ post.excerpt | markdown | strip_html | truncate: 150 }}
+        {% endif %}
+    </p>
+    {% if post.lang == "en" %}
+        <a class="read__more" href="{{ post.url | prepend: site.baseurl }}">Read more&#8230</a>
+    {% else %}
+        <a class="read__more" href="{{ post.url | prepend: site.baseurl }}">Leia mais&#8230</a>
+    {% endif %}
+    {% endfor  %}
+</article>
+
+

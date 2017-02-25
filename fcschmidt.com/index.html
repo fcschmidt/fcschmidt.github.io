@@ -1,0 +1,78 @@
+---
+layout: page
+title: Home
+description:
+image: home
+---
+
+{% assign author = site.data.profile.author %}
+{% if author %}
+<section id="banner">
+    <div class="inner">
+        <h2>{{ author.name }}</h2>
+        <p>{{ author.bio }}</p>
+    </div>
+    <a href="#content" class="more scrolly">Learn More</a>
+</section>
+{% endif %}
+
+<section id="content" class="wrapper__content">
+    <div class="wrapper__content-inner {% if page.title contains 'Home' %}home {% endif %}">
+        <article class="mini__bio">
+            <header>
+                <h2><span>Who am i</span></h2>
+            </header>
+            <p class="content">
+                I'm a Student of Computer Science and
+                getting ready to start a new degree in physical.<br/>
+                Interested in Artificial Intelligence
+                (more specifically on machine learning and natural language processing)
+                and  Data Science. <br/>
+                My programming language favorite are <a href="https://www.python.org/" target="_blank">python</a> and
+                <a href="https://www.r-project.org/" target="_blank">R</a>. <br/>
+                I love Science, technology and aeronautics.<br/>
+                <a href="/about/">Read more...</a>
+               <!-- See my information professional and skills
+                <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank">Linkedin</a> and
+                <a href="http://stackoverflow.com/story/{{ site.author.stackoverflow }}" target="_blank">Stackoverflow professional</a>.
+                My open source code projects, contributions, studies, practice on
+                <a href="https://github.com/{{ site.author.github }}" target="_blank">Github</a>
+                and <a href="https://bitbucket.org/{{ site.author.bitbucket }}" target="_blank">Bitbucket</a>. <br/>
+                About this <a href="/about/site-config/">site</a>.-->
+            </p>
+        </article>
+
+        <article class="recent__post">
+            <header>
+                <h2><span>Recent Posts</span></h2>
+            </header>
+            {% for post in site.posts limit:3 %}
+            <p class="post__title">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <span class="post__date">&boxh; {{ post.date | date: "%B %-d, %Y" }}</span>
+            </p>
+            <p class="content">
+                {% if post.fullview %}
+                {{ post.content }}
+                {% else %}
+                {{ post.excerpt | markdown | strip_html | truncate: 150 }}
+                {% endif %}
+            </p>
+            <!--{% if post.lang == "en" %}
+                <a href="{{ post.url }}">Read more&#8230</a>
+            {% else %}
+                <a href="{{ post.url }}">Leia mais&#8230</a>
+            {% endif %}-->
+            {% endfor  %}
+        </article>
+
+        <article class="open__lab">
+            <header>
+                <h2><span>Projects</span></h2>
+            </header>
+            <p class="title">Title</p>
+            <p class="content">Teste conteúdo</p>
+        </article>
+    </div>
+    {% include footer.html %}
+</section>

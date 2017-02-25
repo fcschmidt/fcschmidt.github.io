@@ -1,0 +1,24 @@
+- name: "SCHMIDT, F.C. [Colaboração]"
+  title: TÉCNICAS CRIPTOGRÁFICAS, CONCEITOS, USOS E APLICAÇÕES
+  year: 2013
+  pages: 40
+  locale: Universidade Paulista, Araraquara - SP
+  language: in Portuguese
+  archive:
+     - item: Disponivel em
+       url: teste
+       type: pdf
+     - item: e
+       url: teste
+       type: html
+
+- name: "SCHMIDT, F.C. [Colaboração]"
+  title: DESENVOLVIMENTO DE UM JOGO COM UTILIZAÇÃO DE INTERFACE GRÁFICA
+  year: 2014
+  pages: 57
+  locale: Universidade Paulista, Araraquara - SP
+  language: in Portuguese
+  archive:
+     - item: Disponivel em
+       url: teste
+       type: pdf
