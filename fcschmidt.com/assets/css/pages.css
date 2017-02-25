@@ -1,0 +1,288 @@
+/*
+*  Default Customs Config
+*/
+.clearfix::before,
+.clearfix::after{
+    display: table;
+    content: " ";
+}
+.clearfix::after{
+    clear: both;
+}
+.right {float: right;}
+.left {float: left;}
+@media (max-width: 556px) {
+    .right {float: none}
+    .left {float: none}
+}
+
+section.wrapper__content{
+    background-color: #ffffff;
+    padding: 10em 0 0 0;
+}
+section.wrapper__content .wrapper__content-inner{
+    color: #000000;
+    /*background-color: #141618;*/
+    /*margin: -25em auto;*/
+    margin-top: -10em;
+    padding: .5em;
+    min-height: 600px;
+    /*height: 100vh;*/
+    width: 100%;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+section.wrapper__content .wrapper__content-inner article{
+    margin-top: 0;
+}
+section.wrapper__content .wrapper__content-inner article a,
+section.wrapper__content .wrapper__content-inner article p a{
+    color: dodgerblue;
+}
+section.wrapper__content .wrapper__content-inner article header h2{
+    color: #000000;
+    text-align: center;
+    margin-top: 1em;
+}
+section.wrapper__content .wrapper__content-inner article header h2 span{
+   border-bottom: 1px solid #000000;
+}
+section.wrapper__content .wrapper__content-inner article .content{
+    color: #000000;
+
+}
+section.wrapper__content .home,
+section.wrapper__content .blog{
+    width: 100%;
+}
+.footer{
+    color: #778899;
+    font-size: .9rem;
+    text-align: center;
+    margin-top: 5em;
+    padding: .5em;
+    border-top: 1px solid #faebd7;
+}
+.footer a{
+    color: #1e90ff;
+    border: none;
+}
+.footer .site__credits a:hover{
+    border-bottom: 1px solid #1e90ff
+}
+.footer .toTop{
+    float: right;
+    text-decoration: none;
+    margin-top: -3em;
+}
+
+/*
+*  Pages
+*/
+.recent__post .content,
+.open__lab .content{
+    margin: -2em 0 0 0;
+}
+/*----- Home -----*/
+.recent__post .post__title a{
+    font-size: 1rem;
+}
+.recent__post .post__date{
+    color: gray;
+    font-size: .9rem;
+}
+/*----- Blog -----*/
+/*----- About -----*/
+/*----- Projects -----*/
+/*----- Research -----*/
+.research .works{
+    /*font-size: .8rem;*/
+}
+
+@media (min-width: 768px){
+    section.wrapper__content .wrapper__content-inner{
+        margin: -10em auto;
+        width: 70%;
+    }
+    section.wrapper__content .wrapper__content-inner article header h2{
+        color: #000000;
+        text-align: center;
+        margin-top: 1em;
+    }
+    section.wrapper__content .wrapper__content-inner article header h2 span{
+       border-bottom: 1px solid #000000;
+    }
+    section.wrapper__content .wrapper__content-inner article{
+        margin-top: 2em;
+    }
+    section.wrapper__content .home,
+    section.wrapper__content .blog{
+        width: 60%;
+    }
+    .footer{
+        margin-top: 15em;
+    }
+    /*.footer a{
+        color: #1e90ff;
+        border: none;
+    }
+    .footer .site__credits a:hover{
+        border-bottom: 1px solid #1e90ff
+    }
+    .footer .toTop{
+        float: right;
+        text-decoration: none;
+        margin-top: -3em;
+    }*/
+    /*----- Home landing -----*/
+    .mini__bio{
+        margin-top: 2em;
+        text-align: center;
+    }
+    .recent__post{
+        text-align: left;
+        color: #1d242a;
+    }
+    .recent__post .post__title a{
+        font-size: 1.3rem;
+    }
+    .recent__post .post__date{
+        color: gray;
+        font-size: .9rem;
+    }
+    .recent__post .content,
+    .open__lab .content{
+        margin: -2em 0 0 0;
+    }
+    /*----- Blog -----*/
+    .posts .post__title{
+        font-size: 1.3rem;
+    }
+    .posts .post__date{
+        color: gray;
+        font-size: 1rem;
+    }
+    .posts .content{
+        line-height: 1.4em;
+        margin: -2.4em 0 .5em 0;
+    }
+    .posts a.read__more{
+        padding: .4em;
+        border: 1px solid #faebd7;
+
+        -webkit-transition: all .7s;
+        -moz-transition: all .7s;
+        -ms-transition: all .7s;
+        -o-transition: all .7s;
+        transition: all .7s;
+    }
+    .posts a.read__more:hover{
+        color: #ffffff;
+        background-color: #1e90ff;
+        border: 1px solid #1e90ff;
+    }
+    /*----- About -----*/
+    .about .bio p{
+        font-size: 1rem;
+        width: 60%;
+        float: left;
+    }
+    .about .bio .bio__image{
+        width: 20em;
+        height: 15em;
+        float: right;
+    }
+    .about .photos .img{
+        width: 50%;
+        float: left;
+        padding: .2em;
+        margin-bottom: 1em;
+    }
+    .about .photos p{
+        text-align: center;
+        padding-top: 5em;
+    }
+    .about .photos a.btn{
+        background-color: #517fa4;
+        font-size: 1rem;
+        color: #ffffff;
+        padding: .3em;
+        border: 1px solid #517fa4;
+        border-radius: 5px;
+
+        -webkit-transition: all .7s;
+        -moz-transition: all .7s;
+        -ms-transition: all .7s;
+        -o-transition: all .7s;
+        transition: all .7s;
+    }
+    .about .photos a.btn:hover{
+        background-color: #ffffff;
+        color: #517fa4;
+    }
+    .about .left{
+        width: 70%;
+        padding: .4em 0;
+    }
+    .about .right{
+        width: 30%;
+        padding: .4em;
+    }
+    .about .left p,
+    .about .right p{
+        font-size: 1rem;
+    }
+
+    .right section h4.title{
+        margin-bottom: .5em;
+    }
+    .right section ul{
+        margin-bottom: .5em;
+    }
+    .right section ul li{
+        font-size: .8rem;
+        line-height: 1.5;
+        margin-left: 1.5em;
+        list-style: circle;
+        padding-bottom: .3em;
+    }
+    .right .skills{
+        margin-bottom: .5em;
+    }
+    .right .skills ul li.title{
+        font-size: .9rem;
+        text-transform: uppercase;
+        margin-left: 0;
+        list-style: none;
+    }
+
+
+
+
+
+    /*----- Projects -----*/
+    /*----- Research -----*/
+    .research .works span{
+        font-size: 1rem;
+    }
+    .research .works ul li{
+        font-size: .95rem;
+        border-bottom: 1px solid #faebd7;
+        padding: .5em;
+    }
+    .research .works ul li > span.title{
+        font-size: .9rem;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 900px) {
+    section.wrapper__content .wrapper__content-inner{
+        /*margin: -10em auto;*/
+        width: 100%;
+    }
+}

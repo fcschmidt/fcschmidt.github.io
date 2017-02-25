@@ -1,0 +1,40 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | {{ site.title }}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ page.description }}{% endif %}">
+    <meta name="author" content="{{ site.name }}">
+    {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ','}}">{% endif %}
+    {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ','}}">{% endif %}
+
+    <meta property="og:locale" content="alternate"/>
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}blog{% endif %}"/>
+    <meta property="og:url" content="{{ site.url }}{% if page.url != '/index.html' %}{{ page.url }}{% endif %}"/>
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} &mdash;{% endif %} {{ site.name }}"/>
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+    <meta property="og:site_name" content="{{ site.name }}"/>
+    <meta property="og:image" content="{% if page.image %}{{ site.url }}/assets/images/post/{{ page.image }}{% else %}{{ site.url }}/assets/images/{{ site.image }}{% endif %}"/>
+    <meta property="og:image:type" content="image/jpg"/>
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@{{ site.twitter_user }}"/>
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &mdash;{% endif %} {{ site.name }}"/>
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+    <meta name="twitter:url" content="{{ site.url }}{% if page.url != '/index.html' %}{{ page.url }}{% endif %}"/>
+    <meta name="twitter:creator" content="@{{ site.twitter_user }}"/>
+    <meta name="twitter:image" content="{%if page.image %}{{ site.url }}/assets/images/post/{{ page.image }}{% else %}{{ site.url }}/assets/images/{{ site.image }}{% endif %}"/>
+    <meta name="twitter:account_id" content=""/>
+
+    {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+    <link rel="canonical" href="{{ canonical }}">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/icons/{{ site.icon }}"/>
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/assets/css/main.css"/>
+    <link rel="stylesheet" href="/assets/css/pages.css"/>
+    <link rel="stylesheet" href="/assets/css/highlight.css"/>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
