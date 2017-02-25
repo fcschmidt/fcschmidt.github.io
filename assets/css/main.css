@@ -150,13 +150,13 @@ nav.header__menu{
     margin-right: .2em;
 }
 .header__menu .nav__menu-secondary li a{
-    color: #333333;
+    color: #808080;
     letter-spacing: .1em;
     text-decoration: none;
-    padding: 0 .5em 0 .5em;
+    padding: 0 1em 0 1em;
 }
 .header__menu .nav__menu-secondary li a:hover{
-    color: #1e90ff;
+    color: #181C1F;
 }
 .header__menu .nav__menu-secondary li.current a{
     /*color: #1b6d85;*/
@@ -256,7 +256,11 @@ div pre::before{
         border-top: none;
     }
     .header__menu .nav__menu-secondary li{
-        margin-right: .5em;
+        margin-right: .6em;
+        padding-bottom: .8em;
+    }
+    .header__menu .nav__menu-secondary li.current a{
+        padding-bottom: 1.2em;
     }
     /* Sidebar */
     .sidebar .sidebar__avatar{
