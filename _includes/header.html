@@ -4,8 +4,9 @@
     <nav class="nav__menu">
         <a class="nav__menu-brand" href="/">{{ site.name }}</a>
         <ul class="nav__menu-primary  list-unstyled">
-            <li class="{% if page.title contains 'Home' %}active{% endif %}"><a href="/">Home</a></li>
+            <li id="fix" class="{% if page.title contains 'Home' %}active{% endif %}"><a href="/">Home</a></li>
             <li class="{% if page.url contains 'blog' %}active{% endif %}"><a href="/blog/">Blog</a></li>
+            <li class="{% if page.url contains 'learning' %}active{% endif %}"><a href="/learning/home/">Learning</a></li>
         </ul>
         {% include social.html %}
     </nav>
