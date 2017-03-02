@@ -2,27 +2,30 @@
 layout: default
 ---
 
-
 <header class="header__docs">
-    <div class="count-particles">
-        <span class="js-count-particles">--</span> particles
-    </div>
-    <div id="particles-js" class="wrapper__content {{ page.color }}" style="padding: 0">
-    </div>
-
-    <nav class="docs__menu">
-        {% assign doc = site.data.docs %}
-        {% include docs/docs_ul.html items=doc.docs %}
-    </nav>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
 </header>
+<nav id="navbar" class="docs__menu">
+    {% assign doc = site.data.docs %}
+    {% include docs/docs_ul.html items=doc.docs %}
+</nav>
 <div class="docs col-xs-12 col-md-9 col-md-offset-1">
     <div class="row">
-        <div class="docs__content col-xs-12 col-md-11 col-md-push-1">
+        <aside class="sidebar__menu col-md-3 col-md-push-1">
+            <nav id="indice">
+                <p>Teoria dos Grafos</p>
+                <ul>
+                    <li class="current"><a href="{{ page.url }}">Introdução à Analise de Algoritmos</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Teste</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="docs__content col-xs-12 col-md-8 col-md-push-1">
             <section>
-                <header>
-                    <h1>{{ page.title }}</h1>
-                    <p>{{ page.description }}</p>
-                </header>
                 {{ content }}
             </section>
         </div>

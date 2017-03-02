@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+
+<header class="header__docs">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+</header>
+<nav class="docs__menu">
+    {% assign doc = site.data.docs %}
+    {% include docs/docs_ul.html items=doc.docs %}
+</nav>
+<div class="docs col-xs-12 col-md-9 col-md-offset-1">
+    <div class="row">
+        <div class="docs__content col-xs-12 col-md-11 col-md-push-1">
+            <section>
+                {{ content }}
+            </section>
+        </div>
+    </div>
+</div>

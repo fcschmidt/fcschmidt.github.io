@@ -150,13 +150,13 @@ nav.header__menu{
     margin-right: .2em;
 }
 .header__menu .nav__menu-secondary li a{
-    color: #333333;
+    color: #808080;
     letter-spacing: .1em;
     text-decoration: none;
-    padding: 0 .5em 0 .5em;
+    padding: 0 1em 0 1em;
 }
 .header__menu .nav__menu-secondary li a:hover{
-    color: #1e90ff;
+    color: #181C1F;
 }
 .header__menu .nav__menu-secondary li.current a{
     /*color: #1b6d85;*/
@@ -206,6 +206,7 @@ div pre::before{
     .header{margin-bottom: 0}
     /* Primary menu */
     .header{
+        /*background-color: #1E2327;*/
         background-color: #f5f5f5;
         border-bottom: 1px solid #E5E5E5;
         display: block;
@@ -241,8 +242,9 @@ div pre::before{
     .header .nav__menu .nav__menu-primary li a:active{
         color: #1e90ff;
     }
+    #home .nav__menu .nav__menu-primary li#fix a,
     .nav__menu .nav__menu-primary li.active a{
-        font-weight: 600;
+        /*font-weight: 600;*/
         color: #1e90ff;
     }
     .header .nav__menu .social{display: none; !important;}
@@ -256,7 +258,11 @@ div pre::before{
         border-top: none;
     }
     .header__menu .nav__menu-secondary li{
-        margin-right: .5em;
+        margin-right: .6em;
+        padding-bottom: .8em;
+    }
+    .header__menu .nav__menu-secondary li.current a{
+        padding-bottom: 1.2em;
     }
     /* Sidebar */
     .sidebar .sidebar__avatar{
@@ -801,102 +807,54 @@ section article.box{
 }
 .docs header .wrapper__content p{text-align: center}
 
-/* Particle JS */
-#stats,
-.count-particles{
-    display: none;
-}
+
 @media only screen and (min-width: 768px) and (max-width: 900px){
-    #stats,
-    .count-particles{
-        display: none;
-    }
 }
 @media only screen and (min-width: 768px) {
     /*------- Docs -------*/
     .docs{margin-bottom: 3em}
-    .header__docs .docs__menu ul{
-        padding-left: 12em;
-        border-bottom: 1px solid #faebd7;
-    }
-    .header__docs .docs__menu ul li{
-        display: inline-block;
-        padding: 1em;
-    }
-    .header__docs .docs__menu ul li a{
-        color: #333333;
-        padding: 1.3em .5em 1.1em .5em;
-        text-decoration: none;
-        letter-spacing: .05em;
-    }
-    .header__docs .docs__menu ul li a:hover{color: #1e90ff}
-    .header__docs .docs__menu ul li a:focus,
-    .header__docs .docs__menu ul li.current a{
-        color: #1e90ff;
-        border-bottom: 2px solid #1e90ff;
-    }
-    .docs .docs__content .wrapper__content{
-        margin-top: 0;
-        padding: 1em .7em;
-    }
-    .docs .docs__content section{
-        padding: 1em;
-        margin: 0 -1em 0 0;
-    }
-    .docs .docs__content section header{
-        margin-top: 0;
+    .header__docs{
+        background-color: #808080;
+        color: #ffffff;
         text-align: center;
+        padding: 1em;
+        margin-top: -1.5em;
+    }
+    .docs__menu{
+        background-color: #ffffff;
+        text-align: left;
+        border-bottom: 1px solid #faebd7;
+        margin-bottom: .5em;
+    }
+    .docs__menu ul{margin-top: .5em}
+    .docs__menu ul li{
+        display: inline-block;
+    }
+    .docs__menu li + li{
+        margin-left: .5em;
+    }
+    .docs__menu ul li a{
+        color: #333333;
+        text-decoration: none;
+        padding: 0 .7em;
+    }
+    .docs__menu ul li a:hover,
+    .docs__menu ul li a:focus,
+    .docs__menu ul li.current a{
+        border-bottom: 2px solid #333333;
+        padding: .7em;
+    }
+    .sidebar__menu nav{
+        padding: .5em;
+    }
+    .docs__content section{
+        padding: 0 1em ;
+        margin: .5em -1.5em 0 -.5em;
+        border: 1px solid #faebd7;
+        border-radius: 3px;
     }
 }
 
 @media only screen and (min-width: 1280px){
-    /*------- Particle JS -------*/
-    canvas{
-        display:block;
-        vertical-align:bottom;
-    }
-    /* stats.js */
-    .count-particles{
-        display: block;
-        background: #000022;
-        position: absolute;
-        top: 7.2em;
-        left: 0;
-        width: 80px;
-        color: #13E8E9;
-        font-size: .8em;
-        text-align: left;
-        text-indent: 4px;
-        line-height: 14px;
-        padding-bottom: 2px;
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: bold;
-    }
-    .js-count-particles{
-        font-size: 1.1em;
-    }
-    #stats,
-    .count-particles{
-        display: block;
-        -webkit-user-select: none;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-    #stats{
-        border-radius: 3px 3px 0 0;
-        overflow: hidden;
-    }
-    .count-particles{
-        border-radius: 0 0 3px 3px;
-    }
-    /* particles.js container */
-    #particles-js{
-        width: 100%;
-        height: 60vh;
-        /*background-color: #b61924;*/
-        background-size: cover;
-        background-position: 100% 100%;
-        background-repeat: no-repeat;
-        margin-top: -1.5em;
-    }
+
 }
