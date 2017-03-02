@@ -1,18 +1,7 @@
 _site
 .idea
 .jekyll-metadata
-_includes/landing/interests.html
-_includes/landing/others.html
-tests/skills.html
-_includes/docs
-_layouts/docs.html
-_docs
-/tests
-/assets/css/main.css
-_data/interests.yml
-_data/docs.yml
-_data/projects.yml
-_data/talks.yml
+
 
 
 
