@@ -1,7 +1,6 @@
 title: My Docs
 docs:
   - home
-  - analise-de-algoritmos
-  - python
-  - r
-
+  - teoria-dos-grafos
+#  - python
+#  - r

@@ -7,7 +7,7 @@ layout: default
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>
 </header>
-<nav class="docs__menu">
+<nav id="navbar" class="docs__menu">
     {% assign doc = site.data.docs %}
     {% include docs/docs_ul.html items=doc.docs %}
 </nav>

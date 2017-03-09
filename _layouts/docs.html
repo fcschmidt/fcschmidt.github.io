@@ -8,7 +8,13 @@ layout: default
 </header>
 <nav id="navbar" class="docs__menu">
     {% assign doc = site.data.docs %}
-    {% include docs/docs_ul.html items=doc.docs %}
+    <ul>
+    {% for item in doc.docs %}
+        {% assign item_url = item | prepend:"/learning/" | append:"/" %}
+        {% assign p = site.docs | where:"url", item_url | first %}
+        <li class="{% if page.url contains item_url %}current{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a></li>
+    {% endfor %}
+    </ul>
 </nav>
 <div class="docs col-xs-12 col-md-9 col-md-offset-1">
     <div class="row">
@@ -16,8 +22,8 @@ layout: default
             <nav id="indice">
                 <p>Teoria dos Grafos</p>
                 <ul>
-                    <li class="current"><a href="{{ page.url }}">Introdução à Analise de Algoritmos</a></li>
-                    <li><a href="">Teste</a></li>
+                    <li class="current"><a href="/learning/teoria-dos-grafos/">Introdução</a></li>
+                    <li><a href="/learning/teoria-dos-grafos/analise-de-algoritmos/">Análise de Algoritmos</a></li>
                     <li><a href="">Teste</a></li>
                     <li><a href="">Teste</a></li>
                     <li><a href="">Teste</a></li>
@@ -31,5 +37,8 @@ layout: default
         </div>
     </div>
 </div>
+
+
+
 
 

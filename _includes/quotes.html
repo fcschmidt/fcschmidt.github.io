@@ -1,0 +1,9 @@
+{% assign quote_author = site.data.quotes[page.quote_author] %}
+{% if quote_author %}
+<blockquote cite="{{ quote_author.cite_link}}" class="blockquote-reverse">
+    <p>{{ quote_author.content }}</p>
+    <footer>
+        <cite title="{{ quote_author.cite_title }}" class="text-capitalize">{{ quote_author.name }}</cite>
+    </footer>
+</blockquote>
+{% endif %}

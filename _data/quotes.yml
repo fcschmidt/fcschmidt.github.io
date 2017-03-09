@@ -16,9 +16,9 @@ linus:
   cite_link:
   cite_title: Creator of the Linux
 
-author-name:
-  name:
-  content:
+dijkstra:
+  name: Edsger W. Dijkstra
+  content: "Computer science is no more about computers than astronomy is about telescopes."
   cite_link:
   cite_title:
 

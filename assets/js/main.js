@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     // Scroll navbar and indice for Learning page
     $(window).scroll(function(){
-        if($(document).scrollTop() > 150){
+        if($(document).scrollTop() > 160){
 
             $('#navbar').css({
                 'width' : '100%',
