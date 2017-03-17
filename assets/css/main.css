@@ -687,6 +687,9 @@ section article.box{
 .heading span{
     font-weight: 600;
 }
+.default{
+
+}
 .style1{
     color: #F1F1F1;
     background-color: #21B2A6;
@@ -738,7 +741,7 @@ section article.box{
     color: #F1F1F1;
     background-color: #b61924;
 }
-.style1 .page__desc, .style2 .page__desc, .style3 .page__desc, .style4 .page__desc, .style5 .page__desc, .style6 .page__desc{
+.default  .page__desc, .style1 .page__desc, .style2 .page__desc, .style3 .page__desc, .style4 .page__desc, .style5 .page__desc, .style6 .page__desc{
     text-align: center;
     margin-top: -1.3em;
 }

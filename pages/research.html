@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Research
-description: Research Projects, publications and academic works
+description: Research, publications, talks and academic works
 nav: home
 permalink: /research/
 ---
 
-<section id="research" class="wrapper style3">
+<section id="research" class="wrapper default">
     <div class="wrapper__inner">
         <header>
             <h4 class="heading">
@@ -15,14 +15,14 @@ permalink: /research/
             <p class="page__desc">{{ page.description }}</p>
         </header>
         <article class="publications">
-            <h4>Publications</h4>
+            <h4>My Publications</h4>
             <span style="color: #778899">Nothing Published!!!</span>
         </article>
         <article class="works">
             <h4>Academics Works</h4>
             <span>Here are some academic works held in conjunction with other students, or just for me.</span>
-            <hr/>
-            <ul>
+            <!--<hr/>-->
+            <!--<ul>
                 {% assign work = site.data.works | group_by: 'year' %}
                 {% for year in work reversed %}
                     {% for w in year.items %}
@@ -39,6 +39,13 @@ permalink: /research/
                         {% endif %}
                     {% endfor%}
                 {% endfor %}
+            </ul>-->
+        </article>
+        <article>
+            <h4>Invited Talks</h4>
+            <span>Alguma coisa</span>
+            <ul>
+                <li><a href="#">teste</a></li>
             </ul>
         </article>
     </div>
