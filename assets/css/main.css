@@ -324,20 +324,23 @@ div pre::before{
     .sidebar .sidebar__footer .social li a{
         font-size: 2rem;
         /*color: #778899;*/
-        color: #cccccc;
+        color: #CCCCCC;
     }
     .sidebar .sidebar__footer .social li a:hover{color: #778899;}
     .sidebar .btn__lang{
-        color: #ffffff;
         text-align: center;
     }
-    .sidebar .btn__lang .btn{
+    .sidebar .btn__lang li a{
+        background-color: #CCCCCC;
+        color: #ffffff;
+        padding: .3em .4em;
+        text-decoration: none;
         border: none;
         border-radius: 0;
     }
-    .sidebar .btn__lang .btn:hover,
-    .sidebar .btn__lang .btn:focus,
-    .sidebar .btn__lang .btn:active{
+    .sidebar .btn__lang li.active a:hover,
+    .sidebar .btn__lang li.active a:focus,
+    .sidebar .btn__lang li.active a{
         background-color: #778899;
         color: #ffffff;
     }
