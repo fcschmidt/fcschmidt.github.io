@@ -813,6 +813,7 @@ section .wrapper__inner .heading{
 /*------- Projects -------*/
 /*------- Research -------*/
 #research article h4{
+    font-size: 2rem;
     font-weight: 600;
 }
 #research hr{

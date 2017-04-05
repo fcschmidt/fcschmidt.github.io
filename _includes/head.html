@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="/assets/css/{{ site.styles }}">
-    <link rel="stylesheet" href="/assets/css/highlight.css"/>
+    {% if page.url contains 'blog' %}<link rel="stylesheet" href="/assets/css/highlight.css"/>{% endif %}
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
