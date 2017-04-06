@@ -811,6 +811,13 @@ section .wrapper__inner .heading{
 }
 
 /*------- Projects -------*/
+#projects .project ul .year{
+    margin-left: -1.5em;
+}
+#projects .project ul li{
+    /*font-size: 1.5rem;*/
+}
+
 /*------- Research -------*/
 #research article h4{
     font-size: 2rem;
@@ -836,6 +843,9 @@ section .wrapper__inner .heading{
 #research .works ul li .title{
     font-weight: 600;
 }
+@media (min-width: 768px){
+}
+
 
 /*------- Docs -------*/
 .docs header .wrapper__content,
