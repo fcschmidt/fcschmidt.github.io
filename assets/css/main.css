@@ -863,6 +863,8 @@ section .wrapper__inner .heading{
         padding: 1em;
         margin-top: -1.5em;
     }
+    /*.header__docs h1{margin-left: 5.5em;}*/
+    /*.header__docs p{margin-left: 12.5em}*/
     .docs__menu{
         background-color: #ffffff;
         text-align: left;
