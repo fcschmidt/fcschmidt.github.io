@@ -2,7 +2,10 @@
 layout: default
 ---
 
-
+<!--<nav class="test__nav">
+    {% assign doc = site.data.docs %}
+    {% include docs/docs_ul.html items=doc.docs %}
+</nav>-->
 <header class="header__docs">
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>
@@ -20,3 +23,19 @@ layout: default
         </div>
     </div>
 </div>
+<!--
+
+<style>
+    nav.test__nav{
+        margin-bottom: 2.8em;
+    }
+    nav.test__nav ul{
+        margin-left: 11em;
+    }
+    nav.test__nav ul li{
+        display: inline-block;
+    }
+    nav.test__nav li+li{
+        padding-left: 1.2em;
+    }
+</style>-->

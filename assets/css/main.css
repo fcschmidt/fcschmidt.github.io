@@ -811,6 +811,13 @@ section .wrapper__inner .heading{
 }
 
 /*------- Projects -------*/
+#projects .project ul .year{
+    margin-left: -1.5em;
+}
+#projects .project ul li{
+    /*font-size: 1.5rem;*/
+}
+
 /*------- Research -------*/
 #research article h4{
     font-size: 2rem;
@@ -836,6 +843,9 @@ section .wrapper__inner .heading{
 #research .works ul li .title{
     font-weight: 600;
 }
+@media (min-width: 768px){
+}
+
 
 /*------- Docs -------*/
 .docs header .wrapper__content,
@@ -863,6 +873,8 @@ section .wrapper__inner .heading{
         padding: 1em;
         margin-top: -1.5em;
     }
+    /*.header__docs h1{margin-left: 5.5em;}*/
+    /*.header__docs p{margin-left: 12.5em}*/
     .docs__menu{
         background-color: #ffffff;
         text-align: left;

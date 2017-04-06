@@ -16,7 +16,25 @@ permalink: /projects/
             <p class="page__desc">{{ page.description }}</p>
         </header>
     </div>
-    <article>
-        <p>Page under construction!!!</p>
+    <article class="project">
+        <ul>
+            {% assign proj = site.data.projects | group_by: 'year' %}
+            {% for year in proj reversed %}
+                <h3 class="year">{{ year.name }}</h3>
+                {% for p in year.items %}
+                <li>
+                    {% if p.github_id %}
+                    <a href="https://github.com/{{ site.author.github }}/{{ p.github_id }}" target="_blank">{{ p.name }}</a>
+                    {% endif %}
+                    {% if p.bitbucket_id %}
+                    <a href="https://bitbucket.org/{{ site.author.bitbucket }}/{{ p.bitbucket_id }}" target="_blank">{{ p.name }}</a>
+                    {% endif %}
+                    {% if p.site %}
+                    <a href="{{ p.site }}" target="_blank">{{ p.name }}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
     </article>
 </section>

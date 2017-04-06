@@ -1,14 +1,20 @@
-- name: Project name
-  description: Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.
-  github_id: teste
-  year: 2015
+- name: Font Converter
+  description:
+  github_id: font-converter
+  bitbucket_id:
+  site:
+  year: 2014
 
-- name: Project
-  description: Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.
-  github_id: teste
+- name: My Simple scripting used to download pdf's
+  description:
+  github_id: wget_guidetodatamining
+  bitbucket_id:
+  site:
   year: 2016
 
-- name: Project new
-  description: Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.
-  github_id: teste
+- name: My personal web site
+  description:
+  github_id:
+  bitbucket_id:
+  site: https://fcschmidt.com
   year: 2016
