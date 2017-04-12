@@ -9,11 +9,11 @@ layout: default
             <section class="wrapper__content">
                 <nav class="header__menu">
                     <ul class="nav__menu-secondary list-unstyled">
-                        <li class="{% if page.title contains 'Home' %}current{% endif %}"><a href="/">Index</a></li>
-                        <!--<li class="{% if page.url contains 'about' %}current{% endif %} "><a href="/about/">About</a></li>-->
-                        <li class="{% if page.url contains 'projects' %}current{% endif %} "><a href="/projects/">Projects</a></li>
-                        <li class="{% if page.url contains 'research' %}current{% endif %} "><a href="/research/">Research</a></li>
-                        <!--<li class="{% if page.url contains 'contact' %}current{% endif %} "><a href="/contact/">Contact</a></li>-->
+                        <li {% if page.title contains 'Home' %}class="current"{% endif %}><a href="/">Index</a></li>
+                        <!--<li {% if page.url contains 'about' %}class="current"{% endif %}><a href="/about/">About</a></li>-->
+                        <li {% if page.url contains 'projects' %}class="current"{% endif %}><a href="/projects/">Projects</a></li>
+                        <li {% if page.url contains 'research' %}class="current"{% endif %}><a href="/research/">Research</a></li>
+                        <!--<li {% if page.url contains 'contact' %}class="current"{% endif %}><a href="/contact/">Contact</a></li>-->
                     </ul>
                 </nav>
                 {{ content }}
