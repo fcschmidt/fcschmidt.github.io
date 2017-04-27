@@ -4,7 +4,7 @@
   {% assign base_path = site.github.url %}
 {% endif %}
 <footer class="post__footer">
-    <div class="post__meta">
+    <!--<div class="post__meta">
         <ul class="list-unstyled">
             <li><i class="fa fa-bookmark"></i>
                 {% for category in page.categories %}
@@ -17,7 +17,7 @@
                 {% endfor %}
             </li>
         </ul>
-    </div>
+    </div>-->
     <div class="footer__author row">
         {% assign author = site.author %}
         {% if author.avatar %}
@@ -25,12 +25,38 @@
         {% endif %}
         <div class="footer__author-content">
             {% if author.name %}
-            <p class="name">{{ author.name }}</p>
+            <a class="name" href="/">
+                <span id="fname">{{ author.name | split:' ' | first }}</span>
+                <span id="lname">{{ author.name | split:' ' | last }}</span>
+            </a>
             {% endif %}
             {% if author.bio %}
             <p class="bio">{{ author.bio }}</p>
             {% endif %}
-            {% include social.html %}
+            <ul class="social list-unstyled">
+                <p>contact me on social media:</p>
+                {% if author.twitter %}
+                <li><a class="fa fa-twitter" href="https://twitter.com/{{ author.twitter }}" target="_blank"><br/><span>@{{ author.twitter }}</span></a></li>
+                {% endif %}
+                {% if author.gplus %}
+                <li><a class="fa fa-google-plus" href="https://plus.google.com/u/0/{{ author.gplus }}" target="_blank"><br/><span>{{ author.gplus }}</span></a></li>
+                {% endif %}
+                {% if author.instagram %}
+                <li><a class="fa fa-instagram" href="https://instagram.com/{{ author.instagram }}" target="_blank"><br/><span>{{ author.instagram }}</span></a></li>
+                {% endif %}
+                {% if author.linkedin %}
+                <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/{{ author.linkedin }}" target="_blank"><br/><span>{{ author.linkedin }}</span></a></li>
+                {% endif %}
+                {% if author.github %}
+                <li><a class="fa fa-github" href="https://github.com/{{ author.github }}" target="_blank"><br/><span>@{{ author.github }}</span></a></li>
+                {% endif %}
+                {% if author.bitbucket %}
+                <li><a class="fa fa-bitbucket" href="https://bitbucket.org/{{ author.bitbucket }}" target="_blank"><br/><span>@{{ author.bitbucket }}</span></a></li>
+                {% endif %}
+                {% if author.stackoverflow %}
+                <li><a class="fa fa-stack-overflow" href="http://stackoverflow.com/{{ author.stackoverflow }}" target="_blank"><br/><span>{{ author.stackoverflow }}</span></a></li>
+                {% endif %}
+            </ul>
         </div>
     </div>
     <br/>
