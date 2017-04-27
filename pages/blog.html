@@ -15,7 +15,11 @@ quote_author: einstein
             <a href="{{ post.url }}">{{ post.title }}</a>
         </h3>
         <p class="blog__post-date">
+             {% if post.lang == "en" %}
             <span>Published {{ post.date | date: "%B %e, %Y"}}</span>
+            {% else %}
+            <span>Publicado em {{ post.date | date: "%B %e, %Y"}}</span>
+            {% endif %}
         </p>
         <p class="blog__post-content">
             {% if post.fullview %}
