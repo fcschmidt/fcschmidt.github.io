@@ -2,12 +2,21 @@
 <header class="header clearfix">
     <a id="btn__menu" class="btn text-capitalize"><i class="fa fa-bars"></i> Menu</a>
     <nav class="nav__menu">
+        {% if page.url contains 'pt' %}
+        <a class="nav__menu-brand" href="/pt/">{{ site.name }}</a>
+        <ul class="nav__menu-primary  list-unstyled">
+            <li id="fix" class="{% if page.title contains 'Home' %}active{% endif %}"><a href="/pt/">Home</a></li>
+            <li class="{% if page.url contains 'blog' %}active{% endif %}"><a href="/blog/">Blog</a></li>
+            <!--<li class="{% if page.url contains 'learning' %}active{% endif %}"><a href="/learning/home/">Learning</a></li>-->
+        </ul>
+        {% else %}
         <a class="nav__menu-brand" href="/">{{ site.name }}</a>
         <ul class="nav__menu-primary  list-unstyled">
             <li id="fix" class="{% if page.title contains 'Home' %}active{% endif %}"><a href="/">Home</a></li>
             <li class="{% if page.url contains 'blog' %}active{% endif %}"><a href="/blog/">Blog</a></li>
             <!--<li class="{% if page.url contains 'learning' %}active{% endif %}"><a href="/learning/home/">Learning</a></li>-->
         </ul>
+        {% endif %}
         {% include social.html %}
     </nav>
     <div class="page__header">
