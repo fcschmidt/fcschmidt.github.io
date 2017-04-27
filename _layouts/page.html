@@ -10,14 +10,20 @@ layout: default
                 <nav class="header__menu">
                     {% if page.url contains 'pt' %}
                     <ul class="nav__menu-secondary list-unstyled">
-                        <li {% if page.title contains 'Home' %}class="current"{% endif %}><a href="/pt/">Indice</a></li>
+                        <li {% if page.title contains 'Home' %}class="current"{% endif %}><a href="/pt/">Index</a></li>
                         <!--<li {% if page.url contains 'sobre' %}class="current"{% endif %}><a href="/sobre/">Sobre</a></li>-->
-                        <li {% if page.url contains 'projetos' %}class="current"{% endif %}><a href="/projetos/">Projetos</a></li>
-                        <li {% if page.url contains 'pesquisas' %}class="current"{% endif %}><a href="/pesquisas/">Pesquisas</a></li>
+                        <!--<li {% if page.url contains 'projetos' %}class="current"{% endif %}><a href="{{ page.url }}projetos/">Projetos</a></li>-->
+                        <!--<li {% if page.url contains 'pesquisas' %}class="current"{% endif %}><a href="{{ page.url }}pesquisas/">Pesquisas</a></li>-->
                         <!--<li {% if page.url contains 'contato' %}class="current"{% endif %}><a href="/contato/">Contato</a></li>-->
                     </ul>
                     {% else %}
-                    <ul class="nav__menu-secondary list-unstyled">
+                    <ul id="second" class="nav__menu-secondary list-unstyled">
+                        <li id="avatar" class="visible-md">
+                            <a href="/">
+                                <img class="img img-responsive" src="/assets/images/avatar.png" alt=""/>
+                                <span>{{ author.name }}</span>
+                            </a>
+                        </li>
                         <li {% if page.title contains 'Home' %}class="current"{% endif %}><a href="/">Index</a></li>
                         <!--<li {% if page.url contains 'about' %}class="current"{% endif %}><a href="/about/">About</a></li>-->
                         <li {% if page.url contains 'projects' %}class="current"{% endif %}><a href="/projects/">Projects</a></li>
