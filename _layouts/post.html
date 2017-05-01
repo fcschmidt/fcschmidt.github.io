@@ -10,7 +10,7 @@ comments: true
         <li class="{% if page.url contains 'categories' %}active {% endif %}"><a href="/categories/">Categories</a></li>
         <li class="{% if page.url contains 'tags' %}active {% endif %}"><a href="/tags/">Tags</a></li>
         <!--<li class="{% if page.url contains 'blog' %}active {% endif %}">{{ page.title }}</li>-->
-        <li id="toTop"><a href="#">Back to Top <i class="fa fa-arrow-up"></i></a></li>
+        <li id="toTop"><a href="#"><span>Back to Top</span> <i class="fa fa-arrow-up"></i></a></li>
         {% if page.previous %}
         <li class="previous"><a href="{{ page.previous.url }}" title="{{ page.previous.title}}"><i class="fa fa-long-arrow-left"></i> Previous</a></li>
         {% else %}

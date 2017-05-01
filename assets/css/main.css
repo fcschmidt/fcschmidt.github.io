@@ -228,6 +228,7 @@ div pre::before{
     .header .nav__menu .nav__menu-primary{
         float: right;
         border-top: none;
+        margin-right: .7em;
     }
     .header .nav__menu .nav__menu-primary li{
         background-color: transparent;
@@ -256,8 +257,9 @@ div pre::before{
     .nav__menu .nav__menu-primary li.active a{
         /*font-weight: 600;*/
         background-color: #ffffff;
-        padding: .5em;
         color: #284A75;
+        padding: .5em;
+        border-radius: 4px;
     }
     .header .nav__menu .social{display: none; !important;}
     .header .page__header{display: none; !important;}
@@ -579,29 +581,40 @@ section article.box,
 }
 
 .post .single__post .post__nav ul li{
-    background-color: #F6F9FA;
+    font-size: 2rem;
     padding: .5em;
-    border: 1px solid #F1F1F1;
+    border: 1px solid #faebd7;
 
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
 .post .single__post .post__nav .previous,
 .post .single__post .post__nav .next{
     text-decoration: none;
 }
-.post .single__post .post__nav .previous li,
-.post .single__post .post__nav .next li,
-.post .single__post .post__nav .previous.disabled li:hover,
-.post .single__post .post__nav .next.disabled li:hover{
-    color: #a9a9a9;
-    font-size: 2rem;
-}
 .post .single__post .post__nav .previous li:hover,
 .post .single__post .post__nav .next li:hover{
-    color: #8a2be2;
+    background-color: #4887B9;
+    color: #ffffff;
+    border: 1px solid #4887B9;
+
+    -webkit-transition: all .7s;
+    -moz-transition: all .7s;
+    -ms-transition: all .7s;
+    -o-transition: all .7s;
+    transition: all .7s;
+
 }
+.post .single__post .post__nav ul .disabled li,
+.post .single__post .post__nav ul .disabled li:hover{
+    background-color: transparent;
+    color: #d3d3d3;
+    border-color: #faebd7;
+}
+
+
+
 /* Categories and Tags */
 .categories  .box .click p,
 .tags .box .click p{
@@ -667,7 +680,7 @@ section article.box,
         border-bottom: 1px solid #faebd7;
     }
     .nav__trilha ul{
-        margin-left: 12.8em;
+        margin-left: .8em;
         margin-top: -.3em;
         padding-bottom: .5em;
     }
@@ -699,9 +712,25 @@ section article.box,
         color: #ffffff;
         background-color: #4887B9;
         padding: .27em;
-        margin-left: .7em;
+        margin-left: .3em;
         margin-right: .7em;
         border-radius: 3px;
+    }
+    .nav__trilha ul li.disabled{
+        color: #d3d3d3;
+        border: 1px solid #faebd7;
+        border-radius: 3px;
+        padding: .27em;
+    }
+    /*.nav__trilha ul li.previous a,*/
+    .nav__trilha ul li.disabled.previous{
+        margin-left: .2em;
+        margin-right: .7em;
+        padding-left: .3em;
+        padding-right: .3em;
+    }
+    .nav__trilha ul li#toTop a span{
+        display: none;
     }
     .nav__trilha ul li#toTop{
         float: right;
@@ -714,15 +743,6 @@ section article.box,
     .nav__trilha ul li#toTop a:hover{
         background-color: transparent;
         color: #4887B9;
-    }
-    .nav__trilha ul li.disabled{
-        border: 1px solid #faebd7;
-        border-radius: 3px;
-        padding: .27em;
-    }
-    .nav__trilha ul li.previous a,
-    .nav__trilha ul li.disabled.previous{
-        margin-left: .3em;
     }
 
     /* Arrumar as imagens dos posts */
@@ -828,6 +848,16 @@ section article.box,
     .tags .box .tab-content .tab-pane h3 .target{
         background-color: #F6F9FA;
     }
+}
+@media screen and (min-width: 1024px) {
+    .nav__trilha ul{
+        margin-left: 12.8em;
+    }
+    .nav__trilha ul li#toTop a span{
+        display: block;
+        float: left;
+    }
+
 }
 
 
