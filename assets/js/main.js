@@ -77,7 +77,7 @@ $(document).ready(function () {
     * Error Media Queries
     * Adicionar regras de media queries para visualização
     */
-    $(window).scroll(function(){
+    /*$(window).scroll(function(){
         if($(document).scrollTop() > 100){
             $('#second').css({
                 'width' : '100%',
@@ -117,6 +117,6 @@ $(document).ready(function () {
                 'display' : 'none'
             });
         }
-    });
+    });*/
 });
 
