@@ -1,0 +1,47 @@
+/*
+===============================
+    General style
+===============================
+*/
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    /*color: #47494D;*/
+    /*color: #3b393d;*/
+}
+
+
+@media screen and (min-width: 768px) {
+    /* Header Default */
+    header .nav__menu{
+        background-color: #000060;
+        height: 5em;
+        /*margin-top: -1.3em;*/
+        /*padding: .3em 1em;*/
+    }
+    header .navbar-brand{
+         color: #ffffff;
+        padding-top: .5em;
+        margin-left: 3em;
+    }
+    header .nav__menu .primary{
+        float: right;
+        padding-top: 1.6em;
+        margin-right: 4em;
+    }
+    header .nav__menu .primary li{
+        display: inline-block;
+    }
+    header .nav__menu .primary li a{
+        text-transform: uppercase;
+    }
+}
+
+
+
