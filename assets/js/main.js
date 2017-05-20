@@ -57,8 +57,14 @@ $(document).ready(function () {
                 'z-index' : '1030'
             });
 
-            $('#toTop').css({
-                'display' : 'block'
+            $('.avatar__nav').fadeIn({
+                display : 'block',
+                opacity : 'toggle'
+            });
+
+            $('#toTop').fadeIn({
+                display : 'block',
+                opacity : 'toggle'
             });
         } else {
             $('.nav__trilha').css({
@@ -67,8 +73,13 @@ $(document).ready(function () {
                 'padding-top' : '0'
             });
 
-            $('#toTop').css({
-                'display' : 'none'
+            $('.avatar__nav').css({
+               'display' : 'none'
+            });
+
+            $('#toTop').fadeOut({
+                display : 'block',
+                opacity : 'toggle'
             });
         }
     });

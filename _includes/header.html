@@ -1,6 +1,6 @@
 {% assign author = site.author %}
 <header class="header clearfix">
-    <a id="btn__menu" class="btn text-capitalize"><i class="fa fa-bars"></i> Menu</a>
+    <a id="btn__menu" class="btn text-capitalize"><i class="fa fa-bars"></i></a>
     <nav class="nav__menu">
         {% if page.url contains 'pt' %}
         <a class="nav__menu-brand" href="/pt/">{{ site.name }}</a>
@@ -28,7 +28,7 @@
         </a>
         {% endif %}
         <p class="location"><i class="fa fa-map-marker"></i> Brazil</p>
-        <p class="bio">{{ author.bio }}</p>
+        <p class="bio">{{ author.bio }}</p><div class="clearfix"></div>
     </div>
 </header>
 

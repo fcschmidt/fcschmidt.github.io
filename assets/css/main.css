@@ -39,36 +39,34 @@ code, samp, mark{
 ===============================
 */
 .header{
-    background-color: #f5f5f5;
-    /*background-color: #F6F9FA;*/
-    /*border-bottom: 1px solid #F1F1F1;*/
+    background-color: #222222;
     margin-bottom: -.5em;
 }
+
 .header .nav__menu .nav__menu-brand{
     text-decoration: none;
     display: none;
 }
 .header .btn{
-    background-color: #f5f5f5;
-    color: #1e90ff;
-    /*background-color: #F6F9FA;*/
+    background-color: #222222;
+    color: #ffffff;
     border: none;
     border-radius: 0;
+    /*margin-bottom: .5em; */
 }
 .header .nav__menu{
     margin: 0;
-    border-top: 1px solid #F1F1F1;
+    border-top: 1px solid #1C1D21;
     display: none;
 }
 .header .nav__menu .nav__menu-primary li{
-    background-color: #F1F1F1;
-    /*border-bottom: 1px solid #F6F9FA;*/
-    border-bottom: 1px solid #faebd7;
+    background-color: #1C1D21;
+    border-bottom: 1px solid #222222;
     padding: .5em;
 }
 .header .nav__menu .nav__menu-primary li a{
     text-decoration: none;
-    color: #778899;
+    color: #d3d3d3;
 }
 .nav__menu .nav__menu-primary .home a{
     font-weight: 600;
@@ -77,7 +75,7 @@ code, samp, mark{
 .header .nav__menu .social{
     text-align: center;
     margin-top: -.4em;
-    margin-bottom: 0;
+    margin-bottom: .4em;
 }
 .header .nav__menu .social li{
     padding: .3em;
@@ -86,52 +84,47 @@ code, samp, mark{
 .header .nav__menu .social li a{
     color: #778899;
 }
-/*.header .page__header-author{
-    text-align: center;
-    border-top: 1px solid #F1F1F1;
-}
-.header .page__header-author img{
-    width: 4em;
-    height: 4em;
-}*/
 /* Page header */
 .header .page__header{
-    background-color: #F6F9FA; /*F6F9FA*/
+    background-color: #F6F9FA;
     border-top: 1px solid #F1F1F1;
-    padding: 1em;
+    padding: .6em;
 }
 .header .page__header .img{
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     opacity: .6;
     float: left;
     margin-right: 1em;
     border-radius: 2px;
 }
 .header .page__header a.name{
-    color: #1b6d85;/*333333;*/
-    font-size: 1.7rem;
+    color: #1b6d85;
+    font-size: 1.3rem;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: .1em;
     margin: 0;
     padding-left: .1em;
+    padding-top: -1em;
 }
 .header .page__header a.name #lname{font-weight: 600;}
-.header .page__header .bio{
+.header .page__header .location{
+    color: #778899;
+    font-size: 1.3rem;
+    letter-spacing: .1em;
+    margin: 0;
+}
+.header .page__header p.bio{
     color: #1b6d85;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
     float: left;
     line-height: 1.1;
     margin-top: .3em;
 }
-.header .page__header .location{
-    color: #778899;
-    font-size: 1.4rem;
-    letter-spacing: .1em;
-    margin: 0;
-}
+
+
 /* Secondary menu */
 nav.header__menu{
     background-color: #F6F9FA;
@@ -670,16 +663,34 @@ section article.box,
     .header__blog  .header__content h1{!important;
         font-size: 3.5rem;
     }
+    .post .header__blog .header__content{
+        /*text-align: center;*/
+    }
     .post .header__blog .header__content h1{
-        font-size: 3rem;
-        padding-bottom: .29em;
+        font-size: 3.7rem;
+        /*padding-bottom: .29em;*/
+        padding-top: -1em;
     }
     .post .single__post{
         margin-top: 1.2em;
     }
+    .post header._header{
+        /*background-color: #222222;*/
+        background-color: #45487F;
+        margin: -1.6em 0 1.5em 0;
+        height: 40vh;
+        border-top: 1px solid #1C1D21;
+        padding: 1em 13em;
+        color: #ffffff;
+    }
+    .post header._header h1{
+
+    }
+    /* Trilha */
     .nav__trilha{
         background-color: #ffffff;
         margin-bottom: 1em;
+        /*border-top: 1px solid #faebd7;*/
         border-bottom: 1px solid #faebd7;
     }
     .nav__trilha ul{
@@ -737,7 +748,7 @@ section article.box,
     }
     .nav__trilha ul li#toTop{
         float: right;
-        padding-top: .3em;
+        padding-top: .5em;
         display: none;
     }
     .nav__trilha ul li#toTop a{
@@ -859,6 +870,23 @@ section article.box,
     .nav__trilha ul li#toTop a span{
         display: block;
         float: left;
+    }
+    .nav__trilha ul a.avatar__nav{
+        margin-right: 1em;
+        display: none;
+    }
+    .nav__trilha ul a.avatar__nav img{
+        margin-right: .5em;
+        opacity: .6;
+        border-radius: 3px;
+    }
+    .nav__trilha ul a.avatar__nav{
+        border: none;
+    }
+    .nav__trilha ul a.avatar__nav:hover{
+        background-color: transparent;
+        color: #45487F;
+        text-decoration: none;
     }
 
 }

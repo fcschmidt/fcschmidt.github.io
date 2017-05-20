@@ -4,8 +4,31 @@ comments: true
 ---
 
 {% if page.title contains 'Blog' %}{% else %}
+<!--<header class="_header hidden-xs">
+    <h1>{{ page.title }}</h1>
+    {% if page.lang == "en" %}
+    <span>Published {{ page.date | date: "%B %e, %Y"}}</span>
+    {% else %}
+    <span>Publicado em {{ page.date | date: "%B %e, %Y"}}</span>
+    {% endif %}
+    <ul class="list-unstyled list-inline">
+        <li><i class="fa fa-bookmark"></i>
+            {% for category in page.categories %}
+            <span>{{ category }}</span> &middot;
+            {% endfor %}
+        </li>
+        <li><i class="fa fa-tags"></i>
+            {% for tag in page.tags %}
+            <span>{{ tag }}</span> &middot;
+            {% endfor %}
+        </li>
+    </ul>
+</header>-->
 <nav class="nav__trilha">
     <ul class="list-inline hidden-xs">
+        <a class="avatar__nav" href=""><img src="/assets/images/{{ site.author.avatar }}" alt="avatar" style="width: 3em;height: 3em"/>
+            Fábio Schmidt
+        </a>
         <li><a href="/blog/">All posts</a></li>
         <li class="{% if page.url contains 'categories' %}active {% endif %}"><a href="/categories/">Categories</a></li>
         <li class="{% if page.url contains 'tags' %}active {% endif %}"><a href="/tags/">Tags</a></li>
@@ -23,6 +46,7 @@ comments: true
         <li class="disabled next">Empty</li>
         {% endif %}
     </ul>
+    <div class="clearfix"></div>
 </nav>
 {% endif %}
 <div class="col-xs-12 col-sm-12 col-md-9 col-md-offset-1">
