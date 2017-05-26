@@ -1,34 +1,30 @@
 {% assign author = site.author %}
-<header class="header clearfix">
-    <a id="btn__menu" class="btn text-capitalize"><i class="fa fa-bars"></i> Menu</a>
-    <nav class="nav__menu">
-        {% if page.url contains 'pt' %}
-        <a class="nav__menu-brand" href="/pt/">{{ site.name }}</a>
-        <ul class="nav__menu-primary  list-unstyled">
-            <li id="fix" class="{% if page.title contains 'Home' %}active{% endif %}"><a href="/pt/">Home</a></li>
-            <li class="{% if page.url contains 'blog' %}active{% endif %}"><a href="/blog/">Blog</a></li>
-            <!--<li class="{% if page.url contains 'learning' %}active{% endif %}"><a href="/learning/home/">Learning</a></li>-->
-        </ul>
-        {% else %}
+<header class="header__page">
+    <nav class="nav__menu clearfix">
         <a class="nav__menu-brand" href="/">{{ site.name }}</a>
-        <ul class="nav__menu-primary  list-unstyled">
+        <ul class="nav__menu-primary list-unstyled">
             <li id="fix" class="{% if page.title contains 'Home' %}active{% endif %}"><a href="/">Home</a></li>
             <li class="{% if page.url contains 'blog' %}active{% endif %}"><a href="/blog/">Blog</a></li>
-            <!--<li class="{% if page.url contains 'learning' %}active{% endif %}"><a href="/learning/home/">Learning</a></li>-->
         </ul>
-        {% endif %}
-        {% include social.html %}
     </nav>
-    <div class="page__header">
-        <img class="img img-responsive" src="/assets/images/{{ author.avatar }}" alt="{{ author.avatar}}"/>
-        {% if author.name %}
-        <a class="name" href="/">
-            <span id="fname">{{ author.name | split:' ' | first }}</span>
-            <span id="lname">{{ author.name | split:' ' | last }}</span>
-        </a>
-        {% endif %}
-        <p class="location"><i class="fa fa-map-marker"></i> Brazil</p>
-        <p class="bio">{{ author.bio }}</p>
+    <div class="header__mobile">
+        <div class="btn__container">
+            <a id="btn__menu" class="btn text-capitalize"><i class="fa fa-bars"></i></a>
+            <a class="fa fa-github" href=""></a>
+        </div>
+        <nav class="nav__menu-mobile">
+            <ul class="list-unstyled">
+                <li class="active"><a href="/">Home</a></li>
+                <li class=""><a href="/blog/">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="author__container">
+            <img class="img img-responsive" src="/assets/images/avatar.png" alt=""/>
+            <div class="author__info clearfix">
+                <span class="name">{{ author.name }}</span><br/>
+                <span class="bio">{{ author.bio }}</span>
+            </div>
+        </div>
     </div>
 </header>
 

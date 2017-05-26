@@ -2,38 +2,31 @@
 layout: default
 ---
 
+
+<nav class="nav__menu-secondary visible-xs">
+    <ul class="list-unstyled list-inline">
+        <li class="{% if page.title contains 'Home' %}current{% endif %}"><a href="/">Index</a></li>
+        <li class="{% if page.url contains 'projects' %}current{% endif %} "><a href="/projects/">Projects</a></li>
+        <li class="{% if page.url contains 'research' %}current{% endif %} "><a href="/research/">Research</a></li>
+    </ul>
+</nav>
 <div class="col-xs-12 col-md-9 col-md-offset-1">
-    <div class="row">
+    <div class="row wrapper">
         {% include sidebar.html %}
         <div class="col-xs-12 col-sm-8 col-md-8 col-md-push-1">
             <section class="wrapper__content">
-                <nav class="header__menu">
-                    {% if page.url contains 'pt' %}
-                    <ul class="nav__menu-secondary list-unstyled">
-                        <li {% if page.title contains 'Home' %}class="current"{% endif %}><a href="/pt/">Index</a></li>
-                        <!--<li {% if page.url contains 'sobre' %}class="current"{% endif %}><a href="/sobre/">Sobre</a></li>-->
-                        <!--<li {% if page.url contains 'projetos' %}class="current"{% endif %}><a href="{{ page.url }}projetos/">Projetos</a></li>-->
-                        <!--<li {% if page.url contains 'pesquisas' %}class="current"{% endif %}><a href="{{ page.url }}pesquisas/">Pesquisas</a></li>-->
-                        <!--<li {% if page.url contains 'contato' %}class="current"{% endif %}><a href="/contato/">Contato</a></li>-->
-                    </ul>
-                    {% else %}
-                    <ul id="second" class="nav__menu-secondary list-unstyled">
-                        <li id="avatar" class="visible-md">
-                            <a href="/">
-                                <img class="img img-responsive" src="/assets/images/avatar.png" alt=""/>
-                                <span>{{ author.name }}</span>
-                            </a>
-                        </li>
-                        <li {% if page.title contains 'Home' %}class="current"{% endif %}><a href="/">Index</a></li>
-                        <!--<li {% if page.url contains 'about' %}class="current"{% endif %}><a href="/about/">About</a></li>-->
-                        <li {% if page.url contains 'projects' %}class="current"{% endif %}><a href="/projects/">Projects</a></li>
-                        <li {% if page.url contains 'research' %}class="current"{% endif %}><a href="/research/">Research</a></li>
-                        <!--<li {% if page.url contains 'contact' %}class="current"{% endif %}><a href="/contact/">Contact</a></li>-->
-                    </ul>
-                    {% endif %}
-                </nav>
                 {{ content }}
             </section>
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+

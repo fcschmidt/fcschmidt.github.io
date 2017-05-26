@@ -1,0 +1,6 @@
+- name: Home
+  urls:
+    - url: index
+    - url: projects
+    - url: research
+

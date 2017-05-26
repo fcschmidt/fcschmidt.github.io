@@ -1,8 +1,15 @@
-/*
-===============================
-    General style
-===============================
-*/
+/*-----------------------------
+Primary colors
+
+Tons claros:
+#F6F9FA
+#f1f1f1
+#a9a9a9
+
+Tons escuros:
+#222222
+1C1D21
+-----------------------------*/
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -12,36 +19,167 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
-    /*color: #47494D;*/
-    /*color: #3b393d;*/
+    color: #222222;
 }
 
 
-@media screen and (min-width: 768px) {
-    /* Header Default */
-    header .nav__menu{
-        background-color: #000060;
-        height: 5em;
-        /*margin-top: -1.3em;*/
-        /*padding: .3em 1em;*/
+/*
+*   General config
+*/
+.main__container{
+    margin: auto;
+
+}
+
+.wrapper__content{
+    margin-top: 1em;
+}
+.wrapper__content article{
+    margin: -.5em;
+}
+
+/*------- Header -------*/
+.header__page{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.header__page .btn__container{
+    background-color: #222222;
+    height: 2.4em;
+}
+.header__page a#btn__menu{
+    background-color: #1C1D21;
+    color: #ffffff;
+    padding: .48em 1em;
+    border: none;
+    border-radius: 0;
+    float: left;
+}
+.header__page .fa-github{
+    color: #ffffff;
+    font-size: 1.6rem;
+    float: right;
+    padding: .55em 1em;
+    text-decoration: none;
+}
+
+/* Mobile Menu */
+.header__page .nav__menu-mobile{
+    margin-top: 0;
+    display: none;
+    border-top: 1px solid #1C1D21;
+}
+.header__page .nav__menu-mobile ul{
+    background-color: #222222;
+
+    margin-bottom: 0;
+    border-bottom: 1px solid #222222;
+}
+.header__page .nav__menu-mobile ul li{
+    padding: .5em .8em;
+}
+.header__page .nav__menu-mobile ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: .1em;
+}
+.header__page .nav__menu-mobile ul li.active,
+.header__page .nav__menu-mobile ul li.active a{
+    background-color: #1C1D21;
+    color: #ffffff;
+    font-weight: 600;
+}
+/* Social contacts */
+.header__page .nav__menu-mobile .social__contacts{
+    color: #a9a9a9;
+    border-top: 1px solid #1C1D21;
+}
+/* Author Header */
+.header__page .author__container{
+    background-color: #222222;
+    padding: .5em;
+    margin-top: 0;
+    border-top: 1px solid #1C1D21;
+    border-bottom: 1px solid #1C1D21;
+}
+.header__page .author__container .img{
+    width: 3em;
+    height: 3em;
+    float: left;
+    margin-right: 1em;
+    margin-left: .2em;
+
+    border: 1px solid #a9a9a9;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.header__page .author__container .author__info span{color: #a9a9a9;}
+.header__page .author__container .author__info span.bio{
+    font-size: 1rem;
+}
+/*------- Secondary Menu --------*/
+.nav__menu-secondary{
+    background-color: #222222;
+    margin-top: 6.6em;
+    position: relative;
+}
+.nav__menu-secondary ul{margin: 0}
+.nav__menu-secondary ul li + li{
+    padding: .3em 0;
+}
+.nav__menu-secondary ul li a{
+    color: #a9a9a9;
+    padding: .3em;
+    text-decoration: none;
+}
+.nav__menu-secondary ul li.current a{
+    color: #ffffff;
+    font-weight: 600;
+}
+.header__page .nav__menu{display: none}
+/*------- Footer -------*/
+@media only screen and (min-width: 768px){
+    .wrapper{
+        margin-top: 2em;
     }
-    header .navbar-brand{
-         color: #ffffff;
-        padding-top: .5em;
-        margin-left: 3em;
+    /*------- Header -------*/
+    .header__page{position: relative}
+    .header__page .header__mobile{display: none}
+    .header__page {
+        background-color: #222222;
+        /*padding: 1em;*/
     }
-    header .nav__menu .primary{
+    .header__page .nav__menu{display: block;}
+    .header__page .nav__menu .nav__menu-brand{
+        color: #ffffff;
+        float: left;
+        margin-left: 15em;
+        margin-top: 1.2em;
+    }
+    .header__page  .nav__menu .nav__menu-primary{
+        display: block;
         float: right;
-        padding-top: 1.6em;
-        margin-right: 4em;
+        margin-right: 15em;
     }
-    header .nav__menu .primary li{
+    .header__page .nav__menu .nav__menu-primary li{
+        background-color: transparent;
+        padding: 1.2em;
+        margin-top: .01em;
+        margin-bottom: -.69em;
+        border-bottom: none;
         display: inline-block;
     }
-    header .nav__menu .primary li a{
-        text-transform: uppercase;
+    .header__page .nav__menu .nav__menu-primary li a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    #home .nav__menu .nav__menu-primary li#fix a,
+    .header__page .nav__menu .nav__menu-primary li.active{
+        background-color: #1C1D21;
+        font-weight: 600;
     }
 }
-
-
-

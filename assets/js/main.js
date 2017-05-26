@@ -4,7 +4,7 @@ $(document).ready(function () {
         $('.nav__menu').eq(0).slideToggle(500);
     });*/
     $('#btn__menu').click(function () {
-        $('.nav__menu').animate({
+        $('.nav__menu-mobile').animate({
             opacity : 'toggle',
             height: 'toggle'
         }, 'slow');
