@@ -47,6 +47,13 @@ code, samp, mark{
     text-decoration: none;
     display: none;
 }
+.header #github{
+    float: right;
+    padding: .5em;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
 .header .btn{
     background-color: #222222;
     color: #ffffff;
@@ -197,6 +204,7 @@ div pre::before{
 }
 @media only screen and (min-width: 768px) {
     .header{margin-bottom: 0}
+    .header #github{display: none}
     /* Primary menu */
     .header{
         /*background-color: #1E2327;*/
