@@ -40,7 +40,12 @@ code, samp, mark{
 */
 .header{
     background-color: #222222;
-    margin-bottom: -.5em;
+    /*margin-bottom: -.5em;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
 }
 
 .header .nav__menu .nav__menu-brand{
@@ -49,7 +54,7 @@ code, samp, mark{
 }
 .header #github{
     float: right;
-    padding: .5em;
+    padding: .5em .7em;
     color: #ffffff;
     text-decoration: none;
     display: block;
@@ -95,14 +100,15 @@ code, samp, mark{
 .header .page__header{
     background-color: #F6F9FA;
     border-top: 1px solid #F1F1F1;
-    padding: .6em;
+    border-bottom: 1px solid #faebd7;
+    padding: .3em;
 }
 .header .page__header .img{
     width: 3em;
     height: 3em;
-    opacity: .6;
+    /*opacity: .6;*/
     float: left;
-    margin-right: 1em;
+    margin-right: .5em;
     border-radius: 2px;
 }
 .header .page__header a.name{
@@ -111,22 +117,21 @@ code, samp, mark{
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: .1em;
-    margin: 0;
-    padding-left: .1em;
-    padding-top: -1em;
+    /*margin: 0;*/
+    /*padding-left: .1em;*/
 }
 .header .page__header a.name #lname{font-weight: 600;}
 .header .page__header .location{
     color: #778899;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     letter-spacing: .1em;
     margin: 0;
 }
 .header .page__header p.bio{
     color: #1b6d85;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-size: 1rem;
-    float: left;
+    /*float: left;*/
     line-height: 1.1;
     margin-top: .3em;
 }
@@ -135,18 +140,20 @@ code, samp, mark{
 /* Secondary menu */
 nav.header__menu{
     background-color: #F6F9FA;
-    margin: -1.5em -.95em 0 -.95em;
+    margin: -1.9em -.95em 0 -.95em;
 }
 .header__menu .nav__menu-secondary{
-    border-top: 1px solid #faebd7;
+    /*border-top: 1px solid #faebd7;*/
     border-bottom: 1px solid #faebd7;
+    margin-top: 6.5em;
     margin-bottom: .9em;
     padding: .3em;
 }
 .header__menu .nav__menu-secondary li{
     display: inline-block;
+    font-size: 1.2rem;
     margin-top: .2em;
-    margin-left: -.3em;
+    margin-left: -.4em;
     margin-right: .2em;
 }
 .header__menu .nav__menu-secondary li a{
@@ -162,7 +169,7 @@ nav.header__menu{
     /*color: #1b6d85;*/
     color: #181C1F;
     border-bottom: 2px solid #1b6d85;
-    padding-bottom: .4em;
+    padding-bottom: .5em;
 }
 
 /* Footer */
@@ -203,7 +210,10 @@ div pre::before{
     clear: both;
 }
 @media only screen and (min-width: 768px) {
-    .header{margin-bottom: 0}
+    .header{
+        margin-bottom: 0;
+        position: relative;
+    }
     .header #github{display: none}
     /* Primary menu */
     .header{
@@ -275,13 +285,16 @@ div pre::before{
     .header__menu .nav__menu-secondary{
         background-color: #ffffff;
         border-top: none;
+        margin-top: 0;
     }
     .header__menu .nav__menu-secondary li{
+        font-size: 1.5rem;
+        margin-top: 0;
         margin-right: .6em;
-        padding-bottom: .8em;
+        padding-bottom: .7em;
     }
     .header__menu .nav__menu-secondary li.current a{
-        padding-bottom: 1.25em;
+        padding-bottom: 1.1em;
     }
     .header__menu .nav__menu-secondary #avatar{
         margin-left: 15em;
@@ -319,7 +332,7 @@ div pre::before{
     .sidebar .sidebar__avatar img{
         width: 220px;
         height: 220px;
-        opacity: .6;
+        /*opacity: .6;*/
     }
     .sidebar a.name{
         color: #1b6d85;
@@ -542,7 +555,7 @@ section article.box,
     height: 5em;
     margin: 0 .5em 0 .2em;
     float: left;
-    opacity: .6;
+    /*opacity: .6;*/
 }
 .post .post__footer .footer__author-content a.name{
     color: #1b6d85;/*333333;*/
@@ -691,9 +704,7 @@ section article.box,
         padding: 1em 13em;
         color: #ffffff;
     }
-    .post header._header h1{
-
-    }
+    .post header._header h1{}
     /* Trilha */
     .nav__trilha{
         background-color: #ffffff;
@@ -731,8 +742,8 @@ section article.box,
     .nav__trilha ul li.active{
         /*background-color: #FFD343;*/
         /*color: #2B5A83;*/
-        color: #ffffff;
         background-color: #4887B9;
+        color: #ffffff;
         padding: .27em;
         margin-left: .3em;
         margin-right: .7em;
@@ -782,13 +793,13 @@ section article.box,
         border-radius: 2px;
     }
     .post .post__footer .footer__author img{
-        width: 10em;
-        height: 10em;
+        width: 9em;
+        height: 9em;
         margin-right: 1em;
         float: left;
     }
     .post .post__footer .footer__author-content a.name{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .post .post__footer .footer__author-content .bio{
         font-size: 1.8rem;
@@ -797,18 +808,21 @@ section article.box,
     }
     .post .post__footer .footer__author-content .social{margin-top: 1em}
     .post .post__footer .footer__author-content .social p{
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #778899;
     }
-    .post .post__footer .footer__author-content .social li a{font-size: 1.5em}
+    .post .post__footer .footer__author-content .social li a{font-size: 1.3em}
     .post .post__footer .footer__author-content .social li a span{
         font-size: .5em;
         display: inline-block;
     }
     .post .post__footer .footer__author,
-    .post .post__footer .post__meta,
-    .post .post__footer .post__share{
+    .post .post__footer .post__meta{
         margin: 0;
+    }
+    .post .post__footer .post__share{
+        margin: 1em 0;
+        border-top: 1px solid #e9e9e9;
     }
     .sidebar__footer .author__post{
         background-color: #F6F9FA;
@@ -832,17 +846,16 @@ section article.box,
         height: 3em;
         margin-right: .5em;
         float: left;
-        opacity: .6;
+        /*opacity: .6;*/
     }
-    #blog .sidebar .sidebar__footer .author__post .name{
-        font-size: 1.8rem;
+    #blog .sidebar .sidebar__footer .author__post a.name{
+        font-size: 1.3rem;
         color: #778899;
-        margin-bottom: -.3em;
-        margin-top: 0;
+        /*margin-bottom: -.3em;*/
     }
     #blog .sidebar .sidebar__footer .author__post .bio{
-        font-size: 1.1rem;
-        margin-top: .5em;
+        font-size: 1rem;
+        margin-top: -.4em;
     }
     #blog .sidebar .sidebar__footer .author__post .social{
         font-size: 1rem;
@@ -873,7 +886,7 @@ section article.box,
 }
 @media screen and (min-width: 1024px) {
     .nav__trilha ul{
-        margin-left: 12.8em;
+        margin-left: 12.9em;
     }
     .nav__trilha ul li#toTop a span{
         display: block;
@@ -881,22 +894,22 @@ section article.box,
     }
     .nav__trilha ul a.avatar__nav{
         margin-right: 1em;
+        border: none;
         display: none;
     }
-    .nav__trilha ul a.avatar__nav img{
-        margin-right: .5em;
-        opacity: .6;
-        border-radius: 3px;
-    }
-    .nav__trilha ul a.avatar__nav{
-        border: none;
+    .nav__trilha ul a.avatar__nav span{
+        font-size: 1.3rem;
     }
     .nav__trilha ul a.avatar__nav:hover{
         background-color: transparent;
         color: #45487F;
         text-decoration: none;
     }
-
+    .nav__trilha ul a.avatar__nav img{
+        margin-right: .4em;
+        /*opacity: .6;*/
+        border-radius: 3px;
+    }
 }
 
 
