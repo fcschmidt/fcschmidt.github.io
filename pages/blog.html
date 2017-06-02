@@ -16,9 +16,9 @@ quote_author: einstein
         </h3>
         <p class="blog__post-date">
              {% if post.lang == "en" %}
-            <span>Published {{ post.date | date: "%B %e, %Y"}}</span>
+            <span><i class="fa fa-calendar"></i> {{ post.date | date: "%B %e, %Y"}}</span>
             {% else %}
-            <span>Publicado em {{ post.date | date: "%B %e, %Y"}}</span>
+            <span><i class="fa fa-calendar"></i>{{ post.date | date: "%B %e, %Y"}}</span>
             {% endif %}
         </p>
         <p class="blog__post-content">
@@ -29,9 +29,9 @@ quote_author: einstein
             {% endif %}
         </p>
         {% if post.lang == "en" %}
-        <a href="{{ post.url }}">Read more&#8230</a>
+        <a class="read" href="{{ post.url }}">Read more&#8230</a>
         {% else %}
-        <a href="{{ post.url }}">Leia mais&#8230</a>
+        <a class="read" href="{{ post.url }}">Leia mais&#8230</a>
         {% endif %}
     </article>
     {% endfor %}

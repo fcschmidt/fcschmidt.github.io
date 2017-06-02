@@ -18,9 +18,9 @@
         <a href="{{ site.baseurl }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
         <ul class="header__data list-unstyled list-inline">
             {% if page.lang == "en" %}
-            <span>Published {{ page.date | date: "%B %-d, %Y"}}</span> &mdash;
+            <span><!--Published --><i class="fa fa-calendar"></i> {{ page.date | date: "%B %-d, %Y"}}</span> &mdash;
             {% else %}
-            <span>Publicado em {{ page.date | date: "%B %-d, %Y"}}</span> &mdash;
+            <span><!--Publicado em --> <i class="fa fa-calendar"></i> {{ page.date | date: "%B %-d, %Y"}}</span> &mdash;
             {% endif %}
             <li><i class="fa fa-bookmark"></i>
                 {% for category in page.categories %}

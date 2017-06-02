@@ -39,7 +39,7 @@ comments: true
         {% else %}
         <li class="disabled previous">Empty</li>
         {% endif %}
-        <li class="{% if page.url contains 'blog' %}active {% endif %}">{{ page.title }}</li>
+        <li class="{% if page.url contains 'blog' %}active {% endif %}">{{ page.title | truncate: 20 }}</li>
         {% if page.next %}
         <li class="next"><a href="{{ page.next.url }}" title="{{ page.next.title }}">Next <i class="fa fa-long-arrow-right"></i></a></li>
         {% else %}
@@ -52,7 +52,7 @@ comments: true
 <div class="col-xs-12 col-sm-12 col-md-9 col-md-offset-1">
     <div class="row">
         {% if page.title contains 'Blog' %}{% include blog/sidebar-archives.html %}{% endif %}
-        <div class="{% if page.title contains 'Blog' %}col-sm-9 col-md-8{% else %}col-sm-12 col-md-11{% endif %} col-md-push-1">
+        <div class="{% if page.title contains 'Blog' %}col-sm-9 col-md-8 col-md-push-1{% else %}col-sm-12 col-md-9 col-md-push-2{% endif %}">
             {% include blog/header.html %}
             {% if page.class == "post" %}
             <section class="wrapper__content single__post">

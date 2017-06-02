@@ -9,7 +9,6 @@ $(document).ready(function () {
             height: 'toggle'
         }, 'slow');
     });
-
     // Scroll navbar and indice for Learning page
     $(window).scroll(function(){
         if($(document).scrollTop() > 160){

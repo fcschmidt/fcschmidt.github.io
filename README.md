@@ -12,9 +12,8 @@
 ## Credits
 - [Font Awesome](http://fontawesome.io/).
 - [Disqus](https://disqus.com/).
-- [Particle JS](http://github.com/VincentGarreau/particles.js).
 
-Home page Inspired by [GitHub](https://github.com/).
+Home page Inspired by [GitHub](https://github.com/fcschmidt).
 Page site config Inspired by [Mark Dotto](http://markdotto.com/about/).
 
 ## License
