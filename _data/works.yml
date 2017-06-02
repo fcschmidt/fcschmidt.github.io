@@ -1,22 +1,22 @@
-- name: "SCHMIDT, F.C. [Collaboration]"
-  title: TÉCNICAS CRIPTOGRÁFICAS, CONCEITOS, USOS E APLICAÇÕES
-  year: 2013
-  pages: 40
-  locale: Universidade Paulista, Araraquara - SP
-  language: in Portuguese
+- name:
+  title:
+  year:
+  pages:
+  locale:
+  language:
   archive:
-     - item: available in
-       url: https://www.dropbox.com/s/b3yk8twd27ij72n/APS-%20Criptografia.pdf?dl=0
-       type: pdf
+     - item:
+       url:
+       type:
 
 
-- name: "SCHMIDT, F.C. [Collaboration]"
-  title: DESENVOLVIMENTO DE UM JOGO COM UTILIZAÇÃO DE INTERFACE GRÁFICA
-  year: 2014
-  pages: 57
-  locale: Universidade Paulista, Araraquara - SP
-  language: in Portuguese
+- name:
+  title:
+  year:
+  pages:
+  locale:
+  language:
   archive:
-     - item: available in
-       url: https://www.dropbox.com/s/2l5lcxqatpi0y6s/APS-Game.pdf?dl=0
-       type: pdf
+     - item:
+       url:
+       type:
