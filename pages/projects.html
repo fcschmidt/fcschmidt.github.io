@@ -7,35 +7,50 @@ permalink: /projects/
 ---
 
 
-<section id="projects" class="wrapper style3">
+<section id="projects" class="wrapper default">
     <div class="wrapper__inner">
         <header>
             <h4 class="heading">
                 <span>{{ page.title }}</span>
             </h4>
             <p class="page__desc">{{ page.description }}</p>
-            <h3>Page under construction!!!</h3>
+            <!--<h3>Page under construction!!!</h3>-->
         </header>
     </div>
-    <!-- <article class="project">
+    <article class="project">
         <ul>
             {% assign proj = site.data.projects | group_by: 'year' %}
             {% for year in proj reversed %}
-                <h3 class="year">{{ year.name }}</h3>
+                <h3 class="year text-capitalize">{{ year.name }}</h3>
+                {% if year.name contains "current" %}
+                {% for i in year.items %}
+                <!--<li class="text-capitalize">{{ i.name }}</li>-->
+                <li>
+                    {% if i.github_id %}
+                    <a class="text-capitalize" href="https://github.com/{{ site.author.github }}/{{ i.github_id }}" target="_blank">{{ i.name }}</a>
+                    {% endif %}
+                    {% if i.bitbucket_id %}
+                    <a class="text-capitalize" href="https://bitbucket.org/{{ site.author.bitbucket }}/{{ i.bitbucket_id }}" target="_blank">{{ i.name }}</a>
+                    {% endif %}
+                    {% if i.site %}
+                    <a href="{{ i.site }}" target="_blank">{{ i.name }}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}{% else %}
                 {% for p in year.items %}
                 <li>
                     {% if p.github_id %}
-                    <a href="https://github.com/{{ site.author.github }}/{{ p.github_id }}" target="_blank">{{ p.name }}</a>
+                    <a class="text-capitalize" href="https://github.com/{{ site.author.github }}/{{ p.github_id }}" target="_blank">{{ p.name }}</a>
                     {% endif %}
                     {% if p.bitbucket_id %}
-                    <a href="https://bitbucket.org/{{ site.author.bitbucket }}/{{ p.bitbucket_id }}" target="_blank">{{ p.name }}</a>
+                    <a class="text-capitalize" href="https://bitbucket.org/{{ site.author.bitbucket }}/{{ p.bitbucket_id }}" target="_blank">{{ p.name }}</a>
                     {% endif %}
                     {% if p.site %}
                     <a href="{{ p.site }}" target="_blank">{{ p.name }}</a>
                     {% endif %}
                 </li>
-                {% endfor %}
+                {% endfor %}{% endif %}
             {% endfor %}
         </ul>
-    </article> -->
+    </article>
 </section>
