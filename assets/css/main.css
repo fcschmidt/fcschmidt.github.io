@@ -505,8 +505,7 @@ section article.box,
     background-color: #F6F9FA;
 }
 .header__blog{
-    margin-top: -.5em;
-    margin-bottom: -.36em;
+    margin:  0 0 0;
 }
 .header__blog .header__content h1{
     font-size: 1.5em;
@@ -545,15 +544,19 @@ section article.box,
 .single__post .box p{
     color: #212121;
 }
+.post .header__blog {
+    margin: 1em 0;
+}
 .post .header__blog .header__content h1{
     color: #222222;
-    font-size: 2.2rem;
+    font-size: 3rem;
+    font-weight: 600;
     text-align: center;
-    margin-bottom: .2em;
+    margin-bottom: .3em;
 }
 .post .header__blog .header__content .header__data{
-    color: #778899;
-    font-size: 1rem;
+    color: #222222;
+    font-size: 1.3rem;
     text-align: center;
     margin-left: 0;
 }
@@ -582,14 +585,16 @@ section article.box,
 .post .post__footer .footer__author{
     background-color: #F6F9FA;
     /*margin-bottom: .5em;*/
+    text-align: center;
     margin: 0 -.9em;
     padding: .5em;
 }
 .post .post__footer .footer__author img{
-    width: 3em;
-    height: 3em;
-    margin: 0 .5em 0 .2em;
-    float: left;
+    /*width: 4em;*/
+    height: 4em;
+    /*margin-left: 7em;*/
+    /*margin: 0 .5em 0 .2em;*/
+    /*float: left;*/
     /*opacity: .6;*/
 }
 .post .post__footer .footer__author-content a.name{
@@ -609,7 +614,7 @@ section article.box,
 }
 .post .post__footer .footer__author-content .social{
     margin-top: .5em;
-    margin-left: 3.7em;
+    /*margin-left: 3.7em;*/
 }
 .post .post__footer .footer__author-content .social p{
     font-size: 1rem;
@@ -706,7 +711,7 @@ section article.box,
     #blog .nav__menu-secondary{display: none}
     .header__blog{
         background-color: #ffffff;
-        margin-top: -1.5em;
+        margin: -1.9em 0 0 0;
     }
     .sidebar .box,
     .blog__post .box,
@@ -744,6 +749,8 @@ section article.box,
     }
     .post .header__blog .header__content .header__data{
         font-size: 1.4rem;
+        margin-top: -.4em;
+        margin-bottom: 4.5em;
     }
     .post .single__post{
         margin-top: 1.2em;
@@ -820,7 +827,7 @@ section article.box,
     }
     .nav__trilha ul li#toTop{
         float: right;
-        padding-top: .5em;
+        padding-top: .2em;
         display: none;
     }
     .nav__trilha ul li#toTop a{
@@ -841,6 +848,7 @@ section article.box,
     }
     .post .post__footer{margin-top: 2em}
     .post .post__footer .footer__author{
+        text-align: inherit;
         border: 1px solid #F1F1F1;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
@@ -849,6 +857,7 @@ section article.box,
     .post .post__footer .footer__author img{
         width: 9em;
         height: 9em;
+        margin-left: 0;
         margin-right: 1em;
         float: left;
     }
@@ -1043,7 +1052,6 @@ section article.box,
 }
 .default  .page__desc, .style1 .page__desc, .style2 .page__desc, .style3 .page__desc, .style4 .page__desc, .style5 .page__desc, .style6 .page__desc{
     text-align: center;
-    margin-top: -1.3em;
 }
 .icon .fa{color: #CCCCCC;}
 .icon .fa:hover{color: #767676;}
@@ -1058,14 +1066,15 @@ section .wrapper .heading span{
     padding: .2em;
 }
 section .wrapper__inner .heading{
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     text-transform: uppercase;
     text-align: center;
 }
 /* who am i*/
 #whoami p{
-    text-align: center;
-    /*font-size: 1.5rem;*/
+    /*text-align: center;*/
+    font-size: 1.5rem;
+    margin: 0 -.7em;
 }
 #whoami ul{text-align: center}
 #whoami ul li{
@@ -1082,30 +1091,23 @@ section .wrapper__inner .heading{
     background-color: #FFFF99;
 }
 /* Recent posts */
+#posts{margin: 1em 0;}
 #posts .content{
     padding: .3em 0;
+    border-top: 1px solid #F1F1F1;
     border-bottom: 1px solid #F1F1F1;
-    margin-top: -1em;
+    margin: 0 -1.6em;
+    clear: both;
 }
-#posts .content  span{
+#posts .content span{
     font-size: 1.5rem;
     color: #778899;
 }
-
-@media only screen and (min-width: 768px) {
-    .wrapper__content article{
-        margin: 0 0 .5em 0;
-    }
-    section .wrapper{
-        margin: 0;
-    }
-    #whoami p{font-size: 1.6rem}
-    #posts .content p{
-        color: #212121;
-        font-size: 1.5rem;
-        margin-top: -.5em;
-    }
+#posts .content p{
+    font-size: 1.4rem;
+    margin-top: -.7em;
 }
+
 
 /*------- Projects -------*/
 #projects .project ul .year{
@@ -1140,7 +1142,30 @@ section .wrapper__inner .heading{
 #research .works ul li .title{
     font-weight: 600;
 }
-@media (min-width: 768px){
+@media only screen and (min-width: 768px) {
+    .wrapper__content article{
+        margin: 0 0 .5em 0;
+    }
+    section .wrapper{
+        /*margin: 0;*/
+        margin: 0 -.1em;
+    }
+    #whoami,
+    #posts{
+        border: 1px solid #F1F1F1;
+    }
+    #whoami p{
+        /*text-align: center;*/
+        font-size: 1.6rem;
+        margin: 0 0 0 -.1em;
+    }
+    #posts .content{margin: 0;}
+    #posts .content p{
+        color: #212121;
+        font-size: 1.6rem;
+        /*margin-top: -.5em;*/
+        margin: -.5em 0 0 -.1em;
+    }
 }
 
 /*------- Docs -------*/
@@ -1220,4 +1245,15 @@ section .wrapper__inner .heading{
 }
 @media only screen and (min-width: 1280px){
 
+}
+
+/*<div class="prompt">In&nbsp;[&nbsp;]:</div>*/
+.prompt{
+    font-family: monospace;
+    font-size: inherit;
+    color: inherit;
+    vertical-align: baseline;
+    float: left;
+    padding-right: 1em;
+    /*margin-left: -5em;*/
 }
