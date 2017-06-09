@@ -567,7 +567,8 @@ section article.box,
 }
 .post .post__footer .post__meta {
     border-top: 1px solid #F1F1F1;
-    padding: .5em 0;
+    margin-top: 1em;
+    padding: 1em 0;
 }
 .post .post__footer .post__meta ul li{
     font-size: 1.7rem;
@@ -575,7 +576,7 @@ section article.box,
     margin-bottom: .5em;
 }
 .post .post__footer .post__meta ul li span{
-    background-color: #F6F9FA;
+    /*background-color: #F6F9FA;*/
     padding: .2em .3em;
     border: 1px solid #F1F1F1;
     border-radius: 3px;
@@ -670,7 +671,6 @@ section article.box,
     color: #d3d3d3;
     border-color: #faebd7;
 }
-
 
 
 /* Categories and Tags */
@@ -882,6 +882,9 @@ section article.box,
     .post .post__footer .footer__author,
     .post .post__footer .post__meta{
         margin: 0;
+    }
+    .post .post__footer .post__meta li + li{
+        margin-left: 2em;
     }
     .post .post__footer .post__share{
         margin: 1em 0;
