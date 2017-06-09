@@ -952,14 +952,16 @@ section article.box,
 }
 @media screen and (min-width: 1024px) {
     .nav__trilha ul{
-        margin-left: 12.9em;
+        /*margin-left: 12.9em;*/
+        margin-left: 24.5em;
     }
     .nav__trilha ul li#toTop a span{
         display: block;
         float: left;
     }
     .nav__trilha ul a.avatar__nav{
-        margin-right: 1em;
+        margin-right: 4em;
+        margin-left: -6.4em;
         border: none;
         display: none;
     }
