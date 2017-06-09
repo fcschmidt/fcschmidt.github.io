@@ -886,10 +886,6 @@ section article.box,
     .post .post__footer .post__meta li + li{
         margin-left: 2em;
     }
-    .post .post__footer .post__share{
-        margin: 1em 0;
-        border-top: 1px solid #e9e9e9;
-    }
     .sidebar__footer .author__post{
         background-color: #F6F9FA;
     }
@@ -977,6 +973,24 @@ section article.box,
         margin-right: .4em;
         /*opacity: .6;*/
         border-radius: 3px;
+    }
+    #share{
+        float: left;
+        display: none;
+        margin-right: -5em;
+    }
+    #share li.string{
+        color: #a9a9a9;
+        font-family: Ubuntu;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    #share li + li{padding-top: .4em;}
+    #share li a{
+        color: #a9a9a9;
+        font-size: 2rem;
+        text-decoration: none;
     }
 }
 

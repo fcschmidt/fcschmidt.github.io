@@ -82,6 +82,22 @@ $(document).ready(function () {
             });
         }
     });
+    // Share posts
+    $(window).scroll(function(){
+        if($(document).scrollTop() > 100){
+            $('#share').css({
+                'position' : 'fixed',
+                'display' : 'block',
+                'margin-top' : '5em',
+                'z-index' : '1030'
+            });
+        } else {
+            $('#share').css({
+                'position' : 'relative',
+                'display' : 'none'
+            });
+        }
+    });
     /*
     * Navbar Secondary Menu and Avatar display
     * Error Media Queries
