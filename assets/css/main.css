@@ -114,7 +114,8 @@ code, samp, mark{
     border-radius: 2px;
 }
 .header .page__header a.name{
-    color: #1b6d85;
+    /*color: #1b6d85;*/
+    color: #333333;
     font-size: 1.3rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -242,6 +243,21 @@ div pre::before{
         text-transform: uppercase;
     }
     .header #btn__menu{display: none;}
+    .header a.lang{
+        /*background-color: #181C1F;*/
+        color: #ffffff;
+        text-transform: uppercase;
+        text-decoration: none;
+        float: right;
+        /*margin: 1em;*/
+        padding: 1.1em;
+    }
+    .header .gh{
+        color: #ffffff;
+        font-size: 3rem;
+        float: left;
+        padding: .27em .7em;
+    }
     .header .nav__menu{
         display: block;
         position: relative;
@@ -352,8 +368,8 @@ div pre::before{
         /*opacity: .6;*/
     }
     .sidebar a.name{
-        color: #1b6d85;
-        /*color: #333333;*/
+        /*color: #1b6d85;*/
+        color: #333333;
         font-size: 2.4rem;
         text-transform: uppercase;
         text-decoration: none;
@@ -509,7 +525,8 @@ section article.box,
 }
 .header__blog .header__content h1{
     font-size: 1.5em;
-    color: #1b6d85;
+    /*color: #1b6d85;*/
+    color: #333333;
     margin-bottom: .1em;
 }
 .header__blog .header__content .desc{
@@ -838,7 +855,7 @@ section article.box,
         color: #4887B9;
     }
 
-    /* Arrumar as imagens dos posts */
+    /* Arrumar as imagens do posts */
     .post .single__post img{!important;
         width: auto;
         height: auto;
@@ -912,7 +929,8 @@ section article.box,
     }
     #blog .sidebar .sidebar__footer .author__post a.name{
         font-size: 1.3rem;
-        color: #778899;
+        /*color: #778899;*/
+        color: #333333;
         /*margin-bottom: -.3em;*/
     }
     #blog .sidebar .sidebar__footer .author__post .bio{
@@ -949,15 +967,18 @@ section article.box,
 @media screen and (min-width: 1024px) {
     .nav__trilha ul{
         /*margin-left: 12.9em;*/
-        margin-left: 24.5em;
+        /*margin-left: 24.5em;*/
+        margin-left: 30em;
     }
     .nav__trilha ul li#toTop a span{
         display: block;
         float: left;
     }
     .nav__trilha ul a.avatar__nav{
-        margin-right: 4em;
-        margin-left: -6.4em;
+        /*margin-right: 4em;*/
+        /*margin-left: -6.4em;*/
+        margin-left: -11.5em;
+        margin-right: 3em;
         border: none;
         display: none;
     }
@@ -1017,7 +1038,9 @@ section article.box,
 .heading span{
     font-weight: 600;
 }
-.default{}
+.default .heading span{
+    /*color: #333333;*/
+}
 .style1{
     color: #F1F1F1;
     background-color: #21B2A6;
@@ -1082,6 +1105,7 @@ section .wrapper{
 }
 section .wrapper .heading span{
     border-bottom: 1px solid #778899;
+    /*border-bottom: 1px solid #333333;*/
     padding: .2em;
 }
 section .wrapper__inner .heading{
