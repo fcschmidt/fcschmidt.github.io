@@ -5,7 +5,7 @@
   site:
   year: 2014
 
-- name: My Simple scripting used to download pdf's
+- name: wget guide to data mining PDF's
   description:
   github_id: wget_guidetodatamining
   bitbucket_id:

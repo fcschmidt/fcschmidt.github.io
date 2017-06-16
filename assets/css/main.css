@@ -52,15 +52,17 @@ code, samp, mark{
     display: none;
 }
 .header #github{
-    float: right;
-    padding: .5em .7em;
     color: #ffffff;
+    font-size: 1.8rem;
+    float: right;
+    padding: .4em .7em;
     text-decoration: none;
     display: block;
 }
 .header .btn{
     background-color: #222222;
     color: #ffffff;
+    font-size: 1.5rem;
     border: none;
     border-radius: 0;
     /*margin-bottom: .5em; */
