@@ -26,9 +26,9 @@ description: "Computer Science student, Autodidata, Python, R, AI interested"
 
 safe: false
 url: https://fcschmidt.github.io
-url: https://fcschmidt.com
-domain: fcschmidt.com
-enforce_ssl: fcschmidt.com
+url: https://fcschmidt.me
+domain: fcschmidt.me
+enforce_ssl: fcschmidt.me
 twitter_user: fcschimidt
 icon: favicon.ico
 styles: main.css

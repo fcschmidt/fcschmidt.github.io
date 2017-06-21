@@ -1,4 +1,4 @@
-# My Personal Page [https://fcschmidt.com](https://fcschmidt.com) :sunglasses:
+# My Personal Page [https://fcschmidt.me](https://fcschmidt.me) :sunglasses:
 
 
 ## This site was designed and built using:
