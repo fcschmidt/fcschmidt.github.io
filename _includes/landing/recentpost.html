@@ -1,13 +1,18 @@
 <section id="posts" class="wrapper default">
     <div class="wrapper__inner">
         <header>
+            {% if page.url contains 'pt' %}
+            <h4 class="heading"><span>Recente Post</span></h4>
+            {% else %}
             <h4 class="heading"><span>Recent Post</span></h4>
+            {% endif %}
         </header>
         <div class="content">
             {% for post in site.posts limit:3 %}
             <h4>
                 <a href="{{ post.url }}">{{ post.title }}</a> <br/>
-                <span><i class="fa fa-calendar"></i> {{ post.date | date: "%B %-d, %Y" }}</span>
+                <!--date: "%B %-d, %Y"-->
+                <span><i class="fa fa-calendar"></i> {{ post.date | date_to_string }}</span>
             </h4>
             <p>
                 {% if post.fullview %}

@@ -10,7 +10,11 @@
     {% endif %}-->
 
     <nav class="nav__menu">
+        {% if page.url contains 'pt' %}
+        <a class="nav__menu-brand" href="/pt/">{{ site.name }}</a>
+        {% else %}
         <a class="nav__menu-brand" href="/">{{ site.name }}</a>
+        {% endif %}
         <ul class="nav__menu-primary  list-unstyled">
             <li id="fix" class="{% if page.title contains 'Home' %}active{% endif %}"><a href="/">Home</a></li>
             <li class="{% if page.url contains 'blog' %}active{% endif %}"><a href="/blog/">Blog</a></li>
