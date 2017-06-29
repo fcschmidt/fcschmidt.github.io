@@ -5,7 +5,7 @@
   site:
   year: 2014
 
-- name: My Simple scripting used to download pdf's
+- name: wget guide to data mining PDF's
   description:
   github_id: wget_guidetodatamining
   bitbucket_id:
@@ -16,5 +16,61 @@
   description:
   github_id:
   bitbucket_id:
-  site: https://fcschmidt.com
+  site: https://fcschmidt.me
   year: 2016
+
+- name: Latex models
+  description:
+  github_id: latex-models
+  bitbucket_id:
+  site:
+  year: 2017
+
+
+#=======================================
+#   Current
+#=======================================
+
+#- name:
+#  description:
+#  github_id:
+#  bitbucket_id:
+#  site:
+#  year: current
+
+- name: latex code syntaxhighlight
+  description:
+  github_id: latex-code-syntaxhighlight
+  bitbucket_id:
+  site:
+  year: current
+
+- name: wget ocw
+  description:
+  github_id: wget_ocw
+  bitbucket_id:
+  site:
+  year: current
+
+- name: specialist systems
+  description:
+  github_id: specialist-systems
+  bitbucket_id:
+  site:
+  year: current
+
+- name: openlab
+  description:
+  github_id: openlab
+  bitbucket_id:
+  site:
+  year: current
+
+- name: python latex syntaxhighlight
+  description:
+  github_id: python-latex-syntaxhighlight
+  bitbucket_id:
+  site:
+  year: current
+
+
