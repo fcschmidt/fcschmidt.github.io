@@ -1,27 +1,26 @@
 ---
-layout: post
-title: Blog post
-description: "My blog technical and disclosure of personal projects and thing of my mind"
-nav: blog
-class: blog
+layout: page
+title: Blog Post
+description: "My blog technical and disclosure of personal projects and thing of my mind."
 permalink: /blog/
 quote_author: einstein
 ---
 
-<section class="wrapper__content blog__post">
+
+<div class="blog">
+    <h1 class="heading">{{ page.title }}</h1>
+    <span>{{ page.description }}</span>
     {% for post in site.posts %}
-    <article class="box">
-        <h3 class="title">
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </h3>
-        <p class="blog__post-date">
-             {% if post.lang == "en" %}
-            <span>Published {{ post.date | date: "%B %e, %Y"}}</span>
-            {% else %}
-            <span>Publicado em {{ post.date | date: "%B %e, %Y"}}</span>
-            {% endif %}
+    <article class="post">
+        <p class="post-title">
+            <a class="post-title" href="{{ post.url }}">{{ post.title }}</a> <br/>
         </p>
-        <p class="blog__post-content">
+        {% if post.lang == "en" %}
+        <p class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date: "%B %-d, %Y" }}</p>
+        {% else %}
+        <p class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date_to_string }}</p>
+        {% endif %}
+        <p class="post-content">
             {% if post.fullview %}
             {{ post.content }}
             {% else %}
@@ -29,11 +28,11 @@ quote_author: einstein
             {% endif %}
         </p>
         {% if post.lang == "en" %}
-        <a href="{{ post.url }}">Read more&#8230</a>
+        <a class="readme" href="{{ post.url }}">Continue read&#8230</a>
         {% else %}
-        <a href="{{ post.url }}">Leia mais&#8230</a>
+        <a class="readme" href="{{ post.url }}">Continue lendo&#8230</a>
         {% endif %}
     </article>
     {% endfor %}
-</section>
+</div>
 

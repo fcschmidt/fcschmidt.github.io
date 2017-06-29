@@ -2,40 +2,32 @@
 layout: page
 title: Projects
 description: "Hobby, Fun, my Open Source projects, studies and practice."
-nav: home
 permalink: /projects/
 ---
 
-
-<section id="projects" class="wrapper style3">
-    <div class="wrapper__inner">
-        <header>
-            <h4 class="heading">
-                <span>{{ page.title }}</span>
-            </h4>
-            <p class="page__desc">{{ page.description }}</p>
-            <h3>Page under construction!!!</h3>
-        </header>
-    </div>
-    <!-- <article class="project">
+<div class="project-list">
+    <h1 class="heading">{{ page.title }}</h1>
+    <span>{{ page.description }}</span>
+    <article class="projects">
         <ul>
             {% assign proj = site.data.projects | group_by: 'year' %}
             {% for year in proj reversed %}
-                <h3 class="year">{{ year.name }}</h3>
+                <p class="year">{{ year.name }}</p>
                 {% for p in year.items %}
                 <li>
                     {% if p.github_id %}
-                    <a href="https://github.com/{{ site.author.github }}/{{ p.github_id }}" target="_blank">{{ p.name }}</a>
+                    <a title="https://github.com/{{ site.author.github }}/{{ p.github_id }}" href="https://github.com/{{ site.author.github }}/{{ p.github_id }}" target="_blank">{{ p.name }}</a>
                     {% endif %}
                     {% if p.bitbucket_id %}
-                    <a href="https://bitbucket.org/{{ site.author.bitbucket }}/{{ p.bitbucket_id }}" target="_blank">{{ p.name }}</a>
+                    <a title="https://bitbucket.org/{{ site.author.bitbucket }}/{{ p.bitbucket_id }}" href="https://bitbucket.org/{{ site.author.bitbucket }}/{{ p.bitbucket_id }}" target="_blank">{{ p.name }}</a>
                     {% endif %}
                     {% if p.site %}
-                    <a href="{{ p.site }}" target="_blank">{{ p.name }}</a>
+                    <a  title="{{ p.site }}" href="{{ p.site }}" target="_blank">{{ p.name }}</a>
                     {% endif %}
                 </li>
                 {% endfor %}
             {% endfor %}
         </ul>
-    </article> -->
-</section>
+    </article>
+</div>
+

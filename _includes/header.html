@@ -1,30 +1,17 @@
-{% assign author = site.author %}
-<header class="header__page">
-    <nav class="nav__menu clearfix">
-        <a class="nav__menu-brand" href="/">{{ site.name }}</a>
-        <ul class="nav__menu-primary list-unstyled">
-            <li id="fix" class="{% if page.title contains 'Home' %}active{% endif %}"><a href="/">Home</a></li>
-            <li class="{% if page.url contains 'blog' %}active{% endif %}"><a href="/blog/">Blog</a></li>
+<header>
+    <!--<div class="mobile">
+        <a class="brand" href="/">{{ site.name }}</a>
+        <a class="github-icon" href=""><i class="fa fa-github"></i></a>
+    </div>-->
+    <nav class="menu">
+        <a class="brand" href="/">{{ site.name }}</a>
+        <a class="github-icon" href=""><i class="fa fa-github"></i></a>
+        <ul>
+            <li class="{% if page.title contains 'Home' %}active{% endif %}"><a href="/">home</a></li>
+            <li class="{% if page.url contains 'projects'%}active{% endif %}"><a href="/projects/">projects</a></li>
+            <li class="{% if page.title contains 'About'%}active{% endif %}"><a href="/about/">about</a></li>
+            <li class="{% if page.title contains 'Blog'%}active{% endif %}"><a href="/blog/">blog</a></li>
+            <li class="{% if page.url contains 'research'%}active{% endif %}"><a href="/research/">research</a></li>
         </ul>
     </nav>
-    <div class="header__mobile">
-        <div class="btn__container">
-            <a id="btn__menu" class="btn text-capitalize"><i class="fa fa-bars"></i></a>
-            <a class="fa fa-github" href=""></a>
-        </div>
-        <nav class="nav__menu-mobile">
-            <ul class="list-unstyled">
-                <li class="active"><a href="/">Home</a></li>
-                <li class=""><a href="/blog/">Blog</a></li>
-            </ul>
-        </nav>
-        <div class="author__container">
-            <img class="img img-responsive" src="/assets/images/avatar.png" alt=""/>
-            <div class="author__info clearfix">
-                <span class="name">{{ author.name }}</span><br/>
-                <span class="bio">{{ author.bio }}</span>
-            </div>
-        </div>
-    </div>
 </header>
-

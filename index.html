@@ -4,8 +4,36 @@ title: Home
 description: "Personal web page, blog and promoter projects!"
 ---
 
-{% include landing/whoami.html %}
-{% include landing/recentpost.html %}
+<div class="about">
+    <h1 class="heading">Mini bio</h1>
+    <p>
+        I'm a Student of Computer Science and Aspiring Data Scientist. <br/>
+        Interested in Artificial Intelligence(more specifically on machine learning and Robotics)
+        Data Science, Bio-informatics and Bioinspired Computing.<br/>
+        My programming language favorite are <a href="https://www.python.org/" target="_blank">python</a> and
+        <a href="https://www.r-project.org/" target="_blank">R</a>. <br/>
+        Great enthusiast of technology, aeronautics, military technology, Rock 'n Roll and Dance Music.<br/>
+    </p>
+    <a class="read-more" href="/about">continue read&#8230</a>
+</div>
+<div class="blog">
+    <h1 class="heading">Recent Posts</h1>
+    <article class="post">
+        {% for post in site.posts limit:3 %}
+        <p class="post-title">
+            <a href="{{ post.url }}">{{ post.title }}</a> <br/>
+        </p>
+        <p class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date: "%B %-d, %Y" }}</p>
+        <p class="post-content">
+            {% if post.fullview %}
+            {{ post.content }}
+            {% else %}
+            {{ post.excerpt | markdown | strip_html | truncate: 150 }}
+            {% endif %}
+        </p>
+        {% endfor  %}
+    </article>
+</div>
 
 
 

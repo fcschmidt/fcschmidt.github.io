@@ -2,53 +2,47 @@
 layout: page
 title: Research
 description: Research Projects, publications in peer-reviewed journals, conferences, my talks and others academic works
-nav: home
 permalink: /research/
 ---
 
-<section id="research" class="wrapper default">
-    <div class="wrapper__inner">
-        <header>
-            <h4 class="heading">
-                <span>{{ page.title }}</span>
-            </h4>
-            <!-- <p class="page__desc">{{ page.description }}</p> -->
-            <h3>Page under construction!!!</h3>
-        </header>
-       <!-- <article class="publications">
-            <h4>My Publications</h4>
-            <span style="color: #778899">Nothing Published!!!</span>
-        </article>
-        <article class="works">
-            <h4>Academics Works</h4>
-            <span>Here are some academic works held in conjunction with other students, or just for me.</span>
-            <span style="color: #778899">Nothing Works!!!</span>
-            <hr/>
-            <ul>
-                {% assign work = site.data.works | group_by: 'year' %}
-                {% for year in work reversed %}
-                    {% for w in year.items %}
-                        {% if w.name contains ' ' %}
-                        <li>
-                            {{ w.name }} <span class="title">{{ w.title }}.</span> {{ w.year }}. {{ w.pages }} p.
-                            <span class="meta">{{ w.locale }}, {{ w.year }}.</span>
-                            {{ w.language }}.
-                            {% for arch in w.archive %}
-                            {{ arch.item }}
-                            [<a href="{{ arch.url }}" target="_blank">{{ arch.type }}</a>]
-                            {% endfor %}.
-                        </li>
-                        {% endif %}
-                    {% endfor%}
-                {% endfor %}
-            </ul>
-        </article>
-        <article>
-            <h4>Invited Talks</h4>
-            <span style="color: #778899">Nothing Invited!!!</span>
-        </article>-->
-    </div>
-</section>
+<div class="research">
+    <h1 class="heading" style="text-align: center;font-size: 3rem;">
+        <i class="fa fa-gear fa-2x"></i><br>
+        Page under construction!!!
+    </h1>
+</div>
 
-
-
+<!--
+<div class="research">
+    <article class="publications">
+        <h1 class="heading">My Publications</h1>
+        <span>{{ page.description }}</span><br>
+        <span style="color: #778899">Nothing Published!!!</span>
+    </article>
+    <article class="works">
+        <h4>Academics Works</h4>
+        <span style="color: #778899">Nothing Works!!!</span>
+        <ul>
+            {% assign work = site.data.works | group_by: 'year' %}
+            {% for year in work reversed %}
+                {% for w in year.items %}
+                    {% if w.name contains ' ' %}
+                    <li>
+                        {{ w.name }} <span class="title">{{ w.title }}.</span> {{ w.year }}. {{ w.pages }} p.
+                        <span class="meta">{{ w.locale }}, {{ w.year }}.</span>
+                        {{ w.language }}.
+                        {% for arch in w.archive %}
+                        {{ arch.item }}
+                        [<a href="{{ arch.url }}" target="_blank">{{ arch.type }}</a>]
+                        {% endfor %}.
+                    </li>
+                    {% endif %}
+                {% endfor%}
+            {% endfor %}
+        </ul>
+    </article>
+    <article>
+        <h4>Invited Talks</h4>
+        <span style="color: #778899">Nothing Invited!!!</span>
+    </article>
+</div>-->

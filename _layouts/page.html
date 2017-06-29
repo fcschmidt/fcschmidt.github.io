@@ -2,31 +2,6 @@
 layout: default
 ---
 
-
-<nav class="nav__menu-secondary visible-xs">
-    <ul class="list-unstyled list-inline">
-        <li class="{% if page.title contains 'Home' %}current{% endif %}"><a href="/">Index</a></li>
-        <li class="{% if page.url contains 'projects' %}current{% endif %} "><a href="/projects/">Projects</a></li>
-        <li class="{% if page.url contains 'research' %}current{% endif %} "><a href="/research/">Research</a></li>
-    </ul>
-</nav>
-<div class="col-xs-12 col-md-9 col-md-offset-1">
-    <div class="row wrapper">
-        {% include sidebar.html %}
-        <div class="col-xs-12 col-sm-8 col-md-8 col-md-push-1">
-            <section class="wrapper__content">
-                {{ content }}
-            </section>
-        </div>
-    </div>
+<div class="wrapper__content">
+    {{ content }}
 </div>
-
-
-
-
-
-
-
-
-
-

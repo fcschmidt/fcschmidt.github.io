@@ -1,4 +1,4 @@
-# My Personal Page [https://fcschmidt.com](https://fcschmidt.com) :sunglasses:
+# My Personal Page [https://fcschmidt.me](https://fcschmidt.me) :sunglasses:
 
 
 ## This site was designed and built using:
@@ -12,11 +12,10 @@
 ## Credits
 - [Font Awesome](http://fontawesome.io/).
 - [Disqus](https://disqus.com/).
-- [Particle JS](http://github.com/VincentGarreau/particles.js).
 
-Home page Inspired by [GitHub](https://github.com/).
+Home page Inspired by [Mark Dotto](http://markdotto.com/about/).
 Page site config Inspired by [Mark Dotto](http://markdotto.com/about/).
 
 ## License
-[MIT License](https://opensource.org/licenses/MIT) © Fábio Schmidt &middot; Minimalist Design
+[MIT License](https://opensource.org/licenses/MIT) © @fcschmidt &middot; Minimalist Design by [@fcschimidt](https://twitter.com/fcschimidt)
 

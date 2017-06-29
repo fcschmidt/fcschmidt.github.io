@@ -13,11 +13,6 @@
             </a>
         </li>
         {% endif %}
-
-        <li class="pagination">
-            <span>{{ paginator.page }}</span> of <span>{{ paginator.total_pages }}</span>
-        </li>
-
         {% if page.next %}
         <li class="next">
             <a href="{{ site.baseurl }}{{ page.next.url }}" title="{{ page.next.title }}">Next

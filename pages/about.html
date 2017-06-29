@@ -1,19 +1,47 @@
 ---
 layout: page
 title: About
-description: "About"
-nav: home
+description: "About me"
 permalink: /about/
 ---
 
 
-<section id="projects" class="wrapper style3">
-    <div class="wrapper__inner">
-        <header>
-            <h4 class="heading">
-                <span>{{ page.title }}</span>
-            </h4>
-            <p class="page__desc">{{ page.description }}</p>
-        </header>
+{% assign author = site.author %}
+<div class="about">
+    <h1 class="heading">About</h1>
+    <p>
+        <span>I'm a Student of Computer Science and Aspiring Data Scientist.</span> <br/>
+        Interested in Artificial Intelligence(more specifically on machine learning and Robotics)
+        Data Science, Bio-informatics and Bioinspired Computing.<br/>
+        My programming language favorite are <a href="https://www.python.org/" target="_blank">python</a> and
+        <a href="https://www.r-project.org/" target="_blank">R</a>. <br/>
+        Great enthusiast of technology, aeronautics, military technology, Rock 'n Roll and Dance Music.<br/>
+    </p>
+    <div class="meta-info">
+        <div class="info">
+            <h3 class="subtitle">More information</h3>
+            See my information professional and skills
+            <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank">Linkedin</a> and
+            <a href="http://stackoverflow.com/story/{{ site.author.stackoverflow }}" target="_blank">Stackoverflow professional</a>.
+            My open source code projects, contributions, studies, practice on
+            <a href="https://github.com/{{ site.author.github }}" target="_blank">Github</a>
+            and <a href="https://bitbucket.org/{{ site.author.bitbucket }}" target="_blank">Bitbucket</a>. <br/>
+            <!--Research information <i class="fa fa-file-text-o"></i>
+            <a href="" title="Lattes - Academic CV (Portuguese)">Lattes</a>.</br>-->
+            About this <a href="/about/site-config/">site</a>.
+        </div>
+        <div class="contacts">
+            <h3 class="subtitle">Contacts:</h3>
+            <p>Contact me by e-mail at:</p>
+            <ul class="email">
+                <!--<li title="e-mail"><i class="fa fa-envelope-o"></i> {{ author.email1 }}</li>-->
+                <li title="e-mail"><i class="fa fa-envelope-o"></i> {{ author.email }}</li>
+            </ul>
+            <p style="margin-top: 1em">Contact me on social media:</p>
+            {% include social.html %}
+        </div>
     </div>
-</section>
+    <div class="col-avatar">
+        <img class="avatar" src="/assets/images/fb.jpg" alt="">
+    </div>
+</div>
