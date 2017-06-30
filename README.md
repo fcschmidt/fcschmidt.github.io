@@ -13,7 +13,7 @@
 - [Font Awesome](http://fontawesome.io/).
 - [Disqus](https://disqus.com/).
 
-Home page Inspired by [Mark Dotto](http://markdotto.com/about/).
+Home page Inspired by [Mark Dotto](http://markdotto.com/about/). </br>
 Page site config Inspired by [Mark Dotto](http://markdotto.com/about/).
 
 ## License
