@@ -22,7 +22,7 @@ collections:
 # Site settings
 name: "@fcschimidt"
 title: "F&aacute;bio Schmidt"
-description: "Computer Science student, Autodidata, Python, R, AI interested"
+description: "Computer Science Student, Aspiring Data Scientist, Autodidata, Python, R, AI interested"
 
 safe: false
 url: https://fcschmidt.github.io
@@ -30,14 +30,15 @@ url: https://fcschmidt.me
 domain: fcschmidt.me
 enforce_ssl: fcschmidt.me
 twitter_user: fcschimidt
-icon: favicon.ico
+icon: "favicon.png"
+image: "avatar.png"
 styles: main.css
 
 
 # Author
 author:
   name: "F&aacute;bio Schmidt"
-  avatar: "avatar.png"
+  avatar: "fb.jpg"
   bio: "Computer Science Student and Aspiring Data Scientist"
   location: Brazil
   email: "fcschimidt [at] gmail [dot] com"
