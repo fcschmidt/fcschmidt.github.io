@@ -20,7 +20,7 @@ collections:
 
 
 # Site settings
-name: "@fcschimidt"
+name: "@fcschmidt"
 title: "F&aacute;bio Schmidt"
 description: "Computer Science Student, Aspiring Data Scientist, Autodidata, Python, R, AI interested"
 
@@ -46,7 +46,7 @@ author:
   twitter: fcschimidt
 #  gplus: +fábiocschmidt
   instagram:
-  linkedin: fcschimidt
+  linkedin: fcschmidt
   github: fcschmidt
   bitbucket: fcschmidt
   stackoverflow: fcschmidt
