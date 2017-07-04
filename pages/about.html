@@ -6,28 +6,29 @@ permalink: /about/
 ---
 
 
-{% assign author = site.author %}
+{% assign author = site.author %}{% assign link = site.links %}
 <div class="about">
     <h1 class="heading">About</h1>
     <p>
         <span>I'm a Student of Computer Science and Aspiring Data Scientist.</span> <br/>
         Interested in Artificial Intelligence(more specifically on machine learning and Robotics)
         Data Science, Bio-informatics and Bioinspired Computing.<br/>
-        My programming language favorite are <a href="https://www.python.org/" target="_blank">python</a> and
-        <a href="https://www.r-project.org/" target="_blank">R</a>. <br/>
+        My programming language favorite are
+        <a href="{{link.python}}" target="_blank" title="{{link.python}}">python</a> and
+        <a href="{{link.r}}" target="_blank" title="{{link.r}}">R</a>. <br/>
         Great enthusiast of technology, aeronautics, military technology, Rock 'n Roll and Dance Music.<br/>
     </p>
     <div class="meta-info">
         <div class="info">
             <h3 class="subtitle">More information</h3>
             See my information professional and skills
-            <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank">Linkedin</a> and
-            <a href="http://stackoverflow.com/story/{{ site.author.stackoverflow }}" target="_blank">Stackoverflow professional</a>.
+            <a href="{{link.linkedin}}{{author.linkedin}}" target="_blank" title="{{link.linkedin}}{{author.linkedin}}">Linkedin</a> and
+            <a href="{{link.stack}}{{author.stackoverflow}}" target="_blank" title="{{link.stack}}{{author.stackoverflow}}">Stackoverflow professional</a>.
             My open source code projects, contributions, studies, practice on
-            <a href="https://github.com/{{ site.author.github }}" target="_blank">Github</a>
-            and <a href="https://bitbucket.org/{{ site.author.bitbucket }}" target="_blank">Bitbucket</a>. <br/>
-            <!--Research information <i class="fa fa-file-text-o"></i>
-            <a href="" title="Lattes - Academic CV (Portuguese)">Lattes</a>.</br>-->
+            <a href="{{link.github}}{{author.github}}" target="_blank" title="{{link.github}}{{author.github}}">Github</a>
+            and <a href="{{link.bitbucket}}{{author.bitbucket}}" target="_blank" title="{{link.bitbucket}}{{author.bitbucket}}">Bitbucket</a>. <br/>
+            Research information
+            <a href="{{ link.lattes_url }}" title="{{ link.lattes_url }}" target="_blank">Lattes - Academic CV (Portuguese)</a>.</br>
             About this <a href="/about/site-config/">site</a>.
         </div>
         <div class="contacts">
