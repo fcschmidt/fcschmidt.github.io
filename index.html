@@ -4,14 +4,16 @@ title: Home
 description: "Personal web page, blog and promoter projects!"
 ---
 
+{% assign author = site.author %}{% assign link = site.links %}
 <div class="about">
     <h1 class="heading">Mini bio</h1>
     <p>
         I'm a Student of Computer Science and Aspiring Data Scientist. <br/>
         Interested in Artificial Intelligence(more specifically on machine learning and Robotics)
         Data Science, Bio-informatics and Bioinspired Computing.<br/>
-        My programming language favorite are <a href="https://www.python.org/" target="_blank">python</a> and
-        <a href="https://www.r-project.org/" target="_blank">R</a>. <br/>
+        My programming language favorite are
+        <a href="{{link.python}}" target="_blank" title="{{link.python}}">python</a> and
+        <a href="{{link.r}}" target="_blank" title="{{link.r}}">R</a>. <br/>
         Great enthusiast of technology, aeronautics, military technology, Rock 'n Roll and Dance Music.<br/>
     </p>
     <a class="read-more" href="/about">continue read&#8230</a>
