@@ -8,7 +8,7 @@ markdown: kramdown
 
 # Google Analytics
 google__analytics:
-  tracking-id: UA-85981803-1
+  tracking-id: UA-102073967-1
 
 # Disqus comments
 disqus__shortname:
