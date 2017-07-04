@@ -40,18 +40,31 @@ author:
   name: "F&aacute;bio Schmidt"
   avatar: "fb.jpg"
   bio: "Computer Science Student and Aspiring Data Scientist"
-  location: Brazil
+  location: "Brazil"
   email: "fcschimidt [at] gmail [dot] com"
   email1: "fcs [at] fcschmidt [dot] me"
-  twitter: fcschimidt
+  twitter: "fcschimidt"
 #  gplus: +fábiocschmidt
   instagram:
-  linkedin: fcschmidt
-  github: fcschmidt
-  bitbucket: fcschmidt
-  stackoverflow: fcschmidt
-  stackoverflow_story: fcschmidt
+  linkedin: "fcschmidt"
+  github: "fcschmidt"
+  bitbucket: "fcschmidt"
+  stackoverflow: "fcschmidt"
+  stackoverflow_story: "fcschmidt"
+  medium: "@fcschmidt"
 
+links:
+  twitter: "https://twitter.com/"
+  linkedin: "https://www.linkedin.com/in/"
+  github: "https://github.com/"
+  bitbucket: "https://bitbucket.org/"
+  stack: "http://stackoverflow.com/story/"
+  stack_story:
+  python: "https://www.python.org/"
+  r: "https://www.r-project.org/"
+  mit: "http://opensource.org/licenses/MIT"
+  medium: "https://medium.com/"
+  lattes_url: "http://lattes.cnpq.br/3591699750918062"
 
 gems:
   # - jekyll-feed
