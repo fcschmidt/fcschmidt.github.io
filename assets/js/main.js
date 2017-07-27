@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // Open mobile menu
     $('#btn__menu').click(function () {
-        $('.nav__menu-mobile').animate({
+        $('#nav__menu-mobile').animate({
             opacity : 'toggle',
             height: 'toggle'
         }, 'slow');
