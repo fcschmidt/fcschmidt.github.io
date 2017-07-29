@@ -34,7 +34,7 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script type="text/javascript">
-        var host = "{{ site.url }}";
+        var host = "{{ site.enforce_ssl }}";
         if ((host == window.location.host) && (window.location.protocol != "https:"))
             window.location.protocol = "https";
     </script>
