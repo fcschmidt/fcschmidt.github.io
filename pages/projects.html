@@ -5,29 +5,29 @@ description: "Hobby, Fun, my Open Source projects, studies and practice."
 permalink: /projects/
 ---
 
-<div class="project-list">
+
+<div class="projects">
     <h1 class="heading">{{ page.title }}</h1>
-    <span>{{ page.description }}</span>
-    <article class="projects">
+    <span>{{ page.description}}</span>
+    {% assign proj = site.data.projects | group_by: 'year' %}
+    {% for year in proj reversed %}
+        <div class="project-header">
+            <h2 class="year">{{ year.name }}</h2>
+        </div>
         <ul>
-            {% assign proj = site.data.projects | group_by: 'year' %}
-            {% for year in proj reversed %}
-                <p class="year">{{ year.name }}</p>
-                {% for p in year.items %}
-                <li>
-                    {% if p.github_id %}
-                    <a title="https://github.com/{{ site.author.github }}/{{ p.github_id }}" href="https://github.com/{{ site.author.github }}/{{ p.github_id }}" target="_blank">{{ p.name }}</a>
-                    {% endif %}
-                    {% if p.bitbucket_id %}
-                    <a title="https://bitbucket.org/{{ site.author.bitbucket }}/{{ p.bitbucket_id }}" href="https://bitbucket.org/{{ site.author.bitbucket }}/{{ p.bitbucket_id }}" target="_blank">{{ p.name }}</a>
-                    {% endif %}
-                    {% if p.site %}
-                    <a  title="{{ p.site }}" href="{{ p.site }}" target="_blank">{{ p.name }}</a>
-                    {% endif %}
-                </li>
-                {% endfor %}
+            {% for p in year.items %}
+            <li>
+                {% if p.github_id %}
+                <a title="https://github.com/{{ site.author.github }}/{{ p.github_id }}" href="https://github.com/{{ site.author.github }}/{{ p.github_id }}" target="_blank">{{ p.name }}</a>
+                {% endif %}
+                {% if p.bitbucket_id %}
+                <a title="https://bitbucket.org/{{ site.author.bitbucket }}/{{ p.bitbucket_id }}" href="https://bitbucket.org/{{ site.author.bitbucket }}/{{ p.bitbucket_id }}" target="_blank">{{ p.name }}</a>
+                {% endif %}
+                {% if p.site %}
+                <a  title="{{ p.site }}" href="{{ p.site }}" target="_blank">{{ p.name }}</a>
+                {% endif %}
+            </li>
             {% endfor %}
         </ul>
-    </article>
+    {% endfor %}
 </div>
-
