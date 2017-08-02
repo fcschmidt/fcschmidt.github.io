@@ -40,9 +40,11 @@ p{padding-top: .7em;}
     margin-bottom: 1.3em;
 }
 .wrapper__content a{
+    color: #0077CC;
     border-bottom: 1px solid #faebd7;
 }
 .wrapper__content a:hover{
+    color: #33AAFF;
     border-bottom: 1px solid #55acee;
 }
 .wrapper__content .breadcrumb{
@@ -71,10 +73,14 @@ p{padding-top: .7em;}
     }
 }
 @media only screen and (min-width: 1024px){
-    .main__container{
+    /*Old size .main__container{
         display: table;
         margin: 0  15em 0 19.5em;
         width: 55%;
+    }*/
+    .main__container{
+        width: 50em;
+        margin: -3em auto 2.5em auto;
     }
     .wrapper__content #return{
         margin-top: -6.6em;
@@ -178,8 +184,10 @@ header{
 }
 @media only screen and (min-width: 1024px){
     .menu{
-        width: 55%;
-        margin: 0  15em 0 19.5em;
+        /*width: 55%;
+        margin: 0  15em 0 19.5em;*/
+        width: 58.5%;
+        margin: 0 auto 40px auto;
         padding: .6em 0;
         background-color: transparent;
     }
@@ -254,7 +262,7 @@ footer{
 .about .col-avatar .avatar{
     display: none;
 }
-/* About site config */
+/* About - Site config */
 .site-config ul li{
     margin-left: 2em;
     list-style: disc;
@@ -285,6 +293,67 @@ footer{
         border-radius: 3px;
     }
 }
+/* About - Resume */
+.resume .header{
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+}
+.resume .header .left{
+    float: none;
+}
+.resume .header .img{
+    float: none;
+}
+
+@media only screen and (min-width: 768px){
+    .resume{
+        position: relative;
+        margin-bottom: 2em;
+    }
+    .resume .header .left{
+        float: left;
+        text-align: left;
+    }
+    .resume .header .img{
+        float: right;
+        width: 6em;
+        height: 6em;
+    }
+    .resume .section-wrapper .section-inner{
+        position: relative;
+        clear: both;
+    }
+    .resume .section-wrapper .section-inner .section-header{
+        background-color: transparent;
+    }
+    .resume .section-wrapper .section-inner .section-header::after{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 12px;
+        left: 0;
+        background: #d3d3d3;
+        content: '';
+        z-index: 0;
+        height: 1px;
+    }
+    .resume .section-inner .section-header .title{
+        display: inline-block;
+        position: relative;
+        padding: 0 15px 0 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 2rem;
+        color: #F48024;
+        background: #ffffff;
+        z-index: 1;
+        clear: left;
+    }
+}
+
+
+
 /*
 *  Blog
 ------------------------------------------------*/
@@ -417,14 +486,45 @@ footer{
 .archives .categories .inner ul li .text-muted,
 .archives .tags .inner ul li .text-muted{
     font-weight: 600;
-    color: lightgray;
+    color: #d3d3d3;
 }
 /*
 *  Projects
 ------------------------------------------------*/
-.projects ul p.year{
-    font-size: 2rem;
+.projects{
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.projects .project-header{
+    position: relative;
+    margin-top: 1em;
+}
+.projects .project-header::after{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 12px;
+    left: 0;
+    background: #d3d3d3;
+    content: '';
+    z-index: 0;
+    height: 1px;
+}
+.projects .project-header h2{
+    display: inline-block;
+    position: relative;
+    padding: 0 15px 0 0;
+    text-transform: uppercase;
     font-weight: 600;
+    font-size: 2rem;
+    color: #F48024;
+    background: #ffffff;
+    z-index: 1;
+    clear: left;
+}
+.projects ul{
+    margin: -1em auto 0 auto;
 }
 .projects ul li{
     list-style: disc;
@@ -439,6 +539,8 @@ footer{
     color: #333333;
     border-bottom: 1px solid #333333;
 }
+
+
 @media only screen and (min-width: 768px){
     .blog .post .post-title a{
         font-size: 2rem;
@@ -461,7 +563,6 @@ footer{
     }
     .archives .categories{float: left;}
     .archives .tags{float: right;}
-
 }
 @media only screen and (min-width: 1024px){
     .single-post{
@@ -484,7 +585,7 @@ code{
 }
 pre{
     display: block;
-    margin-top: 1rem;
+    margin-top: 1.3rem;
     margin-bottom: 1rem;
     padding: 1rem;
     font-size: 1.5rem;
