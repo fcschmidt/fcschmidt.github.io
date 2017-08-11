@@ -1,0 +1,34 @@
+{
+  "service":[
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/",
+      "user": "fcschimidt",
+      "icon" : "twitter"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/",
+      "user": "fcschmidt",
+      "icon" : "linkedin"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/",
+      "user": "fcschmidt",
+      "icon" : "github"
+    },
+    {
+      "name": "stackoverflow",
+      "url": "https://stackoverflow.com/",
+      "user": "fcschmidt",
+      "icon" : "stack-overflow"
+    },
+    {
+      "name": "medium",
+      "url": "https://medium.com/",
+      "user": "fcschmidt",
+      "icon" : "medium"
+    }
+  ]
+}
