@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6{
 }
 p{padding-top: .7em;}
 .main__container{
+    position: relative;!important;
     display: table;
     margin-top: -3.5em;
     padding: .5em;
@@ -73,14 +74,12 @@ p{padding-top: .7em;}
     }
 }
 @media only screen and (min-width: 1024px){
-    /*Old size .main__container{
-        display: table;
-        margin: 0  15em 0 19.5em;
-        width: 55%;
-    }*/
     .main__container{
-        width: 50em;
+        display: table;
+        /*margin: 0  15em 0 19.5em;*/
         margin: -3em auto 2.5em auto;
+        width: 55%;
+        /*width: 50em;*/
     }
     .wrapper__content #return{
         margin-top: -6.6em;
@@ -184,9 +183,9 @@ header{
 }
 @media only screen and (min-width: 1024px){
     .menu{
-        /*width: 55%;
-        margin: 0  15em 0 19.5em;*/
-        width: 58.5%;
+        width: 55%;
+        /*margin: 0  15em 0 19.5em;*/
+        /*width: 58.5%;*/
         margin: 0 auto 40px auto;
         padding: .6em 0;
         background-color: transparent;
@@ -293,67 +292,6 @@ footer{
         border-radius: 3px;
     }
 }
-/* About - Resume */
-.resume .header{
-    position: relative;
-    background-color: transparent;
-    text-align: center;
-}
-.resume .header .left{
-    float: none;
-}
-.resume .header .img{
-    float: none;
-}
-
-@media only screen and (min-width: 768px){
-    .resume{
-        position: relative;
-        margin-bottom: 2em;
-    }
-    .resume .header .left{
-        float: left;
-        text-align: left;
-    }
-    .resume .header .img{
-        float: right;
-        width: 6em;
-        height: 6em;
-    }
-    .resume .section-wrapper .section-inner{
-        position: relative;
-        clear: both;
-    }
-    .resume .section-wrapper .section-inner .section-header{
-        background-color: transparent;
-    }
-    .resume .section-wrapper .section-inner .section-header::after{
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 12px;
-        left: 0;
-        background: #d3d3d3;
-        content: '';
-        z-index: 0;
-        height: 1px;
-    }
-    .resume .section-inner .section-header .title{
-        display: inline-block;
-        position: relative;
-        padding: 0 15px 0 0;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 2rem;
-        color: #F48024;
-        background: #ffffff;
-        z-index: 1;
-        clear: left;
-    }
-}
-
-
-
 /*
 *  Blog
 ------------------------------------------------*/
@@ -518,7 +456,7 @@ footer{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 2rem;
-    color: #F48024;
+    color: #F48024;/*0395DE*/
     background: #ffffff;
     z-index: 1;
     clear: left;

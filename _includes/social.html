@@ -1,3 +1,4 @@
+<!--
 <ul class="social-media">
     {% if author.twitter %}
     <li>
@@ -48,4 +49,23 @@
         </a>
     </li>
     {% endif %}
+
+    {% if author.medium %}
+    <li>
+        <a href="https://medium.com/{{ author.medium }}" target="_blank"><i class="fa fa-medium"></i>
+            <br><span>@{{ author.medium }}</span>
+        </a>
+    </li>
+    {% endif %}
+</ul>
+-->
+<ul class="social-media">
+    {% for s in site.data.social.service %}
+    <li>
+        <a href="{{ s.url }}{{ s.user }}" target="_blank">
+            <i class="fa fa-{{ s.icon }}"></i>
+            <br><span>@{{ s.user }}</span>
+        </a>
+    </li>
+    {% endfor %}
 </ul>
