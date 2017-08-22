@@ -11,11 +11,12 @@
 
 ## Credits
 - [Font Awesome](http://fontawesome.io/).
-- [Disqus](https://disqus.com/).
+- [Normalize CSS v3.0.2](https://git.io/normalize)
+- [CSS Reset](http://meyerweb.com/eric/tools/css/reset/)
 
-Home page Inspired by [Mark Dotto](http://markdotto.com/about/). </br>
+<br>
 Page site config Inspired by [Mark Dotto](http://markdotto.com/about/).
 
 ## License
-[MIT License](https://opensource.org/licenses/MIT) © @fcschmidt &middot; Minimalist Design by [@fcschimidt](https://twitter.com/fcschimidt)
+[MIT License](https://opensource.org/licenses/MIT) © Fábio Schmidt &middot; Minimalist Design by [@fcschimidt](https://twitter.com/fcschimidt)
 
