@@ -8,19 +8,19 @@ description: "Personal web page, blog and promoter projects!"
 <div class="about">
     <h1 class="heading">Mini bio</h1>
     <p>
-        I'm a Student of Computer Science and Aspiring Data Scientist. <br/>
+        I'm a Student of Computer Science, Front-end Developer and Aspiring Data Scientist. <br/>
         Interested in Artificial Intelligence(more specifically on machine learning and Robotics)
         Data Science, Bio-informatics and Bioinspired Computing.<br/>
         My programming language favorite are
         <a href="{{link.python}}" target="_blank" title="{{link.python}}">python</a> and
         <a href="{{link.r}}" target="_blank" title="{{link.r}}">R</a>. <br/>
-        Great enthusiast of technology, aeronautics, military technology, Rock 'n Roll and Dance Music.<br/>
+        Great enthusiast of technology, aeronautics, Rock 'n Roll and Electronic Music.<br/>
     </p>
     <a class="read-more" href="/about">continue read&#8230</a>
 </div>
-<div class="blog">
+<div id="home" class="blog">
     <h1 class="heading">Recent Posts</h1>
-    <article class="post">
+    <!--<article class="post">
         {% for post in site.posts limit:3 %}
         <p class="post-title">
             <a href="{{ post.url }}">{{ post.title }}</a> <br/>
@@ -34,10 +34,22 @@ description: "Personal web page, blog and promoter projects!"
             {% endif %}
         </p>
         {% endfor  %}
+    </article>-->
+    <article class="post">
+        {% for post in site.posts  limit: 5 %}
+        <p class="date">{{ post.date | date: "%d %b %Y" }}</p>
+        <div class="content">
+            <p class="post-title">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </p>
+            <p class="post-content">
+                {% if post.fullview %}
+                    {{ post.content }}
+                {% else %}
+                    {{ post.excerpt | markdown | strip_html | truncate: 100 }}
+                {% endif %}
+            </p>
+        </div>
+        {% endfor %}
     </article>
 </div>
-
-
-
-
-

@@ -19,6 +19,12 @@
       "icon" : "github"
     },
     {
+     "name": "bitbucket",
+      "url": "https://bitbucket.org/",
+      "user": "fcschmidt",
+      "icon": "bitbucket"
+    },
+    {
       "name": "stackoverflow",
       "url": "https://stackoverflow.com/",
       "user": "fcschmidt",

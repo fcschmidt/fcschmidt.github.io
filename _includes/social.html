@@ -1,43 +1,43 @@
-<!--
+{% assign link = site.links %}
 <ul class="social-media">
     {% if author.twitter %}
     <li>
-        <a href="https://twitter.com/{{ author.twitter }}" target="_blank"><i class="fa fa-twitter"></i>
+        <a href="{{ link.twitter }}{{ author.twitter }}" target="_blank"><i class="fa fa-twitter"></i>
             <br><span>@{{ author.twitter }}</span>
         </a>
     </li>
     {% endif %}
     {% if author.gplus %}
     <li>
-        <a href="https://plus.google.com/u/0/{{ author.gplus }}" target="_blank"><i class="fa fa-google-plus"></i>
+        <a href="{{ link.gplus }}{{ author.gplus }}" target="_blank"><i class="fa fa-google-plus"></i>
             <br><span>{{ author.gplus }}</span>
         </a>
     </li>
     {% endif %}
     {% if author.instagram %}
     <li>
-        <a href="https://instagram.com/{{ author.instagram }}" target="_blank"><i class="fa fa-instagram"></i>
+        <a href="{{ link.instagram }}{{ author.instagram }}" target="_blank"><i class="fa fa-instagram"></i>
             <br><span>{{ author.instagram }}</span>
         </a>
     </li>
     {% endif %}
     {% if author.linkedin %}
     <li>
-        <a href="https://www.linkedin.com/in/{{ author.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i>
+        <a href="{{ link.linkedin }}{{ author.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i>
             <br><span>@{{ author.linkedin }}</span>
         </a>
     </li>
     {% endif %}
     {% if author.github %}
     <li>
-        <a href="https://github.com/{{ author.github }}" target="_blank"><i class="fa fa-github"></i>
+        <a href="{{ link.github }}{{ author.github }}" target="_blank"><i class="fa fa-github"></i>
             <br><span>@{{ author.github }}</span>
         </a>
     </li>
     {% endif %}
     {% if author.bitbucket %}
     <li>
-        <a href="https://bitbucket.org/{{ author.bitbucket }}" target="_blank"><i class="fa fa-bitbucket"></i>
+        <a href="{{ link.bitbucket }}{{ author.bitbucket }}" target="_blank"><i class="fa fa-bitbucket"></i>
             <br><span>@{{ author.bitbucket }}</span>
         </a>
     </li>
@@ -58,7 +58,7 @@
     </li>
     {% endif %}
 </ul>
--->
+<!--
 <ul class="social-media">
     {% for s in site.data.social.service %}
     <li>
@@ -69,3 +69,4 @@
     </li>
     {% endfor %}
 </ul>
+-->
