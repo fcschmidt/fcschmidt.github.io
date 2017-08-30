@@ -11,10 +11,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-html {
+html{
     font-size: 62.5%;
 }
-body {
+body{
     font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
     color: #1C1D21;
@@ -41,12 +41,12 @@ p{padding-top: .7em;}
     margin-bottom: 1.3em;
 }
 .wrapper__content a{
-    color: #0077CC;
+    color: #222222;
     border-bottom: 1px solid #faebd7;
 }
 .wrapper__content a:hover{
-    color: #33AAFF;
-    border-bottom: 1px solid #55acee;
+    color: #333333;
+    border-bottom: 1px solid #333333;
 }
 .wrapper__content .breadcrumb{
     padding: .2em 0;
@@ -54,7 +54,6 @@ p{padding-top: .7em;}
     margin-bottom: 2em;
     font-size: 1rem;
     color: #408080;
-    border-bottom: 1px solid #EEEEEE;
 }
 .wrapper__content .breadcrumb li{
     display: inline-block;
@@ -88,11 +87,8 @@ p{padding-top: .7em;}
     }
     .wrapper__content .breadcrumb{
         margin-top: -8em;
-        margin-bottom: 5.6em;
-
-        padding: .5em 0;!important;
+        margin-bottom: 5em;
         color: #408080;
-        border-bottom: 1px solid #EEEEEE;
     }
 }
 /* Social Media */
@@ -107,11 +103,9 @@ p{padding-top: .7em;}
 .social-media li a{
     font-size: 1.7rem;
     text-decoration: none;
-    color: #222222;
     border: none;
 }
 .social-media li a:hover{
-    color: #333333;
     border: none;
 }
 .social-media  li a span{
@@ -188,14 +182,11 @@ p{padding-top: .7em;}
 @media only screen and (min-width: 768px){
     .header{
         position: relative;
-        background-color: #EEEEEE;
+        background-color: #222222;
     }
     .header ._brand{display: none}
     .header .btn,
     .header .github_icon{display: none;}
-    .header a{
-        color: #005BAA;
-    }
     .menu{
         position: relative;
         padding: .3em 0;
@@ -206,19 +197,16 @@ p{padding-top: .7em;}
         margin-left: .3em;
         display: block;
         float: left;
+        color: #ffffff;
         font-size: 1.6rem;
         font-weight: 600;
-        color: #222222;
-    }
-    .menu .brand:hover{
-        color: #005BAA;
     }
     .menu .github-icon{
         margin-right: .3em;
         display: block;
         float: right;
+        color: #ffffff;
         font-size: 2.3rem;
-        color: #222222;
     }
     .menu ul{
         display: block;
@@ -235,7 +223,6 @@ p{padding-top: .7em;}
         padding: 0;
         display: inline-block;
         font-size: 1.5rem;
-        color: #1C1D21;
         text-transform: capitalize;
     }
     .menu ul li.active a{
@@ -272,93 +259,34 @@ footer{
     border-top: 1px solid #EEEEEE;
     clear: both;
 }
+footer a{
+    color: #222222;
+    font-weight: 600;
+    border-bottom: 1px solid #faebd7;
+}
+footer a:hover{
+    color: #333333;
+    border-color: #333333;
+}
 @media only screen and (min-width: 768px){
     footer{text-align: inherit;}
     footer .copy{float: left;}
     footer .author{float: right;}
 }
 /*
-*  Home
-------------------------------------------------*/
-#home .post{
-    margin-top: .5em;
-}
-#home .post .date{
-    padding: .2em 0;
-    width: 30%;
-    float: left;
-    font-weight: 600;
-    color: #ffffff;
-    text-align: center;
-    background-color: #a9a9a9;
-}
-#home .post .content{
-    padding-left: 1em;
-    width: 70%;
-    float: right;
-    clear: both;
-}
-#home .post .post-title{
-    margin-top: -2.5em;
-}
-#home .post .post-content{
-    display: none;
-}
-@media only screen and (min-width: 768px){
-    #home .post{
-        margin-top: .5em;
-    }
-    #home .post .date{
-        width: 10%;
-        height: 10vmin;
-    }
-    #home .post .content{
-        padding-left: 1em;
-        width: 90%;
-        float: right;
-        clear: both;
-    }
-    #home .post .post-title{
-        margin-top: -4.5em;
-    }
-    #home .post .post-content{
-        display: block;
-    }
-}
-@media only screen and (min-width: 1024px){
-    #home .post .date{
-        padding-top: .7em;
-    }
-    #home .post .post-title{
-        margin-top: -5.1em;
-    }
-}
-@media screen and (min-width: 1440px){
-    #home .post .date{
-        height: 4.5em;
-    }
-}
-/*
 *  About
 ------------------------------------------------*/
 .about p a,
 .about .meta-info .info a,
+.about .read-more,
 .site-config a{
     font-weight: 600;
-    color: #222222;
-}
-.about p a:hover,
-.about .meta-info .info a:hover,
-.site-config a:hover{
-    color: #333333;
-    border-bottom: 1px solid #333333;
 }
 .about p span{
     font-size: 1.5rem;
     font-weight: 600;
     color: #1C1D21;
 }
-.about .read-more{border: none;}
 .about .meta-info{
     width: 100%;
     margin-top: 2em;
@@ -376,9 +304,15 @@ footer{
 .about .col-avatar{
     width: 100%;
     margin-top: 2em;
+    text-align: center;
 }
 .about .col-avatar .avatar{
-    display: none;
+    width: 70%;
+    border: 2px solid #1C1D21;
+    border-radius: 3px;
+}
+.about .quote{
+    text-align: center;
 }
 /* About - Site config */
 .site-config ul li{
@@ -400,6 +334,7 @@ footer{
     .about .col-avatar{
         width: 40%;
         margin-top: 2em;
+        margin-bottom: 1em;
         float: right;
     }
     .about .col-avatar .avatar{
@@ -414,29 +349,24 @@ footer{
 /*
 *  Blog
 ------------------------------------------------*/
-.blog .post .post-title a{
+.blog-post .article{
+    display: block;
+    padding: 1em 0 2em 0;
+    font-weight: 600;
     font-size: 1.7rem;
-    font-weight: 600;
-    color: #222222;
 }
-.blog .post .post-title a:hover{
-    color: #333333;
-    border-bottom: 1px solid #333333;
+.blog-post .article + .article{
+    padding-top: .7em;
+    border-top: 1px solid #EEEEEE;
 }
-.blog .post .post-date{
-    margin-top: -.7em;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #a9a9a9;
+.blog-post .article a{
+    float: left;
 }
-.blog .post .post-content{
-    font-size: 1.5rem;
-    padding-top: 0;
+.blog-post .article .article-date{
+    float: right;
+    color: #c1c1c1;
 }
-.blog .post a.readme{
-    font-size: 1.4rem;
-    border: none;
-}
+/* Single post */
 .single-post{
     margin-bottom: 2em;
     color: #1C1D21;
@@ -485,6 +415,14 @@ footer{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.single-post .post-content a{
+    color: #0077CC;
+    border-bottom: 1px solid #faebd7;
+}
+.single-post .post-content a:hover{
+    color: #33AAFF;
+    border-bottom: 1px solid #55acee;
+}
 .single-post .paginator{
     padding-bottom: 2em;
     clear: both;
@@ -503,6 +441,19 @@ footer{
 }
 .single-post .paginator ul li a{
     border-bottom: none;
+}
+.single-post .paginator ul .disabled,
+.single-post .paginator ul .disabled{
+    color: #c1c1c1;
+}
+.single-post .paginator ul .previous a,
+.single-post .paginator ul .next a{
+    color: #1C1D21;
+}
+.single-post .paginator ul .previous a:hover,
+.single-post .paginator ul .next a:hover{
+    color: #333333;
+    border-color: #333333;
 }
 .single-post .author-footer{
     padding-bottom: .5em;
@@ -531,6 +482,53 @@ footer{
     text-transform: uppercase;
     border-bottom: 1px solid #EEEEEE;
 }
+@media only screen and (min-width: 768px) {
+    .blog-post .article{
+         font-size: 2rem;
+    }
+    .single-post .page-title{
+        margin-top: 2.5em;
+        font-size: 4.2rem;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .single-post{
+        margin-top: -5em;
+    }
+}
+/* Code config */
+code,
+pre{
+    font-family: Menlo, Monaco, "Courier New", monospace;
+}
+code{
+    padding: .25em .5em;
+    font-size: 85%;
+    color: #bf616a;
+    background-color: #EEEEEE;
+    border-radius: 3px;
+}
+pre{
+    display: block;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    background-color: #EEEEEE;
+    border-radius: 3px;
+}
+pre code{
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent;
+}
+.highlight{
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+.highlight pre{margin-bottom: 0;}
 /*
 *  Archives
 ------------------------------------------------*/
@@ -548,11 +546,16 @@ footer{
     margin-top: .2em;
     margin-left: 2em;
     list-style: disc;
+    font-weight: 600;
 }
 .archives .categories .inner ul li .text-muted,
 .archives .tags .inner ul li .text-muted{
     font-weight: 600;
     color: #d3d3d3;
+}
+@media only screen and (min-width: 768px){
+    .archives .categories{float: left;}
+    .archives .tags{float: right;}
 }
 /*
 *  Projects
@@ -584,7 +587,7 @@ footer{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 2rem;
-    color: #0395DE;/*F48024,0395DE, 005BAA*/
+    color: #c1c1c1;/*F48024,0395DE, 005BAA*/
     background: #ffffff;
     z-index: 1;
     clear: left;
@@ -599,74 +602,27 @@ footer{
 .projects ul li a{
     font-size: 1.5rem;
     font-weight: 600;
-    color: #222222;
 }
-.projects ul li a:hover{
-    color: #333333;
-    border-bottom: 1px solid #333333;
-}
-
-
 @media only screen and (min-width: 768px){
-    .blog .post .post-title a{
-        font-size: 2rem;
-    }
-    .blog .post .post-date{
-        font-size: 1.4rem;
-    }
-    .blog .post .post-content{
-        font-size: 1.6rem;
-    }
-    .single-post .page-title{
-        margin-top: 2.5em;
-        font-size: 3.7rem;
-    }
     .projects ul p.year {
         font-size: 2.3rem;
     }
+    .projects ul li{
+        list-style: none;
+        margin: .5em 1em;
+    }
     .projects ul li a{
+        padding: .2em .3em;
         font-size: 1.7rem;
+        border: 1px solid #c1c1c1;
+
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
     }
-    .archives .categories{float: left;}
-    .archives .tags{float: right;}
-}
-@media only screen and (min-width: 1024px){
-    .single-post{
-        margin-top: -5em;
+    .projects ul li a:hover{
+        border: 1px solid #333333;
     }
 }
-/*
-*  Code config
-------------------------------------------------*/
-code,
-pre{
-    font-family: Menlo, Monaco, "Courier New", monospace;
-}
-code{
-    padding: .25em .5em;
-    font-size: 85%;
-    color: #bf616a;
-    background-color: #eeeeee;
-    border-radius: 3px;
-}
-pre{
-    display: block;
-    margin-top: 1.3rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    font-size: 1.5rem;
-    line-height: 1.4;
-    background-color: #eeeeee;
-    border-radius: 3px;
-}
-pre code{
-    padding: 0;
-    font-size: 100%;
-    color: inherit;
-    background-color: transparent;
-}
-.highlight{
-    margin-bottom: 1rem;
-    border-radius: 4px;
-}
-.highlight pre{margin-bottom: 0;}

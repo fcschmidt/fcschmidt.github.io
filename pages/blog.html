@@ -7,64 +7,13 @@ quote_author: einstein
 ---
 
 {% include breadcrumb.html %}
-<div class="blog">
+<div class="blog-post">
     <h1 class="heading">{{ page.title }}</h1>
     <span>{{ page.description }}</span>
     {% for post in site.posts %}
-    <article class="post">
-        <p class="post-title">
-            <a class="post-title" href="{{ post.url }}">{{ post.title }}</a> <br/>
-        </p>
-        {% if post.lang == "en" %}
-        <p class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date: "%B %-d, %Y" }}</p>
-        {% else %}
-        <p class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date_to_string }}</p>
-        {% endif %}
-        <p class="post-content">
-            {% if post.fullview %}
-            {{ post.content }}
-            {% else %}
-            {{ post.excerpt | markdown | strip_html | truncate: 150 }}
-            {% endif %}
-        </p>
-        {% if post.lang == "en" %}
-        <a class="readme" href="{{ post.url }}">Continue read&#8230</a>
-        {% else %}
-        <a class="readme" href="{{ post.url }}">Continue lendo&#8230</a>
-        {% endif %}
-
-        <!--<div class="date">
-            <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-        </div>
-        <div class="post-content">
-            <p class="post-title">
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            </p>
-        </div>-->
-    </article>
+    <p class="article">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="article-date">{{ post.date | date: "%d %b %Y" }}</span>
+    </p>
     {% endfor %}
 </div>
-
-<!--
-<style>
-    .post .date{
-        float: left;
-        width: 15%;
-        text-align: center;
-        font-weight: 600;
-        color: #333333;
-        background-color: #f1f1f1;
-        border-right: 1px solid darkgrey;
-    }
-    .post .date p{
-        padding: .3em;
-    }
-    .post .post-content{
-        float: right;
-        padding-left: 1em;
-        width: 85%;
-    }
-    .post .post-title{
-        margin-top: -.3em;
-    }
-</style>-->

@@ -18,38 +18,12 @@ description: "Personal web page, blog and promoter projects!"
     </p>
     <a class="read-more" href="/about">continue read&#8230</a>
 </div>
-<div id="home" class="blog">
-    <h1 class="heading">Recent Posts</h1>
-    <!--<article class="post">
-        {% for post in site.posts limit:3 %}
-        <p class="post-title">
-            <a href="{{ post.url }}">{{ post.title }}</a> <br/>
-        </p>
-        <p class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date: "%B %-d, %Y" }}</p>
-        <p class="post-content">
-            {% if post.fullview %}
-            {{ post.content }}
-            {% else %}
-            {{ post.excerpt | markdown | strip_html | truncate: 150 }}
-            {% endif %}
-        </p>
-        {% endfor  %}
-    </article>-->
-    <article class="post">
-        {% for post in site.posts  limit: 5 %}
-        <p class="date">{{ post.date | date: "%d %b %Y" }}</p>
-        <div class="content">
-            <p class="post-title">
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            </p>
-            <p class="post-content">
-                {% if post.fullview %}
-                    {{ post.content }}
-                {% else %}
-                    {{ post.excerpt | markdown | strip_html | truncate: 100 }}
-                {% endif %}
-            </p>
-        </div>
-        {% endfor %}
-    </article>
+<div class="blog-post">
+    <h1 class="heading">Recent Articles</h1>
+    {% for post in site.posts %}
+    <p class="article">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="article-date">{{ post.date | date: "%d %b %Y" }}</span>
+    </p>
+    {% endfor %}
 </div>

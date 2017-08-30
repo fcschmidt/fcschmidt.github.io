@@ -2,11 +2,13 @@
 layout: page
 title: About
 description: "About me"
+quote_author: yoda
 permalink: /about/
 ---
 
 
 {% assign author = site.author %}{% assign link = site.links %}
+{% assign quote = site.data.quotes[page.quote_author] %}
 <div class="about">
     <h1 class="heading">About</h1>
     <p>
@@ -45,7 +47,11 @@ permalink: /about/
             {% include social.html %}
         </div>
     </div>
-    <div class="col-avatar">
+    <p class="col-avatar">
         <img class="avatar" src="/assets/images/{{author.avatar}}" alt="">
-    </div>
+    </p>
+    <p class="quote"><i class="fa fa-quote-left"></i>
+        {{ quote.content }}
+        <i class="fa fa-quote-right"></i><br><span>&mdash; {{ quote.name }}</span>
+    </p>
 </div>

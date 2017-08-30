@@ -22,7 +22,7 @@ collections:
 # Site settings
 name: "@fcschmidt"
 title: "F&aacute;bio Schmidt"
-description: "Computer Science Student, Aspiring Data Scientist."
+description: "Computer Science Student, Front-end Developer and  Aspiring Data Scientist."
 
 safe: false
 url: https://fcschmidt.github.io
@@ -39,7 +39,7 @@ styles: main.css
 author:
   name: "F&aacute;bio Schmidt"
   avatar: "fb.jpg"
-  bio: "Computer Science Student and Aspiring Data Scientist"
+  bio: "Computer Science Student, Front-end Developer and  Aspiring Data Scientist."
   location: "Brazil"
   email: "fcschimidt [at] gmail [dot] com"
   email1: "contact [at] fcschmidt [dot] me"
