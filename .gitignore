@@ -1,8 +1,5 @@
 _site
 .idea
 .jekyll-metadata
-/pages/resume.html
-/pages/tests.html
-_data/links.yml
-_data/resume.json
-/assets/css/resume.css
+
+

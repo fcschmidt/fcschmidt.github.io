@@ -50,10 +50,11 @@ author:
   github: "fcschmidt"
   bitbucket: "fcschmidt"
   stackoverflow: "fcschmidt"
-  stackoverflow_story: "fcschmidt"
   medium: "fcschmidt"
 
-links:
+
+# Social networks
+social:
   twitter: "https://twitter.com/"
   gplus: "https://plus.google.com/u/0/"
   instagram: "https://instagram.com/"
@@ -62,12 +63,18 @@ links:
   bitbucket: "https://bitbucket.org/"
   stack: "http://stackoverflow.com/story/"
   stackoverflow_story:
+  stackoverflow: "http://stackoverflow.com/"
+
+
+# Urls
+links:
   lattes_url: "http://lattes.cnpq.br/3591699750918062"
   pt_resume: "https://github.com/fcschmidt/resume/blob/master/pt/resume_cv.pdf"
   en_resume: "https://github.com/fcschmidt/resume/blob/master/en/resume_cv.pdf"
   python: "https://www.python.org/"
   r: "https://www.r-project.org/"
   mit: "http://opensource.org/licenses/MIT"
+
 
 gems:
   # - jekyll-feed
