@@ -8,7 +8,8 @@
         <a class="github-icon" href="{{ link.github }}{{ author.github }}" target="_blank"><i class="fa fa-github"></i></a>
         <ul class="menu-items">
             <li class="{% if page.title contains 'Home' %}active{% endif %}"><a href="/">home</a></li>
-            <li class="{% if page.url contains 'projects'%}active{% endif %}"><a href="/projects/">projects</a></li>
+            <li><a href="{{ site.social.github }}{{ author.github }}">projects</a></li>
+            <!--<li class="{% if page.url contains 'projects'%}active{% endif %}"><a href="/projects/">projects</a></li>-->
             <li class="{% if page.title contains 'About'%}active{% endif %}"><a href="/about/">about</a></li>
             <li class="{% if page.title contains 'Blog'%}active{% endif %}"><a href="/blog/">blog</a></li>
             <li class="{% if page.url contains 'research'%}active{% endif %}"><a href="/research/">research</a></li>
