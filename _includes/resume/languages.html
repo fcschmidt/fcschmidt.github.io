@@ -1,0 +1,20 @@
+{% assign langs = resume.languages %}
+{% if active.languages == true %}
+<section class="languages style__section">
+    <h1>{{ title.languages }}</h1>
+    <div class="row">
+        <div class="content">
+            {% for l in langs %}
+            <p class="category">{{ l.level }}</p>
+            <ul>
+                <li>{{ l.lang }}
+                    <p class="complement">
+                        <a href="{{ l.href }}" target="_blank">{{ l.complement }}</a>
+                    </p>
+                </li>
+            </ul>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}

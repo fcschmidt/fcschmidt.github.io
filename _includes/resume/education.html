@@ -1,0 +1,23 @@
+{% assign edu = resume.education | group_by: "last_date" %}
+{% if active.education == true %}
+<section class="education">
+    <h1>{{ title.education }}</h1>
+    {% for a in edu reversed %}
+    <div class="row">
+        {% for b in a.items %}
+            <aside>
+                <p class="date">{{ b.last_date }} - {{ b.end_date }}</p>
+            </aside>
+            <div class="content">
+                <div class="course">
+                    <h2>{{ b.degree }}</h2>
+                    <p class="institution">{{ b.institution }}</p>
+                </div>
+                <p class="location">{{ b.location }}</p>
+            </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</section>
+{% endif %}
+

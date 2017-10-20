@@ -1,0 +1,28 @@
+@page  {
+    size: A4;
+}
+@page :first{
+
+}
+@page :blank{
+
+}
+@page :right {
+
+}
+@page :left{
+
+}
+
+h1{
+    font-size: 18pt;
+    font-weight: 700;
+}
+
+.nav{
+    display: none;
+}
+.header .right{
+    display: block;
+    float: right;
+}

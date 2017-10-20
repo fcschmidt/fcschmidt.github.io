@@ -1,0 +1,18 @@
+{% assign skills = resume.skills %}
+{% if active.skills == true %}
+<section class="skills style__section">
+    <h1>{{ title.skills }}</h1>
+    <div class="row">
+        <div class="content">
+            {% for s in skills %}
+            <p class="category">{{ s.category }}</p>
+            <ul>
+                {% for i in s.skill %}
+                <li>{{ i }}</li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}

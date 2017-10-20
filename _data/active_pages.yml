@@ -1,0 +1,13 @@
+pages:
+  contact: true
+  summary: false
+  work-experience: true
+  education: true
+  awards: false
+  skills: true
+  languages: true
+  professional: true
+  hobbies: false
+  publications: false
+  certificates: false
+  extra-edu: false

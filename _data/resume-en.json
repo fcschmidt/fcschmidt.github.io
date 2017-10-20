@@ -1,0 +1,221 @@
+{
+  "header": [
+    {
+      "first_name": "Fábio C.",
+      "second_name": "Schmidt",
+      "position": [
+        {
+          "item": "",
+          "middot": "&middot;"
+        },
+        {
+          "item": ""
+        }
+      ],
+      "quote": "Sometimes it’s people that nobody gives value, they do things that no one can imagine",
+      "last_update": "Last update",
+      "twitter": "https://twitter.com/fcschimidt",
+      "linkedin": "https://www.linkedin.com/in/fcschmidt",
+      "github": "https://github.com/fcschmidt"
+    }
+  ],
+  "contacts": [
+    {
+      "phone": "(+55) 016-99419-6173",
+      "email": "fcschimidt@gmail.com",
+      "website": "https://fcschmidt.me",
+      "professional_address": [{
+        "university": "",
+        "institute": "",
+        "address": "",
+        "zip_code": "",
+        "location": "",
+        "phone_number": "",
+        "e-mail": ""
+      }]
+    }
+  ],
+  "profiles": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/",
+      "user": "fcschimidt",
+      "icon" : "twitter"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/",
+      "user": "fcschmidt",
+      "icon" : "linkedin"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/",
+      "user": "fcschmidt",
+      "icon" : "github"
+    },
+    {
+     "name": "bitbucket",
+      "url": "https://bitbucket.org/",
+      "user": "fcschmidt",
+      "icon": "bitbucket"
+    },
+    {
+      "name": "stackoverflow",
+      "url": "https://stackoverflow.com/",
+      "user": "fcschmidt",
+      "icon" : "stack-overflow"
+    },
+    {
+      "name": "medium",
+      "url": "https://medium.com/",
+      "user": "fcschmidt",
+      "icon" : "medium"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Computer Science",
+      "institution": "University Paulista",
+      "institute": "Institute of Exact Sciences and Technology",
+      "location": "Araraquara, São Paulo, Brazil",
+      "last_date": "August 2013",
+      "end_date": "Present"
+    }
+  ],
+  "experience": [
+    {
+      "job-title": "Front-end Developer",
+      "organization": "Freelancer (Remote based)",
+      "location": "Araraquara, São Paulo, Brazil",
+      "last_date": "Jan 2012",
+      "end_date": "Oct 2015",
+      "work_description": [
+        {
+          "item": "Prototyping and creation of navigable wireframes and UX/UI."
+        },
+        {
+          "item": " Development and Responsive Website Design, using W3C best practices."
+        },
+        {
+          "item": "Using HTML, CSS and JavaScript."
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming",
+      "skill": [
+        "Python,",
+        "C,",
+        "R,",
+        "LateX,",
+        "SQL Databases."
+      ]
+    },
+    {
+      "category": "Web",
+      "skill": [
+        "Flask,",
+        "HTML5,",
+        "CSS3,",
+        "LESS,",
+        "JavaScript,",
+        "JQUERY."
+      ]
+    },
+    {
+      "category": "Design",
+      "skill": [
+        "Responsive Web Design,",
+        "UX Design,",
+        "Bootstrap,",
+        "Materialize,",
+        "Google Material Design."
+      ]
+    },
+    {
+      "category": "Version Control",
+      "skill": [
+        "GIT,",
+        "GitHub,",
+        "Bitbucket."
+      ]
+    },
+    {
+      "category": "Tools",
+      "skill": [
+        "GNU/Linux,",
+        "Pycharm,",
+        "Visual Studio Code,",
+        "Spyder3,",
+        "Jupyter Notebook,",
+        "RStudio..."
+      ]
+    },
+    {
+      "category": "Others",
+      "skill": [
+        "Bower,",
+        "npm,",
+        "Jekyll,",
+        "Web Scrapping & Web Crawler."
+      ]
+    },
+    {
+      "category": "Personal",
+      "skill": [
+        "Organization,",
+        "Quick Learning,",
+        "Self-taught."
+      ]
+    },
+    {
+      "category": "Interpersonal",
+      "skill": [
+        "Effective Communication,",
+        "Flexibility,",
+        "Social Interaction,",
+        "Proactive."
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "level": "Native",
+      "lang": "Portuguese (Brazilian)"
+    },
+    {
+      "level": "A2 Basic user",
+      "lang": "English",
+      "href": "https://www.britishcouncil.org.br/quadro-comum-europeu-de-referencia-para-linguas-cefr",
+      "complement": "CEFR (Understanding • Speaking • Writing)."
+    }
+  ],
+  "interests": [
+    {
+      "content": "Interested in researching in the areas of <span>Machine Learning</span>, <span>Data Science</span>, <span>Mobile Robotics</span> and <span>Bio-inspired Computing</span>."
+    },
+    {
+      "category": "",
+      "list": [
+        ""
+      ]
+    }
+  ],
+  "section-titles": [{
+    "contact": "Contact",
+    "summary": "Professional Summary",
+    "experience": "Work Experience",
+    "education": "Education",
+    "awards": "Grants and awards",
+    "skills": "Skills",
+    "languages": "Languages",
+    "interests": "Professional and Research Interests",
+    "hobbies": "Hobbies and Personal Interests",
+    "publications": "Publications",
+    "certificates": "Certificates",
+    "extra-edu": "Formation"
+  }]
+}

@@ -1,0 +1,22 @@
+{% if page.url contains "en" %}
+    {% assign resume = site.data.resume-en %}
+{% else %}
+    {% assign resume = site.data.resume-pt %}
+{% endif %}
+{% assign active = site.data.active_pages.pages %}
+{% for titles in resume.section-titles %}{% assign title = titles %}{% endfor %}
+<div class="container">
+    {% include resume/header.html %}
+    {% include resume/contact.html %}
+    {% include resume/professional-summary.html %}
+    {% include resume/work-experience.html %}
+    {% include resume/education.html %}
+    {% include resume/publications.html %}
+    {% include resume/awards.html %}
+    {% include resume/skills.html %}
+    {% include resume/languages.html %}
+    {% include resume/professional-interests.html %}
+    {% include resume/extra-edu.html %}
+    {% include resume/certificates.html %}
+    {% include resume/hobbies.html %}
+</div>
