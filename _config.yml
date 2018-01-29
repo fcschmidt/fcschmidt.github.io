@@ -31,14 +31,15 @@ domain: fcschmidt.me
 enforce_ssl: fcschmidt.me
 twitter_user: fcschimidt
 icon: "favicon.png"
-image: "mini-avatar.jpg"
+image: "new-mini-avatar.png"
 styles: main.css
 
 
 # Author
 author:
   name: "F&aacute;bio Schmidt"
-  avatar: "fb.jpg"
+  avatar: "new-avatar.png"
+#  avatar: "fb.jpg"
   bio: "Computer Science Student, Front-end Developer and  Aspiring Data Scientist."
   location: "Brazil"
   email: "fcschimidt [at] gmail [dot] com"
