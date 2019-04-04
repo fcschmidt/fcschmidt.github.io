@@ -1,24 +1,38 @@
 ---
 layout: page
-title: Home
+title: Fábio Schmidt
 description: "Personal web page, blog and promoter projects!"
 ---
 
-{% assign author = site.author %}{% assign link = site.links %}
-<div class="about">
-    <h1 class="heading">{{ site.name }} <!--<a href="">Ler em português</a>--></h1>
-    <p>
-        Welcome to my personal website. My name is <span>F&aacute;bio Schmidt</span>. I'm Computer Science Student, Python Developer
-        and Aspiring Data Scientist. <br>
+{% assign s = site.social %}
+<div class="home">
+    <p class="name">
+        <span class="first">F&aacute;bio</span>
+        <span class="sec">Schmidt</span>
     </p>
-    <a class="read-more" href="/about">continue read&#8230</a>
-</div>
-<div class="blog-post">
-    <h1 class="heading">Recent Post</h1>
-    {% for post in site.posts %}
-    <p class="article">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <span class="article-date">{{ post.date | date: "%d %b %Y" }}</span>
+    <p class="description">
+        Hi! I'm a Software Developer and Entrepreneur in Brazil.
     </p>
-    {% endfor %}
+    <ul class="social">
+        {% if s.twitter %}
+        <li>
+            <a href="{{ s.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
+        </li>
+        {% endif %}
+        {% if s.linkedin %}
+        <li>
+            <a href="{{ s.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </li>
+        {% endif %}
+        {% if s.github %}
+        <li>
+            <a href="{{ s.github }}" target="_blank"><i class="fa fa-github"></i></a>
+        </li>
+        {% endif %}
+        {% if s.contact %}
+        <li>
+            <a href="{{ s.contact }}" target="_blank"><i class="fa fa-envelope"></i></a>
+        </li>
+        {% endif %}
+    </ul>
 </div>
