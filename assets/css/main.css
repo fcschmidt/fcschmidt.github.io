@@ -27,20 +27,13 @@ h1, h2, h3, h4, h5, h6{
 }
 p{padding-top: .7em;}
 .main__container{
-    position: relative;!important;
-    display: table;
-    margin-top: -3.5em;
-    padding: .5em;
     width: 100%;
     color: #333333;
 }
 .wrapper__content{
-    margin-top: 6.5em;
+    margin-top: 6em;
     clear: both;
     text-align: center;
-}
-.wrapper__content div{
-    margin-bottom: 1.3em;
 }
 .wrapper__content .home{
     padding-top: 7em;
@@ -62,8 +55,8 @@ p{padding-top: .7em;}
     display: inline-block;
 }
 .wrapper__content .home .social li a{
-    padding-left: .7em;
-    font-size: 2rem;
+    padding: 0 .5em;
+    font-size: 2.2rem;
     color: #222222;
 }
 .wrapper__content .home .social li a:hover{
