@@ -13,13 +13,13 @@ google__analytics:
 
 # Site settings
 title: "F&aacute;bio Schmidt"
-description: "Computer Science Student, Python Developer and  Aspiring Data Scientist."
+description: "Software Engineer & Blockchain and cryptocurrency enthusiast."
 
 safe: false
 url: https://fcschmidt.github.io
-url: https://fcschmidt.me
-domain: fcschmidt.me
-enforce_ssl: fcschmidt.me
+# url: https://fcschmidt.me
+# domain: fcschmidt.me
+# enforce_ssl: fcschmidt.me
 twitter_user: fcschimidt
 styles: main.css
 
